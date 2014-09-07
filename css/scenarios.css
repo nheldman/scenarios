@@ -1,3 +1,5 @@
+/* DZSLIDES DEFAULT CSS */
+
 * { margin: 0; padding: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 [role="note"] { display: none; }
 body {
@@ -17,7 +19,6 @@ body {
     transform: none !important;
     -moz-transform: none !important;
     -webkit-transform: none !important;
-    -o-transform: none !important;
     -ms-transform: none !important;
 }
 .view head, .view head > title { display: block }
@@ -32,11 +33,9 @@ section {
     width: 800px; height: 600px;
     margin: -150px -200px;
     float: left;
-
     transform: scale(.4);
     -moz-transform: scale(.4);
     -webkit-transform: scale(.4);
-    -o-transform: scale(.4);
     -ms-transform: scale(.4);
 }
 .view section > * { pointer-events: none; }
@@ -51,21 +50,18 @@ body.loaded { display: block; }
     position: absolute;
     -moz-transition: width 400ms linear 0s;
     -webkit-transition: width 400ms linear 0s;
-    -ms-transition: width 400ms linear 0s;
     transition: width 400ms linear 0s;
 }
 .view #progress-bar {
     display: none;
 }
 
-
-
+/* CUSTOM CSS */
 
 html, .view body { background-color: black; counter-reset: slideidx; }
 body, .view section { background-color: white; border-radius: 12px }
 /* A section is a slide. It's size is 800x600, and this will never change */
 section, .view head > title {
-    /* The font from Google */
     font-family: 'Oswald', arial, serif;
     font-size: 30px;
 }
@@ -154,13 +150,11 @@ footer {
 section {
     -moz-transition: left 400ms linear 0s;
     -webkit-transition: left 400ms linear 0s;
-    -ms-transition: left 400ms linear 0s;
     transition: left 400ms linear 0s;
 }
 .view section {
     -moz-transition: none;
     -webkit-transition: none;
-    -ms-transition: none;
     transition: none;
 }
 
@@ -189,6 +183,6 @@ section[aria-selected] ~ section { left: +150%; }
 /* The progressbar, at the bottom of the slides, show the global
    progress of the presentation. */
 #progress-bar {
-    height: 2px;
+    height: 10px;
     background: #AAA;
 }
