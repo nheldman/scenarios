@@ -3,8 +3,10 @@
 * { margin: 0; padding: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 [role="note"] { display: none; }
 body {
-    width: 800px; height: 600px;
-    margin-left: -400px; margin-top: -300px;
+    width: 800px;
+    height: 544px; /*600px;*/
+    margin-left: -400px;
+    margin-top: -272px; /*-300px;*/
     position: absolute; top: 50%; left: 50%;
     overflow: hidden;
     display: none;
@@ -58,12 +60,75 @@ body.loaded { display: block; }
 
 /* CUSTOM CSS */
 
-html, .view body { background-color: black; counter-reset: slideidx; }
-body, .view section { background-color: white; border-radius: 12px }
+html, .view body { background-color: #949699; counter-reset: slideidx; }
+body, .view section {
+    font-family: 'Oswald', arial, serif;
+    background-color: white;
+    letter-spacing: 0;
+    color: #666;
+    /*border-radius: 12px*/
+}
+
 /* A section is a slide. It's size is 800x600, and this will never change */
 section, .view head > title {
-    font-family: 'Oswald', arial, serif;
     font-size: 30px;
+    top: 53px;
+    bottom: 53px;
+}
+
+/* SHARED TEMPLATE ITEMS */
+.button {
+    background: url("../img/button.png") no-repeat;
+    border: medium none;
+    box-shadow: none;
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    height: 60px;
+    /*margin: 20px -100px 0 0;*/
+    padding: 10px 30px;
+    text-align: center;
+    width: 175px;
+    position: absolute;
+    bottom: 80px;
+    right: -60px;
+}
+
+/* TEMPLATE 1: Folder background, image left, text right */
+section.tpl-1 {
+    background: url(../img/bg-folder.jpg);
+    background-size: contain;
+}
+
+section.tpl-1 > div:first-of-type, section.tpl-1 > div:nth-of-type(2) {
+    float: left;
+    font-size: 20px;
+    height: 600px;
+    line-height: 35px;
+    margin: 10px;
+    position: relative;
+    width: 50%;
+    z-index: 0;
+}
+
+section.tpl-1 > div:first-of-type { /* First div is the left column */
+    padding: 28px 0 0 78px;
+    position: relative;
+    width: 33%;
+    z-index: 1;
+}
+
+section.tpl-1 > div:nth-of-type(2) { /* Second div is the right column */
+    background: url("../img/bg-paper.png") no-repeat;
+    background-size: 100%;
+    /*font-size: 20px;*/
+    height: 450px;
+    line-height: 35px;
+    margin: 10px 0 0 4px;
+    padding: 80px 50px 0;
+    position: relative;
+    width: 50%;
+    z-index: 0;
 }
 
 .view section:after {
@@ -96,8 +161,23 @@ li > ul {
 }
 
 p {
-    margin: 25px;
-    font-size: 20px;
+    font-size: 17px;
+    line-height: 1.5em;
+}
+
+a {
+    color: #ee2e24;
+    text-decoration: none;
+    background: transparent;
+}
+
+a:hover, a:focus {
+    color: #949699;
+    text-decoration: underline;
+}
+
+a:active, a:hover {
+    outline: 0;
 }
 
 blockquote {
@@ -130,6 +210,25 @@ figure > img, figure > video {
 figcaption {
     margin: 70px;
     font-size: 50px;
+}
+
+.slide-header, .slide-footer {
+    position: absolute;
+    width: 100%;
+    background: #000;
+    font-size: 75%;
+}
+
+.slide-header {
+    top: 0;
+    padding: 10px;
+}
+
+.slide-footer {
+    bottom: 0;
+    padding: 20px;
+    color: #fff;
+    text-align: right;
 }
 
 footer {
