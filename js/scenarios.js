@@ -14,6 +14,4 @@ jQuery(function() {
         var slide = parseInt(jQuery(this).data('slide'));
         Dz.setSlide(slide);
     });
-
-    jQuery('')
 });
