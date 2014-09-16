@@ -98,7 +98,7 @@ section, .view head > title {
     right: -60px;*/
     bottom: 150px;
     right: 60px;
-    z-index: 2;
+    z-index: 1;
 }
 
 /* TEMPLATE 1: Folder background, image left, text right */
@@ -155,7 +155,7 @@ section.tpl-2 > div:first-of-type {
     height: 450px;
     line-height: 35px;
     padding: 80px 50px 0;
-    z-index: 2;
+    z-index: 1;
 }
 
 section.tpl-2 > div:first-of-type:after {
