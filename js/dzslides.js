@@ -109,13 +109,13 @@ Dz.setupTouchEvents = function() {
 }
 
 Dz.setupView = function() {
-    document.body.addEventListener("click", function ( e ) {
-        if (!Dz.html.classList.contains("view")) return;
-        if (!e.target || e.target.nodeName != "SECTION") return;
-
-        Dz.html.classList.remove("view");
-        Dz.setCursor(Dz.slides.indexOf(e.target) + 1);
-    }, false);
+//    document.body.addEventListener("click", function ( e ) {
+//        if (!Dz.html.classList.contains("view")) return;
+//        if (!e.target || e.target.nodeName != "SECTION") return;
+//
+//        Dz.html.classList.remove("view");
+//        Dz.setCursor(Dz.slides.indexOf(e.target) + 1);
+//    }, false);
 }
 
 /* Adapt the size of the slides to the window */

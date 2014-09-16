@@ -230,6 +230,12 @@ p {
     line-height: 1.5em;
 }
 
+em {
+    font-weight: 700;
+    color: #333;
+    font-style: normal;
+}
+
 a {
     color: #ee2e24;
     text-decoration: none;
