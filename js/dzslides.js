@@ -17,7 +17,7 @@ Dz.init = function() {
     this.html = document.body.parentNode;
     this.setupParams();
     this.onhashchange();
-    this.setupTouchEvents();
+    //this.setupTouchEvents();
     this.onresize();
     this.setupView();
 }
