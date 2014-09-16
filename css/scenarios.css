@@ -94,8 +94,11 @@ section, .view head > title {
     text-align: center;
     width: 175px;
     position: absolute;
-    bottom: 80px;
-    right: -60px;
+    /*bottom: 80px;
+    right: -60px;*/
+    bottom: 150px;
+    right: 60px;
+    z-index: 2;
 }
 
 /* TEMPLATE 1: Folder background, image left, text right */
@@ -135,6 +138,59 @@ section.tpl-1 > div:nth-of-type(2) { /* Second div is the right column */
     z-index: 0;
 }
 
+/* TEMPLATE 2: Full background image, faded paper, text right */
+section.tpl-2 {
+    background: url(../img/bg-kid.png);
+    background-size: contain;
+}
+
+section.tpl-2 > div:first-of-type {
+    float: left;
+    font-size: 20px;
+    line-height: 35px;
+    margin: 10px;
+    position: absolute;
+    left: 38%;
+    width: 50%;
+    height: 450px;
+    line-height: 35px;
+    padding: 80px 50px 0;
+    z-index: 2;
+}
+
+section.tpl-2 > div:first-of-type:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../img/bg-paper.png") no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.75;
+    z-index: -1;
+}
+
+/* TEMPLATE 3: Full background faded image, no paper, text full */
+section.tpl-3 {
+    background: url(../img/bg-kid-fade.png);
+    background-size: contain;
+}
+
+section.tpl-3 > div:first-of-type {
+    float: left;
+    font-size: 20px;
+    line-height: 35px;
+    margin: 10px;
+    width: 80%;
+    height: 450px;
+    line-height: 35px;
+    padding: 80px 50px 0;
+    z-index: 1;
+}
+
+/* Additional styles */
 .view section:after {
     counter-increment: slideidx;
     content: counter(slideidx, decimal-leading-zero);
@@ -149,7 +205,7 @@ section.tpl-1 > div:nth-of-type(2) { /* Second div is the right column */
 }
 
 h1, h2 {
-    margin-top: 200px;
+    line-height: 2em;
     text-align: center;
     font-size: 80px;
 }
@@ -158,10 +214,15 @@ h3 {
 }
 
 ul {
-    margin: 20px 200px;
+    margin: 20px 100px;
 }
+
 li > ul {
     margin: 15px 50px;
+}
+
+.hide {
+    display: none;
 }
 
 p {
