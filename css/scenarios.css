@@ -89,13 +89,10 @@ section, .view head > title {
     float: right;
     font-size: 28px;
     height: 60px;
-    /*margin: 20px -100px 0 0;*/
-    padding: 10px 30px;
+    padding: 7px 0;
     text-align: center;
     width: 175px;
     position: absolute;
-    /*bottom: 80px;
-    right: -60px;*/
     bottom: 150px;
     right: 60px;
     z-index: 1;
@@ -210,7 +207,7 @@ h1, h2 {
     font-size: 80px;
 }
 h3 {
-    margin: 100px 0 50px 100px;
+    margin: 50px 0 50px 100px;
 }
 
 ul {
