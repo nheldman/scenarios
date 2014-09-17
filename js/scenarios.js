@@ -27,6 +27,8 @@ jQuery(function() {
     });
 
     $('#s5-signature-info').on('click touchend', function() {
-        $('#s5-signature-info-modal').modal({fadeDuration:100,closeText:'OK'});
+        if ($(this).is(':checked')) {
+            $('#s5-signature-info-modal').modal({fadeDuration: 100, closeText: 'OK'});
+        }
     });
 });
