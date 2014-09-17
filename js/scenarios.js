@@ -26,7 +26,7 @@ jQuery(function() {
         $(this).css('font-size', Math.round(size))
     });
 
-    $('#s6-signature-info').on('click touchend', function() {
-        $('#s6-signature-info-modal').modal({fadeDuration:100,closeText:'OK'});
+    $('#s5-signature-info').on('click touchend', function() {
+        $('#s5-signature-info-modal').modal({fadeDuration:100,closeText:'OK'});
     });
 });
