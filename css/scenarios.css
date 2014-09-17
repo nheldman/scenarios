@@ -178,11 +178,9 @@ section.tpl-3 {
 section.tpl-3 > div:first-of-type {
     float: left;
     font-size: 20px;
-    line-height: 35px;
+    /*line-height: 35px;*/
     margin: 10px;
-    width: 80%;
     height: 450px;
-    line-height: 35px;
     padding: 80px 50px 0;
     z-index: 1;
 }
@@ -246,6 +244,22 @@ a:hover, a:focus {
 
 a:active, a:hover {
     outline: 0;
+}
+
+.checkbox-list {
+    margin: 20px;
+}
+
+.checkbox-list td {
+    padding: 0 4px;
+    vertical-align: top;
+    font-size: 14px;
+}
+
+.checkbox-list input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
 }
 
 blockquote {
