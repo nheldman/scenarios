@@ -13,6 +13,24 @@
 </style>
 </head>
 <body>
-  <iframe id="scenario" src="scenario-1/index.html" allowtransparency="true"></iframe>
+  <iframe id="scenario" src="" allowtransparency="true"></iframe>
+
+  <script type="text/javascript">
+      var urlParams;
+      (window.onpopstate = function () {
+          var match,
+              pl     = /\+/g,  // Regex for replacing addition symbol with a space
+              search = /([^&=]+)=?([^&]*)/g,
+              decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+              query  = window.location.search.substring(1);
+
+          urlParams = {};
+          while (match = search.exec(query)) {
+              urlParams[decode(match[1])] = decode(match[2]);
+          }
+      })();
+
+      document.getElementById('scenario').src = 'scenario-' + urlParams.scenario + '/index.html';
+  </script>
 </body>
 </html>
