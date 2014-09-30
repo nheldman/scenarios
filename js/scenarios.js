@@ -26,9 +26,15 @@ jQuery(function() {
         $(this).css('font-size', Math.round(size))
     });
 
-    $('#s5-signature-info').on('click touchend', function() {
+    $('#hipaa-auth-7').on('click touchend', function() {
         if ($(this).is(':checked')) {
             $('#s5-signature-info-modal').modal({fadeDuration: 100, closeText: 'OK'});
         }
+    });
+
+    $('.hipaa-auth').on('click touchend', function() {
+        var allChecked = $('.hipaa-auth').length == $('.hipaa-auth:checked').length;
+
+        $(this).parents('section').children('.button').toggleClass('hide', !allChecked);
     });
 });
