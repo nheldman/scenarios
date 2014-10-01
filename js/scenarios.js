@@ -36,5 +36,48 @@ jQuery(function() {
         var allChecked = $('.hipaa-auth').length == $('.hipaa-auth:checked').length;
 
         $(this).parents('section').children('.button').toggleClass('hide', !allChecked);
+
+        if (allChecked) {
+            $('#s5-correct').modal({fadeDuration: 100, closeText: 'OK'});
+        }
+    });
+
+    $('#signed-auth-1').on('click touchend', function() {
+        if ($(this).is(':checked')) {
+            $(this).prop('checked', false);
+            $('#s10-incorrect').modal({fadeDuration: 100, closeText: 'OK'});
+        }
+    });
+
+    $('#signed-auth-2').on('click touchend', function() {
+        if ($(this).is(':checked')) {
+            Dz.setSlide(11);
+        }
+    });
+
+    $('.obtain-records').on('click touchend', function() {
+        var id = $(this).attr('id');
+        var allChecked = $('.obtain-records').length == $('.obtain-records:checked').length;
+
+        $(this).parents('section').children('.button').toggleClass('hide', !allChecked);
+
+        if ($(this).is(':checked')) {
+            $('#' + id + '-modal').modal({fadeDuration: 100, closeText: 'OK'});
+        }
+    });
+
+    $('.hospital-response').on('click touchend', function() {
+        var id = $(this).attr('id'),
+            bestAnswerChecked = id === 'hospital-response-4';
+
+        $(this).parents('section').children('.button').toggleClass('hide', !bestAnswerChecked);
+
+        if ($(this).is(':checked')) {
+            $('#' + id + '-modal').modal({fadeDuration: 100, closeText: 'OK'});
+        }
+
+        if (!bestAnswerChecked) {
+            $(this).prop('checked', false);
+        }
     });
 });

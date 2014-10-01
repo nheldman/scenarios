@@ -254,6 +254,7 @@ a:active, a:hover {
     padding: 0 4px;
     vertical-align: top;
     font-size: 14px;
+    line-height: 1.5em;
 }
 
 .checkbox-list input[type="checkbox"] {
