@@ -277,6 +277,16 @@ blockquote:after {
     content: close-quote;
 }
 
+span.correct {
+    font-weight: bold;
+    color: #060;
+}
+
+span.incorrect {
+    font-weight: bold;
+    color: #600;
+}
+
 /* Figures are displayed full-page, with the caption
    on top of the image/video */
 figure {
