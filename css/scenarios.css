@@ -212,6 +212,10 @@ ul {
     margin: 20px 100px;
 }
 
+ul.verbose {
+    font-size: 15px;
+}
+
 li > ul {
     margin: 15px 50px;
 }
