@@ -88,4 +88,30 @@ jQuery(function() {
 
         $(this).parents('section').children('.button').toggleClass('hide', !allClicked);
     });
+
+    $('.fillInTheBlank').change(function() {
+        var id = $(this).val(),
+            section = $(this).parents('section'),
+            allCorrectChoicesSelected = !(section.find('select>option:selected').filter(function () { return $(this).val() !== 'correct'; }).length > 0),
+            sectionId = section.attr('id'),
+            hasModal = section.find('.modal'),
+            allAnswersProvided = section.find('select>option:selected').filter(function () { return $(this).val() === ''; }).length === 0;
+
+        section.children('.button').toggleClass('hide', !allCorrectChoicesSelected);
+
+        section.children('.answer').hide();
+
+        if (allAnswersProvided) {
+            var id = allCorrectChoicesSelected ? 'correct' : 'incorrect';
+            $('#' + sectionId + '-' + id).show();
+        }
+
+        if (allCorrectChoicesSelected) {
+            $('#' + sectionId + '-' + id).show();
+
+            if (hasModal) {
+                $('#' + sectionId + '-' + id + '-modal').modal();
+            }
+        }
+    });
 });

@@ -98,6 +98,20 @@ section, .view head > title {
     z-index: 1;
 }
 
+.answer {
+    display: none;
+    float: right;
+    font-size: 24px;
+    height: 60px;
+    padding: 7px 0;
+    text-align: right;
+    width: 500px;
+    position: absolute;
+    bottom: 150px;
+    right: 250px;
+    z-index: 1;
+}
+
 /* TEMPLATE 1: Folder background, image left, text right */
 section.tpl-1 {
     background: url(../img/bg-folder.jpg);
@@ -425,4 +439,8 @@ ul.reveal li.show {
     color: #333;
     background: url(../img/form-pencil-fade.jpg) #888;
     cursor: default;
+}
+
+select {
+    font-size: 20px;
 }
