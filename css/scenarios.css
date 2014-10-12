@@ -385,3 +385,44 @@ section[aria-selected] ~ section { left: +150%; }
 
 .modal-medium { width: 450px; }
 .modal-wide { width: 600px; }
+
+ul.reveal {
+    margin: 0;
+}
+
+.help {
+    font-size: 12px;
+    color: #888;
+}
+
+ul.reveal li {
+    float: left;
+    width: 120px;
+    height: 120px;
+    padding: 8px;
+    margin: 8px;
+    border: 2px solid #666;
+    font-size: 0;
+    line-height: 0;
+    list-style: none;
+    color: #ddd;
+    background: url(../img/form-pencil.jpg) #ddd;
+    cursor: pointer;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+ul.reveal li:hover {
+    color: #aaa;
+    background: #aaa transparent;
+    opacity: 0.75;
+}
+
+ul.reveal li.show {
+    font-size: 13px;
+    line-height: 1.25em;
+    color: #333;
+    background: url(../img/form-pencil-fade.jpg) #888;
+    cursor: default;
+}

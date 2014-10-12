@@ -80,4 +80,12 @@ jQuery(function() {
             $(this).prop('checked', false);
         }
     });
+
+    $('ul.reveal li').on('click touchend', function () {
+        $(this).addClass('show');
+
+        var allClicked = $(this).parent().children('li').length === $(this).parent().children('li.show').length;
+
+        $(this).parents('section').children('.button').toggleClass('hide', !allClicked);
+    });
 });
