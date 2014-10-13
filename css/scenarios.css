@@ -103,6 +103,7 @@ section, .view head > title {
 .answer {
     float: right;
     font-size: 24px;
+    font-weight: bold;
     height: 60px;
     padding: 7px 0;
     text-align: right;
@@ -114,10 +115,12 @@ section, .view head > title {
 
 .answer.correct {
     right: 200px;
+    color: #060;
 }
 
 .answer.incorrect {
     right: 10px;
+    color: #600;
 }
 
 /* TEMPLATE 1: Folder background, image left, text right */
@@ -173,7 +176,8 @@ section.tpl-2 > div:first-of-type {
     width: 50%;
     height: 450px;
     line-height: 35px;
-    padding: 80px 50px 0;
+    /*padding: 80px 50px 0;*/
+    padding: 45px 45px 0;
     z-index: 1;
 }
 
@@ -296,12 +300,12 @@ blockquote {
     margin: 10px;
 }
 
-.correct {
+span.correct {
     font-weight: bold;
     color: #060;
 }
 
-.incorrect {
+span.incorrect {
     font-weight: bold;
     color: #600;
 }
@@ -408,6 +412,7 @@ ul.reveal {
 .help {
     font-size: 12px;
     color: #888;
+    clear: both;
 }
 
 ul.reveal li {

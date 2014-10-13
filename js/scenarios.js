@@ -44,6 +44,17 @@ jQuery(function() {
         }
     });
 
+    $('.obtain-records').on('click touchend', function () {
+        var id = $(this).attr('id');
+        var allChecked = $('.obtain-records').length == $('.obtain-records:checked').length;
+
+        $(this).parents('section').children('.button').toggleClass('hide', !allChecked);
+
+        if ($(this).is(':checked')) {
+            $('#' + id + '-modal').modal({fadeDuration: 100, closeText: 'OK'});
+        }
+    });
+
     $('#signed-auth-1').on('click touchend', function() {
         if ($(this).is(':checked')) {
             $(this).prop('checked', false);
