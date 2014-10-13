@@ -71,15 +71,15 @@
                     on the form:
                 </p>
 
-                <table class="checkbox-list">
-                    <tr><td><input id="hipaa-auth-1" class="hipaa-auth" type="checkbox" /></td><td><label for="hipaa-auth-1">Specific description of protected health information (PHI) to be released</label></td></tr>
-                    <tr><td><input id="hipaa-auth-2" class="hipaa-auth" type="checkbox" /></td><td><label for="hipaa-auth-2">Name/description of persons or class of persons authorized to disclose PHI</label></td></tr>
-                    <tr><td><input id="hipaa-auth-3" class="hipaa-auth" type="checkbox" /></td><td><label for="hipaa-auth-3">Name/description of persons or class of persons authorized to receive PHI</label></td></tr>
-                    <tr><td><input id="hipaa-auth-4" class="hipaa-auth" type="checkbox" /></td><td><label for="hipaa-auth-4">Expiration date or event</label></td></tr>
-                    <tr><td><input id="hipaa-auth-5" class="hipaa-auth" type="checkbox" /></td><td><label for="hipaa-auth-5">Statement of individual's right/procedure to revoke authorization</label></td></tr>
-                    <tr><td><input id="hipaa-auth-6" class="hipaa-auth" type="checkbox" /></td><td><label for="hipaa-auth-6">Statement that disclosed PHI may be subject to re-disclosure by recipient and not protected by HIPAA</label></td></tr>
-                    <tr><td><input id="hipaa-auth-7" class="hipaa-auth" type="checkbox" /></td><td><label for="hipaa-auth-7">Signature of individual & date (or of the individual's personal representative with a description of that person's authority to act)</label></td></tr>
-                    <tr><td><input id="hipaa-auth-8" class="hipaa-auth" type="checkbox" /></td><td><label for="hipaa-auth-8">Purpose of disclosure</label></td></tr>
+                <table class="checkbox-list require-all-checked">
+                    <tr><td><input id="hipaa-auth-1" type="checkbox" /></td><td><label for="hipaa-auth-1">Specific description of protected health information (PHI) to be released</label></td></tr>
+                    <tr><td><input id="hipaa-auth-2" type="checkbox" /></td><td><label for="hipaa-auth-2">Name/description of persons or class of persons authorized to disclose PHI</label></td></tr>
+                    <tr><td><input id="hipaa-auth-3" type="checkbox" /></td><td><label for="hipaa-auth-3">Name/description of persons or class of persons authorized to receive PHI</label></td></tr>
+                    <tr><td><input id="hipaa-auth-4" type="checkbox" /></td><td><label for="hipaa-auth-4">Expiration date or event</label></td></tr>
+                    <tr><td><input id="hipaa-auth-5" type="checkbox" /></td><td><label for="hipaa-auth-5">Statement of individual's right/procedure to revoke authorization</label></td></tr>
+                    <tr><td><input id="hipaa-auth-6" type="checkbox" /></td><td><label for="hipaa-auth-6">Statement that disclosed PHI may be subject to re-disclosure by recipient and not protected by HIPAA</label></td></tr>
+                    <tr><td><input id="hipaa-auth-7" type="checkbox" /></td><td><label for="hipaa-auth-7">Signature of individual & date (or of the individual's personal representative with a description of that person's authority to act)</label></td></tr>
+                    <tr><td><input id="hipaa-auth-8" type="checkbox" /></td><td><label for="hipaa-auth-8">Purpose of disclosure</label></td></tr>
                 </table>
             </div>
 
@@ -94,7 +94,7 @@
                 </p>
             </div>
 
-            <div id="s5-correct" class="modal">
+            <div class="modal all-checked">
                 <p><span class="correct">Right</span>! This form meets the requirements for a HIPAA authorization form.</p>
             </div>
         </section>

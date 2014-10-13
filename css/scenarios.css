@@ -93,13 +93,14 @@ section, .view head > title {
     text-align: center;
     width: 175px;
     position: absolute;
-    bottom: 150px;
-    right: 60px;
+    /*bottom: 150px;*/
+    /*right: 60px;*/
+    bottom: 120px;
+    right: 10px;
     z-index: 1;
 }
 
 .answer {
-    display: none;
     float: right;
     font-size: 24px;
     height: 60px;
@@ -107,9 +108,16 @@ section, .view head > title {
     text-align: right;
     width: 500px;
     position: absolute;
-    bottom: 150px;
-    right: 250px;
+    bottom: 120px;
     z-index: 1;
+}
+
+.answer.correct {
+    right: 200px;
+}
+
+.answer.incorrect {
+    right: 10px;
 }
 
 /* TEMPLATE 1: Folder background, image left, text right */
@@ -192,10 +200,10 @@ section.tpl-3 {
 section.tpl-3 > div:first-of-type {
     float: left;
     font-size: 20px;
-    /*line-height: 35px;*/
     margin: 10px;
     height: 450px;
-    padding: 80px 50px 0;
+    /*padding: 80px 50px 0;*/
+    padding: 25px 35px 0;
     z-index: 1;
 }
 
@@ -282,25 +290,18 @@ a:active, a:hover {
 }
 
 blockquote {
-    height: 100%;
-    background-color: black;
-    color: white;
-    font-size: 60px;
-    padding: 50px;
-}
-blockquote:before {
-    content: open-quote;
-}
-blockquote:after {
-    content: close-quote;
+    background: #666;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
 }
 
-span.correct {
+.correct {
     font-weight: bold;
     color: #060;
 }
 
-span.incorrect {
+.incorrect {
     font-weight: bold;
     color: #600;
 }
@@ -439,6 +440,45 @@ ul.reveal li.show {
     color: #333;
     background: url(../img/form-pencil-fade.jpg) #888;
     cursor: default;
+}
+
+ul.reveal-list li.show:hover {
+    color: #333;
+    background: url(../img/form-pencil-fade.jpg) #888;
+    opacity: 1.0;
+}
+
+ul.reveal-list li {
+    font-size: 0;
+}
+
+ul.reveal-list li:after {
+    font-size: 18px;
+    color: #888;
+    cursor: pointer;
+    content: 'Click to reveal...';
+}
+
+ul.reveal-list li:hover {
+    color: #aaa;
+    background: #aaa transparent;
+    opacity: 0.75;
+}
+
+ul.reveal-list li.show {
+    font-size: 18px;
+    color: #666;
+    cursor: default;
+}
+
+ul.reveal-list li.show:after {
+    content: '';
+}
+
+ul.reveal-list li.show:hover {
+    color: #666;
+    background: none;
+    opacity: 1.0;
 }
 
 select {

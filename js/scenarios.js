@@ -32,13 +32,15 @@ jQuery(function() {
         }
     });
 
-    $('.hipaa-auth').on('click touchend', function() {
-        var allChecked = $('.hipaa-auth').length == $('.hipaa-auth:checked').length;
+    $('.checkbox-list.require-all-checked td').on('click touchend', function () {
+        var section = $(this).parents('section'),
+            allChecked = section.find('input[type="checkbox"]').length == section.find('input[type="checkbox"]:checked').length,
+            modal = section.find('.modal.all-checked');
 
-        $(this).parents('section').children('.button').toggleClass('hide', !allChecked);
+        section.children('.button').toggleClass('hide', !allChecked);
 
-        if (allChecked) {
-            $('#s5-correct').modal({fadeDuration: 100, closeText: 'OK'});
+        if (allChecked && modal) {
+            modal.modal({fadeDuration: 100, closeText: 'OK'});
         }
     });
 
@@ -52,17 +54,6 @@ jQuery(function() {
     $('#signed-auth-2').on('click touchend', function() {
         if ($(this).is(':checked')) {
             Dz.setSlide(11);
-        }
-    });
-
-    $('.obtain-records').on('click touchend', function() {
-        var id = $(this).attr('id');
-        var allChecked = $('.obtain-records').length == $('.obtain-records:checked').length;
-
-        $(this).parents('section').children('.button').toggleClass('hide', !allChecked);
-
-        if ($(this).is(':checked')) {
-            $('#' + id + '-modal').modal({fadeDuration: 100, closeText: 'OK'});
         }
     });
 
@@ -81,7 +72,7 @@ jQuery(function() {
         }
     });
 
-    $('ul.reveal li').on('click touchend', function () {
+    $('ul.reveal li, ul.reveal-list li').on('click touchend', function () {
         $(this).addClass('show');
 
         var allClicked = $(this).parent().children('li').length === $(this).parent().children('li.show').length;
@@ -89,29 +80,27 @@ jQuery(function() {
         $(this).parents('section').children('.button').toggleClass('hide', !allClicked);
     });
 
-    $('.fillInTheBlank').change(function() {
+    $('.fill-in-the-blank').change(function() {
         var id = $(this).val(),
             section = $(this).parents('section'),
             allCorrectChoicesSelected = !(section.find('select>option:selected').filter(function () { return $(this).val() !== 'correct'; }).length > 0),
             sectionId = section.attr('id'),
             hasModal = section.find('.modal'),
-            allAnswersProvided = section.find('select>option:selected').filter(function () { return $(this).val() === ''; }).length === 0;
+            allAnswersProvided = section.find('select>option:selected').filter(function () { return $(this).val() === ''; }).length === 0,
+            correctHtml = '<div class="correct answer">Correct!</div>',
+            incorrectHtml = '<div class="incorrect answer">Incorrect, please try again</div>';
 
         section.children('.button').toggleClass('hide', !allCorrectChoicesSelected);
 
-        section.children('.answer').hide();
+        section.children('.answer').remove();
 
         if (allAnswersProvided) {
-            var id = allCorrectChoicesSelected ? 'correct' : 'incorrect';
-            $('#' + sectionId + '-' + id).show();
+            var html = allCorrectChoicesSelected ? correctHtml : incorrectHtml;
+            section.append(html);
         }
 
-        if (allCorrectChoicesSelected) {
-            $('#' + sectionId + '-' + id).show();
-
-            if (hasModal) {
-                $('#' + sectionId + '-' + id + '-modal').modal();
-            }
+        if (allCorrectChoicesSelected && hasModal) {
+            $('#' + sectionId + '-' + id + '-modal').modal({fadeDuration: 100, closeText: 'OK'});
         }
     });
 });
