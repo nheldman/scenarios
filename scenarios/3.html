@@ -9,7 +9,8 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-        <title>JLC: Scenario 3: Juvenile Probation Officer and Outpatient Mental Health Counselor</title>
+        <title>JLC: Scenario 3: School Resource Officer Asks School Counselor to Share a Student's Grades, Attendance
+            and Disciplinary Records, Address, and Phone Number </title>
     </head>
 
     <body class="scenario-3">
@@ -19,19 +20,20 @@
 
         <section id="s1">
             <h1>Scenario 3</h1>
-            <h3>Juvenile Probation Officer and Outpatient Mental Health Counselor</h3>
+            <h3>School Resource Officer Asks School Counselor to Share a Student's Grades, Attendance and Disciplinary
+                Records, Address, and Phone Number</h3>
             <a href="#2.0" class="button">START</a>
         </section>
 
         <section id="s2" class="tpl-1">
             <div>
-                <img src="../img/kid-pic1.png" width="214" height="230" />
+                <img src="../img/kid-pic1.png" width="214" height="230"/>
             </div>
             <div>
                 <p>
-                    Sixteen-year-old Katy is before Judge Hicks on charges of aggravated assault.  Katy has been in court a number of
-                    times on various charges, this being the most serious.  Katy has pled guilty to the current charge and has been
-                    adjudicated delinquent.
+                    A school resource officer (SRO), who is employed by the school district's police department, is
+                    concerned about a student he has seen hanging out with known gang members and has seen out after
+                    curfew a number of times.
                 </p>
             </div>
 
@@ -40,13 +42,14 @@
 
         <section id="s3" class="tpl-1">
             <div>
-                <img src="../img/kid-pic1.png" width="214" height="230" />
+                <img src="../img/kid-pic1.png" width="214" height="230"/>
             </div>
             <div>
                 <p>
-                    The probation officer is preparing a report for the court to aid in disposition, and the officer wishes to obtain
-                    information about Katy's diagnosis, treatment plan and overall progress in treatment to include in the report.
-                    He contacts Katy's outpatient mental health counselor.
+                    The SRO asks the guidance counselor if she can share with him the student's attendance and
+                    disciplinary records, grades, home address, and phone number. He explains that he plans to go to the
+                    student's home and ask one or both of his parents to talk with him about how to help the student
+                    stay out of trouble.
                 </p>
             </div>
 
@@ -56,319 +59,169 @@
         <section id="s4" class="tpl-2">
             <div>
                 <p>
-                    HIPAA permits the mental health counselor to release the requested information to the juvenile probation officer if
-                    she has a signed authorization. The counselor seeks to have Katy or her mother sign the following authorization.
+                    The counselor knows that this request is governed by FERPA. She knows that there are special rules
+                    about "directory information." Which information will be considered "directory information"? (check
+                    all that apply)
                 </p>
+
+                <table class="checkbox-list">
+                    <tr>
+                        <td><input id="dir-info-1" class="dir-info" type="checkbox"/></td>
+                        <td><label for="dir-info-1">attendance records</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="dir-info-2" class="dir-info" type="checkbox"/></td>
+                        <td><label for="dir-info-2">disciplinary records</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="dir-info-3" class="dir-info" type="checkbox"/></td>
+                        <td><label for="dir-info-3">grades</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="dir-info-4" class="dir-info correct" type="checkbox"/></td>
+                        <td><label for="dir-info-4">home address</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="dir-info-5" class="dir-info correct" type="checkbox"/></td>
+                        <td><label for="dir-info-5">phone number</label></td>
+                    </tr>
+                </table>
+                <a id="dir-info-submit" class="button">SUBMIT</a>
             </div>
 
-            <a href="#5.0" class="button">NEXT</a>
+            <a href="#5.0" class="button hide">NEXT</a>
+
+            <div id="dir-info-incorrect-modal" class="modal">
+                <p><span class="incorrect">Incorrect</span>. Try again.</p>
+            </div>
+
+            <div id="dir-info-correct-modal" class="modal modal-wide">
+                <p>
+                    <span class="correct">Correct</span>! The answer is address and phone number only. According to
+                    the U.S. Department of Education, directory information includes, but is not limited to, the
+                    following data about a student:
+                    <ul>
+                        <li>Name</li>
+                        <li>Address and telephone number</li>
+                        <li>Date and place of birth</li>
+                        <li>Participation in school activities and sports</li>
+                        <li>Dates of attendance</li>
+                    </ul>
+                </p>
+            </div>
         </section>
 
         <section id="s5" class="tpl-3">
             <div>
                 <p>
-                    Does the form meet the requirements of a HIPAA authorization form?  Check off each of the required elements present
-                    on the form:
-                </p>
+                    The counselor is aware that the school has met the requirements for releasing directory information
+                    without obtaining parental consent. This means the school has:
 
-                <table class="checkbox-list require-all-checked">
-                    <tr><td><input id="hipaa-auth-1" type="checkbox" /></td><td><label for="hipaa-auth-1">Specific description of protected health information (PHI) to be released</label></td></tr>
-                    <tr><td><input id="hipaa-auth-2" type="checkbox" /></td><td><label for="hipaa-auth-2">Name/description of persons or class of persons authorized to disclose PHI</label></td></tr>
-                    <tr><td><input id="hipaa-auth-3" type="checkbox" /></td><td><label for="hipaa-auth-3">Name/description of persons or class of persons authorized to receive PHI</label></td></tr>
-                    <tr><td><input id="hipaa-auth-4" type="checkbox" /></td><td><label for="hipaa-auth-4">Expiration date or event</label></td></tr>
-                    <tr><td><input id="hipaa-auth-5" type="checkbox" /></td><td><label for="hipaa-auth-5">Statement of individual's right/procedure to revoke authorization</label></td></tr>
-                    <tr><td><input id="hipaa-auth-6" type="checkbox" /></td><td><label for="hipaa-auth-6">Statement that disclosed PHI may be subject to re-disclosure by recipient and not protected by HIPAA</label></td></tr>
-                    <tr><td><input id="hipaa-auth-7" type="checkbox" /></td><td><label for="hipaa-auth-7">Signature of individual & date (or of the individual's personal representative with a description of that person's authority to act)</label></td></tr>
-                    <tr><td><input id="hipaa-auth-8" type="checkbox" /></td><td><label for="hipaa-auth-8">Purpose of disclosure</label></td></tr>
-                </table>
+                    <ul>
+                        <li>
+                            notified parents about the specific types of directory information it may disclose,
+                            <select class="fill-in-the-blank">
+                                <option value="">Select</option>
+                                <option value="correct">and</option>
+                                <option value="incorrect">or</option>
+                            </select>
+                        </li>
+                        <li>
+                            parents have the opportunity to notify the school in writing that they do not want
+                            information about their child disclosed.
+                        </li>
+                    </ul>
+                </p>
             </div>
 
             <a href="#6.0" class="button hide">NEXT</a>
-
-            <div id="s5-signature-info-modal" class="modal modal-wide">
-                <p>
-                    The counselor will need to consult state law to determine whether it is the parent or the student who must sign the
-                    authorization. If state law allows the student to consent to receive mental health services from the counselor, it
-                    is the student who must sign the release.  If state law requires parental consent before the student can receive
-                    the counseling, then the parent must sign the authorization to release information.
-                </p>
-            </div>
-
-            <div class="modal all-checked">
-                <p><span class="correct">Right</span>! This form meets the requirements for a HIPAA authorization form.</p>
-            </div>
         </section>
 
-        <section id="s6" class="tpl-1">
+        <section id="s6" class="tpl-2">
             <div>
-                <img src="../img/kid-pic1.png" width="214" height="230" />
-            </div>
-            <div>
-                <p>Katy and her mother refuse to sign the authorization.</p>
+                <p>
+                    The counselor shares the directory information with the SRO, but informs him that she cannot share
+                    the student's attendance and disciplinary records and grades without parental authorization.
+                    However, there is an exception to the parental authorization requirement that may apply in this
+                    situation.
+                </p>
             </div>
 
             <a href="#7.0" class="button">NEXT</a>
         </section>
 
-        <section id="s7" class="tpl-2">
+        <section id="s7" class="tpl-3">
             <div>
                 <p>
-                    The probation officer believes it is important to report about Katy's current treatment plan to the court.
-                    The probation officer believes that despite Katy and her mother's refusal to authorize the disclosure, the
-                    court can order disclosure of the information to the probation officer. Is this true?
+                    FERPA allows disclosure without parental consent to
                 </p>
 
                 <ul>
-                    <li><a class="open-modal correct" href="#s7-correct">True</a></li>
-                    <li><a class="open-modal" href="#s7-incorrect">False</a></li>
+                    <li><a class="open-modal" href="#s7-incorrect">A. Law enforcement officers pursuant to an interagency
+                        agreement.</a></li>
+                    <li><a class="open-modal" href="#s7-partial">B. Other school officials with a legitimate educational
+                        interest in the records.</a></li>
+                    <li><a class="open-modal" href="#s7-partial">C. Comply with a lawfully issued subpoena or judicial order.</a>
+                    </li>
+                    <li><a class="open-modal correct" href="#s7-correct">D. Both B and C</a></li>
+                    <li><a class="open-modal" href="#s7-partial">E. All of the above</a></li>
                 </ul>
             </div>
 
             <a href="#8.0" class="button hide">NEXT</a>
 
-            <div id="s7-correct" class="modal modal-wide">
+            <div id="s7-incorrect" class="modal">
+                <p><span class="incorrect">Incorrect</span>. Interagency agreements do
+                    not supersede the consent requirements under FERPA.</p>
+            </div>
+
+            <div id="s7-partial" class="modal">
                 <p>
-                    <span class="correct">Right</span>! The counselor can disclose information to the probation officer if
-                    served with a subpoena or court order.
+                    <span class="correct">Partially correct</span>. The correct answer is D (Both B and C).
+                </p>
+
+                <p>
+                    Answer B is correct because FERPA allows disclosure without parental consent to other school
+                    officials who have a legitimate educational interest in the records. The school must include in an
+                    annual notification to parents the specific criteria for determining who is a <i>school official</i> and
+                    what constitutes <i>a legitimate educational interest</i>. Additionally, if the SRO (and any other
+                    individuals) in this case example were to receive information under this exception, they would have
+                    to be informed that they cannot re-release the information except in accordance with FERPA.
+                </p>
+
+                <p>
+                    Answer C is correct because FERPA also allows disclosure without parental consent if required to
+                    comply with a court order or subpoena. If the school receives such an order or subpoena, it must
+                    make a "reasonable effort" to notify the parents about the court order/subpoena before releasing the
+                    records to law enforcement.
                 </p>
             </div>
 
-            <div id="s7-incorrect" class="modal modal-wide">
+            <div id="s7-correct" class="modal">
                 <p>
-                    <span class="incorrect">Wrong</span>. The counselor can disclose information to the probation officer if
-                    served with a subpoena or court order.
-                </p>
-            </div>
-        </section>
-
-        <section id="s8" class="tpl-2">
-            <div>
-                <p>
-                    After reviewing the information provided by the counselor in response to the court order, the probation officer
-                    finds that Katy has not progressed well with her treatment plan.  He is interested in why this might be true.
-                    He asks the counselor for any notes she may have taken during Katy's therapy.  Can the counselor share this
-                    information?
+                    <span class="correct">Correct</span>!
                 </p>
 
-                <ul>
-                    <li><a class="open-modal" href="#s8-incorrect">Yes</a></li>
-                    <li><a class="open-modal correct" href="#s8-correct">No</a></li>
-                </ul>
-            </div>
-
-            <a href="#9.0" class="button hide">NEXT</a>
-
-            <div id="s8-correct" class="modal modal-wide">
                 <p>
-                    <span class="correct">Correct</span>. The counselor can only provide information contained in psychotherapy
-                    notes if the youth gives her written authorization.
-                </p>
-            </div>
-
-            <div id="s8-incorrect" class="modal modal-wide">
-                <p>
-                    <span class="incorrect">Incorrect</span>. The counselor can only provide information contained in psychotherapy
-                    notes if the youth gives her written authorization.
-                </p>
-            </div>
-        </section>
-
-        <section id="s9" class="tpl-3">
-            <div>
-                <p>
-                    Meanwhile, Katy is detained at the local juvenile detention center awaiting disposition.  A caseworker at the detention
-                    center calls Katy's school counselor and asks for a copy of her IEP so the center can implement the IEP while she's in detention.
-                </p>
-            </div>
-
-            <a href="#10.0" class="button">NEXT</a>
-        </section>
-
-        <section id="s10" class="tpl-2">
-            <div>
-                <p>
-                    The school counselor is unclear as to whether he needs to obtain a signed authorization from Katy’s parent or educational
-                    surrogate.  Is there an exception to FERPA’s requirement of a signed authorization that may apply? (check all that apply)
+                    Answer B is correct because FERPA allows disclosure without parental consent to other school
+                    officials who have a legitimate educational interest in the records. The school must include in an
+                    annual notification to parents the specific criteria for determining who is a <i>school official</i>
+                    and
+                    what constitutes <i>a legitimate educational interest</i>. Additionally, if the SRO (and any other
+                    individuals) in this case example were to receive information under this exception, they would have
+                    to be informed that they cannot re-release the information except in accordance with FERPA.
                 </p>
 
-                <table class="checkbox-list">
-                    <tr><td><input id="signed-auth-1" class="signed-auth" type="checkbox" /></td><td><label for="signed-auth-1">The juvenile justice exception to FERPA</label></td></tr>
-                    <tr><td><input id="signed-auth-2" class="signed-auth" type="checkbox" /></td><td><label for="signed-auth-2">Disclosure of educational records without written authorization to schools to which the youth has transferred</label></td></tr>
-                </table>
-            </div>
-
-            <div id="s10-incorrect" class="modal modal-wide">
                 <p>
-                    Sorry, this exception would not apply. Under this exception, individual states may enact statutes that permit schools
-                    to release records to juvenile justice personnel in order to assist youth in the system <em>prior to adjudication</em> if the
-                    recipient of the records certifies in writing that he or she will not disclose the information to a third party without
-                    first obtaining parental consent. In this scenario, the request has been made post-adjudication and therefore this
-                    exception does not apply.
+                    Answer C is correct because FERPA also allows disclosure without parental consent if required to
+                    comply with a court order or subpoena. If the school receives such an order or subpoena, it must
+                    make a "reasonable effort" to notify the parents about the court order/subpoena before releasing the
+                    records to law enforcement.
                 </p>
             </div>
         </section>
 
-        <section id="s11" class="tpl-2">
-            <div>
-                <p>
-                    Maybe. Through her detention, Katy has "transferred" to the detention center school. Which would have to be true in
-                    order for the caseworker to obtain the records through this exception? (check all that apply)
-                </p>
-
-                <table class="checkbox-list">
-                    <tr>
-                        <td><input id="obtain-records-1" class="obtain-records" type="checkbox" /></td>
-                        <td>
-                            <label for="obtain-records-1">
-                                If the home school tells parents in its annual notification that it is the school's practice to
-                                forward education records to schools to which students transfer
-                            </label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input id="obtain-records-2" class="obtain-records" type="checkbox" /></td>
-                        <td>
-                            <label for="obtain-records-2">
-                                If the detention center school's annual notification includes a caseworker as a school official
-                            </label>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <a href="#12.0" class="button hide">NEXT</a>
-
-            <div id="obtain-records-1-modal" class="modal">
-                <p><span class="correct">Yes</span>. This is a requirement for the exception to apply.</p>
-            </div>
-
-            <div id="obtain-records-2-modal" class="modal modal-wide">
-                <p>
-                    <span class="correct">Yes</span>. Schools may release education records without parental consent to
-                    "officials" within the student's school who have a "legitimate educational interest." Here, the caseworker
-                    could have an interest in implementing the IEP, so the school could look to its notification to see if the
-                    caseworker is a school official.
-                </p>
-            </div>
-        </section>
-
-        <section id="s12" class="tpl-1">
-            <div>
-                <img src="../img/kid-pic1.png" width="214" height="230" />
-            </div>
-
-            <div>
-                <p>
-                    Separately, a physician at the detention center had referred Katy for a chest x-ray at a local hospital
-                    after she tested positive for TB during her admission physical; the x-ray was clear.
-                </p>
-            </div>
-
-            <a href="#13.0" class="button">NEXT</a>
-        </section>
-
-        <section id="s13" class="tpl-1">
-            <div>
-                <img src="../img/kid-pic1.png" width="214" height="230" />
-            </div>
-
-            <div>
-                <p>
-                    At disposition, the court orders Katy into a multidimensional treatment foster care (MTFC) program.
-                    The MTFC provider agency indicates that it cannot place Katy until it verifies that she is not contagious
-                    for TB. The child's attorney calls the hospital to ask that the chest x-ray results be sent to the MTFC
-                    provider's health unit.
-                </p>
-            </div>
-
-            <a href="#14.0" class="button">NEXT</a>
-        </section>
-
-        <section id="s14" class="tpl-3">
-            <div>
-                <p>
-                    What would be accurate for the hospital to say to the attorney? (choose the BEST answer)
-                </p>
-
-                <table class="checkbox-list">
-                    <tr>
-                        <td><input id="hospital-response-1" class="hospital-response" type="checkbox" /></td>
-                        <td>
-                            <label for="hospital-response-1">
-                                "HIPAA governs our hospital's ability to release health care records. There is no way that we
-                                can release these records to the agency's health unit."
-                            </label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input id="hospital-response-2" class="hospital-response" type="checkbox" /></td>
-                        <td>
-                            <label for="hospital-response-2">
-                                "HIPAA governs our hospital's ability to release health care records. We may only send the chest
-                                x-ray results to the MTFC provider if we have a signed authorization."
-                            </label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input id="hospital-response-3" class="hospital-response" type="checkbox" /></td>
-                        <td>
-                            <label for="hospital-response-3">
-                                "HIPAA governs our hospital's ability to release health care records. We can release the health
-                                information to the MTFC provider agency's health unit either with a signed release or without a
-                                release if the unit is considered a health care provider who is providing care to Katy.”
-                            </label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input id="hospital-response-4" class="hospital-response" type="checkbox" /></td>
-                        <td>
-                            <label for="hospital-response-4">
-                                "HIPAA governs our hospital's ability to release health care records. I can try to obtain a
-                                signed authorization from the patient or her parent.  Without the authorization, I can release
-                                them to the agency if you have a court order authorizing the release, or if the agency's health
-                                unit is considered a health care provider who is providing care to Katy."
-                            </label>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <a href="#15.0" class="button hide">NEXT</a>
-
-            <div id="hospital-response-1-modal" class="modal">
-                <p>
-                    This is not an accurate response. There are several ways in which the records can be properly released.
-                </p>
-            </div>
-
-            <div id="hospital-response-2-modal" class="modal">
-                <p>
-                    This is not a wholly accurate response. Although a signed authorization is the preferred method for
-                    authorizing the release of health information, there are exceptions under HIPAA which could apply in this situation.
-                </p>
-            </div>
-
-            <div id="hospital-response-3-modal" class="modal">
-                <p>
-                    This is an accurate response, as HIPAA provides an exception for the release of health care information to
-                    treatment providers providing care to a patient. However, it is not a complete response.
-                </p>
-            </div>
-
-            <div id="hospital-response-4-modal" class="modal modal-wide">
-                <p>
-                    <span class="correct">This is the best response</span>. It notes the possible exceptions and the ultimate
-                    requirement of obtaining a signed authorization if no exception can apply. In this situation, it is likely
-                    the court would order release of the information if an authorization was not able to be obtained.  Many
-                    attorneys who represent children in dependency and delinquency proceedings routinely request that the courts
-                    include in their "orders of appointment" specific language authorizing health care providers to release their
-                    client's records to them.  Thus, if the attorney in this case had such an order, that would be sufficient to
-                    authorize the hospital to release the x-ray results to him.
-                </p>
-            </div>
-        </section>
-
-        <section id="s15" class="tpl-3">
+        <section id="s8" class="tpl-3">
             <div>
                 <h2>Thank You!</h2>
             </div>

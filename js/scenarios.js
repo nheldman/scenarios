@@ -55,6 +55,18 @@ jQuery(function() {
         }
     });
 
+    $('#dir-info-submit').on('click touchend', function () {
+        var section = $(this).parents('section'),
+            checkedAnswers = section.find('.dir-info:checked'),
+            correctAnswers = section.find('.dir-info.correct'),
+            correctAnswersChecked = correctAnswers.length === correctAnswers.filter(checkedAnswers).length,
+            modalId = correctAnswersChecked ? '#dir-info-correct-modal' : '#dir-info-incorrect-modal';
+
+        $(modalId).modal({fadeDuration: 100, closeText: 'OK'});
+
+        section.children('.button').toggleClass('hide', !correctAnswersChecked);
+    });
+
     $('#signed-auth-1').on('click touchend', function() {
         if ($(this).is(':checked')) {
             $(this).prop('checked', false);

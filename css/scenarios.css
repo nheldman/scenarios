@@ -487,5 +487,6 @@ ul.reveal-list li.show:hover {
 }
 
 select {
-    font-size: 20px;
+    font-size: 17px;
+    font-family: Oswald;
 }
