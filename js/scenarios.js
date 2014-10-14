@@ -127,7 +127,9 @@ jQuery(function() {
         }
     });
 
+    var recoupLeft, recoupTop;
     $('.drag-me').draggable({
+        revert: 'invalid',
         start: function (event, ui) {
             var left = parseInt($(this).css('left'), 10);
             left = isNaN(left) ? 0 : left;
@@ -144,6 +146,7 @@ jQuery(function() {
 
     $('#s6-caseworker').droppable({
         activeClass: 'droppable-active',
+        accept: '.drag-me',
         drop: function (event, ui) {
             $(ui.draggable).css('top', $(this).position().top);
             $(ui.draggable).css('left', $(this).position().left);
@@ -152,6 +155,7 @@ jQuery(function() {
     });
     $('#s6-file-cabinet').droppable({
         activeClass: 'droppable-active',
+        accept: '.drag-me',
         drop: function (event, ui) {
             $(ui.draggable).css('top', $(this).position().top);
             $(ui.draggable).css('left', $(this).position().left);
