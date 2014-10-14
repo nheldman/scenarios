@@ -517,3 +517,8 @@ select {
     left: 10px;
     z-index: 1;
 }
+
+.droppable-active {
+    border: 2px solid #333;
+    opacity: 0.75;
+}

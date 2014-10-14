@@ -127,8 +127,23 @@ jQuery(function() {
         }
     });
 
-    $('#s6-file').draggable();
+    $('.drag-me').draggable({
+        start: function (event, ui) {
+            var left = parseInt($(this).css('left'), 10);
+            left = isNaN(left) ? 0 : left;
+            var top = parseInt($(this).css('top'), 10);
+            top = isNaN(top) ? 0 : top;
+            recoupLeft = left - ui.position.left;
+            recoupTop = top - ui.position.top;
+        },
+        drag: function (event, ui) {
+            ui.position.left += recoupLeft;
+            ui.position.top += recoupTop;
+        }
+    });
+
     $('#s6-caseworker').droppable({
+        activeClass: 'droppable-active',
         drop: function (event, ui) {
             $(ui.draggable).css('top', $(this).position().top);
             $(ui.draggable).css('left', $(this).position().left);
@@ -136,6 +151,7 @@ jQuery(function() {
         }
     });
     $('#s6-file-cabinet').droppable({
+        activeClass: 'droppable-active',
         drop: function (event, ui) {
             $(ui.draggable).css('top', $(this).position().top);
             $(ui.draggable).css('left', $(this).position().left);
