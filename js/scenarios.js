@@ -128,28 +128,14 @@ jQuery(function() {
     });
 
     var recoupLeft, recoupTop;
-    $('.drag-me').draggable({
-        revert: 'invalid',
-        start: function (event, ui) {
-            var left = parseInt($(this).css('left'), 10);
-            left = isNaN(left) ? 0 : left;
-            var top = parseInt($(this).css('top'), 10);
-            top = isNaN(top) ? 0 : top;
-            recoupLeft = left - ui.position.left;
-            recoupTop = top - ui.position.top;
-        },
-        drag: function (event, ui) {
-            ui.position.left += recoupLeft;
-            ui.position.top += recoupTop;
-        }
-    });
+    $('.drag-me').draggable({ revert: 'invalid' });
 
     $('#s6-caseworker').droppable({
         activeClass: 'droppable-active',
         accept: '.drag-me',
         drop: function (event, ui) {
-            $(ui.draggable).css('top', $(this).position().top);
-            $(ui.draggable).css('left', $(this).position().left);
+            $(ui.draggable).css('top', $(this).position().top + 10);
+            $(ui.draggable).css('left', $(this).position().left + 10);
             alert('Yes');
         }
     });
@@ -157,8 +143,8 @@ jQuery(function() {
         activeClass: 'droppable-active',
         accept: '.drag-me',
         drop: function (event, ui) {
-            $(ui.draggable).css('top', $(this).position().top);
-            $(ui.draggable).css('left', $(this).position().left);
+            $(ui.draggable).css('top', $(this).position().top + 10);
+            $(ui.draggable).css('left', $(this).position().left + 10);
             alert('No');
         }
     });

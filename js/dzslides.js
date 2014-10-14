@@ -121,16 +121,16 @@ Dz.setupView = function() {
 /* Adapt the size of the slides to the window */
 
 Dz.onresize = function() {
-    var db = document.body;
-    var sx = db.clientWidth / window.innerWidth;
-    var sy = db.clientHeight / window.innerHeight;
-    var transform = "scale(" + (1/Math.max(sx, sy)) + ")";
-
-    db.style.MozTransform = transform;
-    db.style.WebkitTransform = transform;
-    db.style.OTransform = transform;
-    db.style.msTransform = transform;
-    db.style.transform = transform;
+//    var db = document.body;
+//    var sx = db.clientWidth / window.innerWidth;
+//    var sy = db.clientHeight / window.innerHeight;
+//    var transform = "scale(" + (1/Math.max(sx, sy)) + ")";
+//
+//    db.style.MozTransform = transform;
+//    db.style.WebkitTransform = transform;
+//    db.style.OTransform = transform;
+//    db.style.msTransform = transform;
+//    db.style.transform = transform;
 }
 
 
