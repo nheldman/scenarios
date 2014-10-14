@@ -126,4 +126,20 @@ jQuery(function() {
             $('#' + sectionId + '-' + id + '-modal').modal({fadeDuration: 100, closeText: 'OK'});
         }
     });
+
+    $('#s6-file').draggable();
+    $('#s6-caseworker').droppable({
+        drop: function (event, ui) {
+            $(ui.draggable).css('top', $(this).position().top);
+            $(ui.draggable).css('left', $(this).position().left);
+            alert('Yes');
+        }
+    });
+    $('#s6-file-cabinet').droppable({
+        drop: function (event, ui) {
+            $(ui.draggable).css('top', $(this).position().top);
+            $(ui.draggable).css('left', $(this).position().left);
+            alert('No');
+        }
+    });
 });

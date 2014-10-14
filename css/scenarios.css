@@ -490,3 +490,30 @@ select {
     font-size: 17px;
     font-family: Oswald;
 }
+
+#s6-file {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 204px;
+    left: 295px;
+    z-index: 2;
+    cursor: move;
+}
+
+#s6-caseworker {
+    width: 350px;
+    height: 258px;
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    z-index: 1;
+}
+
+#s6-file-cabinet {
+    width: 240px;
+    position: absolute;
+    bottom: 121px;
+    left: 10px;
+    z-index: 1;
+}
