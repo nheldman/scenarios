@@ -29,7 +29,7 @@
 
         <section id="s2" class="tpl-1">
             <div>
-                <img src="../img/kid-pic1.png" width="214" height="230"/>
+                <img class="polaroid" src="../img/aaron.jpg" />
             </div>
             <div>
                 <p>
@@ -39,30 +39,39 @@
                 </p>
             </div>
 
+            <a href="#1.0" class="button-back">BACK</a>
             <a href="#3.0" class="button">NEXT</a>
         </section>
 
         <section id="s3" class="tpl-1">
             <div>
-                <img src="../img/kid-pic1.png" width="214" height="230"/>
+                <img class="polaroid" src="../img/aaron.jpg" />
             </div>
             <div>
                 <p>
                     The SRO asks the guidance counselor if she can share with him the student's attendance and
-                    disciplinary records, grades, home address, and phone number. He explains that he plans to go to the
+                    disciplinary records, grades, home address, and phone number.
+                </p>
+                <p>
+                    He explains that he plans to go to the
                     student's home and ask one or both of his parents to talk with him about how to help the student
                     stay out of trouble.
                 </p>
             </div>
 
+            <a href="#2.0" class="button-back">BACK</a>
             <a href="#4.0" class="button">NEXT</a>
         </section>
 
-        <section id="s4" class="tpl-2">
+        <section id="s4" class="tpl-3 bg-lawbooks">
             <div>
                 <p>
                     The counselor knows that this request is governed by FERPA. She knows that there are special rules
-                    about "directory information." Which information will be considered "directory information"? (check
+                    about "directory information."
+
+                </p>
+                <p>
+                    Which information will be considered "directory information"? (check
                     all that apply)
                 </p>
 
@@ -91,10 +100,15 @@
                 <a id="dir-info-submit" class="button">SUBMIT</a>
             </div>
 
+            <a href="#3.0" class="button-back">BACK</a>
             <a href="#5.0" class="button hide">NEXT</a>
 
             <div id="dir-info-incorrect-modal" class="modal">
                 <p><span class="incorrect">Incorrect</span>. Try again.</p>
+            </div>
+
+            <div id="dir-info-partially-correct-modal" class="modal">
+                <p><span class="correct">Partially correct</span>.</p>
             </div>
 
             <div id="dir-info-correct-modal" class="modal modal-wide">
@@ -102,7 +116,8 @@
                     <span class="correct">Correct</span>! The answer is address and phone number only. According to
                     the U.S. Department of Education, directory information includes, but is not limited to, the
                     following data about a student:
-                    <ul>
+
+                    <ul class="verbose">
                         <li>Name</li>
                         <li>Address and telephone number</li>
                         <li>Date and place of birth</li>
@@ -113,7 +128,7 @@
             </div>
         </section>
 
-        <section id="s5" class="tpl-3">
+        <section id="s5" class="tpl-3 bg-lawbooks">
             <div>
                 <p>
                     The counselor is aware that the school has met the requirements for releasing directory information
@@ -136,99 +151,82 @@
                 </p>
             </div>
 
+            <a href="#4.0" class="button-back">BACK</a>
             <a href="#6.0" class="button hide">NEXT</a>
         </section>
 
-        <section id="s6" class="tpl-2">
+        <section id="s6" class="tpl-3 bg-lawbooks">
             <div>
                 <p>
                     The counselor shares the directory information with the SRO, but informs him that she cannot share
                     the student's attendance and disciplinary records and grades without parental authorization.
-                    However, there is an exception to the parental authorization requirement that may apply in this
-                    situation.
                 </p>
-            </div>
 
-            <a href="#7.0" class="button">NEXT</a>
-        </section>
-
-        <section id="s7" class="tpl-3">
-            <div>
                 <p>
-                    FERPA allows disclosure without parental consent to
+                    However, there is an exception to the parental authorization requirement that may apply in this
+                    situation. FERPA allows disclosure without parental consent to:
                 </p>
 
-                <ul>
-                    <li><a class="open-modal" href="#s7-incorrect">A. Law enforcement officers pursuant to an interagency
+                <ul class="alpha">
+                    <li><a class="open-modal" href="#s6-incorrect">Law enforcement officers pursuant to an interagency
                         agreement.</a></li>
-                    <li><a class="open-modal" href="#s7-partial">B. Other school officials with a legitimate educational
+                    <li><a class="open-modal" href="#s6-partial">Other school officials with a legitimate educational
                         interest in the records.</a></li>
-                    <li><a class="open-modal" href="#s7-partial">C. Comply with a lawfully issued subpoena or judicial order.</a>
+                    <li><a class="open-modal" href="#s6-partial">Comply with a lawfully issued subpoena or judicial order.</a>
                     </li>
-                    <li><a class="open-modal correct" href="#s7-correct">D. Both B and C</a></li>
-                    <li><a class="open-modal" href="#s7-partial">E. All of the above</a></li>
+                    <li><a class="open-modal correct" href="#s6-correct">Both B and C</a></li>
+                    <li><a class="open-modal" href="#s6-partial">All of the above</a></li>
                 </ul>
             </div>
 
-            <a href="#8.0" class="button hide">NEXT</a>
+            <a href="#5.0" class="button-back">BACK</a>
+            <a href="#7.0" class="button hide">NEXT</a>
 
-            <div id="s7-incorrect" class="modal">
+            <div id="s6-incorrect" class="modal">
                 <p><span class="incorrect">Incorrect</span>. Interagency agreements do
                     not supersede the consent requirements under FERPA.</p>
             </div>
 
-            <div id="s7-partial" class="modal">
+            <div id="s6-partial" class="modal modal-wide">
                 <p>
-                    <span class="correct">Partially correct</span>. The correct answer is D (Both B and C).
-                </p>
-
-                <p>
-                    Answer B is correct because FERPA allows disclosure without parental consent to other school
-                    officials who have a legitimate educational interest in the records. The school must include in an
-                    annual notification to parents the specific criteria for determining who is a <i>school official</i> and
-                    what constitutes <i>a legitimate educational interest</i>. Additionally, if the SRO (and any other
-                    individuals) in this case example were to receive information under this exception, they would have
-                    to be informed that they cannot re-release the information except in accordance with FERPA.
-                </p>
-
-                <p>
-                    Answer C is correct because FERPA also allows disclosure without parental consent if required to
-                    comply with a court order or subpoena. If the school receives such an order or subpoena, it must
-                    make a "reasonable effort" to notify the parents about the court order/subpoena before releasing the
-                    records to law enforcement.
+                    <span class="correct">Partially correct</span>. The correct answer is <em>D</em> (Both <em>B</em> and
+                    <em>C</em>).
                 </p>
             </div>
 
-            <div id="s7-correct" class="modal">
-                <p>
-                    <span class="correct">Correct</span>!
-                </p>
+            <div id="s6-correct" class="modal modal-wide">
+                <div>
+                    <p>
+                        <span class="correct">Correct</span>!
+                    </p>
 
-                <p>
-                    Answer B is correct because FERPA allows disclosure without parental consent to other school
-                    officials who have a legitimate educational interest in the records. The school must include in an
-                    annual notification to parents the specific criteria for determining who is a <i>school official</i>
-                    and
-                    what constitutes <i>a legitimate educational interest</i>. Additionally, if the SRO (and any other
-                    individuals) in this case example were to receive information under this exception, they would have
-                    to be informed that they cannot re-release the information except in accordance with FERPA.
-                </p>
+                    <p>
+                        Answer <em>B</em> is correct because FERPA allows disclosure without parental consent to other school
+                        officials who have a legitimate educational interest in the records. The school must include in an
+                        annual notification to parents the specific criteria for determining who is a <i>school official</i>
+                        and
+                        what constitutes <i>a legitimate educational interest</i>. Additionally, if the SRO (and any other
+                        individuals) in this case example were to receive information under this exception, they would have
+                        to be informed that they cannot re-release the information except in accordance with FERPA.
+                    </p>
 
-                <p>
-                    Answer C is correct because FERPA also allows disclosure without parental consent if required to
-                    comply with a court order or subpoena. If the school receives such an order or subpoena, it must
-                    make a "reasonable effort" to notify the parents about the court order/subpoena before releasing the
-                    records to law enforcement.
-                </p>
+                    <p>
+                        Answer <em>C</em> is correct because FERPA also allows disclosure without parental consent if required to
+                        comply with a court order or subpoena. If the school receives such an order or subpoena, it must
+                        make a "reasonable effort" to notify the parents about the court order/subpoena before releasing the
+                        records to law enforcement.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <section id="s8" class="tpl-3">
+        <section id="s7" class="tpl-3">
             <div>
-                <h2>Thank You!</h2>
+                <h3>You have completed Scenario 3</h3>
+                <a href="4.html">Go To Scenario 4: Substance Abuse Treatment Provider and Case Worker</a>
             </div>
 
-            <a class="goto button" data-slide="1">Start Over</a>
+            <a href="#1.0" class="button">Start Over</a>
         </section>
 
         <div id="progress-bar"></div>

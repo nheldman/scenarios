@@ -17,14 +17,14 @@ jQuery(function() {
         Dz.setSlide(slide);
     });
 
-    /* Dynamically scale the font size of modal p tags based on the number of letters in the modal text */
-    $('.modal p').each(function () {
-        var ln = $(this).html().length,
-            startSize = 36,
-            size = startSize - (ln/100*2);
-
-        $(this).css('font-size', Math.round(size))
-    });
+    /* Dynamically scale the font size of modal content based on the number of letters in the modal text */
+//    $('.modal').each(function () {
+//        var ln = $(this).text().length,
+//            startSize = 36,
+//            size = startSize - (ln/100*2);
+//
+//        $(this).css('font-size', Math.round(size))
+//    });
 
     $('#hipaa-auth-7').on('click touchend', function() {
         if ($(this).is(':checked')) {
@@ -57,10 +57,16 @@ jQuery(function() {
 
     $('#dir-info-submit').on('click touchend', function () {
         var section = $(this).parents('section'),
-            checkedAnswers = section.find('.dir-info:checked'),
-            correctAnswers = section.find('.dir-info.correct'),
-            correctAnswersChecked = correctAnswers.length === correctAnswers.filter(checkedAnswers).length,
-            modalId = correctAnswersChecked ? '#dir-info-correct-modal' : '#dir-info-incorrect-modal';
+            c4checked = section.find('#dir-info-4').is(':checked'),
+            c5checked = section.find('#dir-info-5').is(':checked'),
+            numChecked = section.find('.dir-info:checked').length,
+            correctAnswersChecked = c4checked && c5checked && numChecked === 2;
+
+        var modalId = correctAnswersChecked
+            ? '#dir-info-correct-modal'
+            : (c4checked || c5checked) && numChecked === 1
+                ? '#dir-info-partially-correct-modal'
+                : '#dir-info-incorrect-modal';
 
         $(modalId).modal({fadeDuration: 100, closeText: 'OK'});
 

@@ -140,6 +140,10 @@ section, .view head > title {
     color: #600;
 }
 
+.polaroid {
+    height: 230px;
+}
+
 .bg-hall {
     background: url(../img/bg-kid.png);
 }
@@ -339,13 +343,17 @@ a:active, a:hover {
 
 .checkbox-list {
     margin: 20px;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+.checkbox-list.verbose {
+    font-size: 14px;
 }
 
 .checkbox-list td {
     padding: 0 4px;
     vertical-align: top;
-    font-size: 14px;
-    line-height: 1.5em;
 }
 
 .checkbox-list input[type="checkbox"] {
@@ -464,6 +472,14 @@ section[aria-selected] ~ section { left: +150%; }
     background: #AAA;
 }
 
+.modal div {
+    max-height: 340px;
+    overflow-y: auto;
+}
+.modal p {
+    font-size: 20px;
+}
+
 .modal-medium { width: 450px; }
 .modal-wide { width: 600px; }
 
@@ -553,16 +569,32 @@ select {
     font-family: Oswald;
 }
 
-#probationOfficer1 {
+.probationOfficer1 {
     position: absolute;
-    top: 190px;
-    left: 225px;
+    top: 200px;
+    left: 195px;
+    height: 230px;
 }
 
-#socialWorker1 {
+.socialWorker1 {
     position: absolute;
-    top: 233px;
-    left: 377px;
+    top: 213px;
+    left: 387px;
+    height: 200px;
+}
+
+.sap1 {
+    position: absolute;
+    top: 230px;
+    left: 145px;
+    height: 230px;
+}
+
+.socialWorker2 {
+    position: absolute;
+    top: 253px;
+    left: 397px;
+    height: 230px;
 }
 
 #s6-file {
