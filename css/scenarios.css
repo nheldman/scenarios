@@ -100,6 +100,23 @@ section, .view head > title {
     z-index: 1;
 }
 
+.button-back {
+    background: url("../img/button-back.png") no-repeat;
+    border: medium none;
+    box-shadow: none;
+    color: #fff;
+    float: right;
+    font-size: 22px;
+    height: 47px;
+    padding: 6px 0;
+    text-align: center;
+    width: 140px;
+    position: absolute;
+    bottom: 120px;
+    left: 10px;
+    z-index: 1;
+}
+
 .answer {
     float: right;
     font-size: 24px;
@@ -154,7 +171,7 @@ section.tpl-1 > div:nth-of-type(2) { /* Second div is the right column */
     height: 450px;
     line-height: 35px;
     margin: 10px 0 0 4px;
-    padding: 80px 50px 0;
+    padding: 50px 50px 0;
     position: relative;
     width: 50%;
     z-index: 0;
@@ -197,11 +214,26 @@ section.tpl-2 > div:first-of-type:after {
 
 /* TEMPLATE 3: Full background faded image, no paper, text full */
 section.tpl-3 {
-    background: url(../img/bg-kid-fade.png);
+    background: url(../img/lawbooks1.png);
     background-size: contain;
 }
 
 section.tpl-3 > div:first-of-type {
+    float: left;
+    font-size: 20px;
+    margin: 10px;
+    height: 450px;
+    /*padding: 80px 50px 0;*/
+    padding: 25px 35px 0;
+    z-index: 1;
+}
+
+/* TEMPLATE 4: Full background white, no paper, text full */
+section.tpl-4 {
+    background-color: #fff;
+}
+
+section.tpl-4 > div:first-of-type {
     float: left;
     font-size: 20px;
     margin: 10px;
@@ -225,13 +257,19 @@ section.tpl-3 > div:first-of-type {
     margin: 1em 0 1em 0;
 }
 
-h1, h2 {
+h1 {
     line-height: 2em;
-    text-align: center;
     font-size: 80px;
 }
+
+h2 {
+    font-size: 40px;
+    line-height: 2em;
+}
+
 h3 {
-    margin: 50px 0 50px 100px;
+    font-size: 32px;
+    line-height: 3em;
 }
 
 ul {
@@ -253,6 +291,7 @@ li > ul {
 p {
     font-size: 17px;
     line-height: 1.5em;
+    margin-bottom: 12px;
 }
 
 em {
@@ -345,6 +384,7 @@ figcaption {
     padding: 20px;
     color: #fff;
     text-align: right;
+    z-index: 1;
 }
 
 footer {
@@ -489,6 +529,18 @@ ul.reveal-list li.show:hover {
 select {
     font-size: 17px;
     font-family: Oswald;
+}
+
+#probationOfficer1 {
+    position: absolute;
+    top: 190px;
+    left: 225px;
+}
+
+#socialWorker1 {
+    position: absolute;
+    top: 233px;
+    left: 377px;
 }
 
 #s6-file {

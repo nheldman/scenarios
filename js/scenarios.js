@@ -20,7 +20,7 @@ jQuery(function() {
     /* Dynamically scale the font size of modal p tags based on the number of letters in the modal text */
     $('.modal p').each(function () {
         var ln = $(this).html().length,
-            startSize = 30,
+            startSize = 36,
             size = startSize - (ln/100*2);
 
         $(this).css('font-size', Math.round(size))

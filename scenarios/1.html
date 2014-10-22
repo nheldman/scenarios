@@ -17,30 +17,37 @@
             <img src="../img/mfc-logo.png" width="109" height="30" />
         </div>
 
-        <section id="s1">
-            <h1>Scenario 1</h1>
-            <h3>Juvenile Probation and Child Welfare Agency</h3>
+        <section id="s1" class="tpl-4">
+            <div>
+                <h1>Scenario 1</h1>
+                <h2>Juvenile Probation and Child Welfare Agency</h2>
+            </div>
+
             <a href="#2.0" class="button">START</a>
         </section>
 
         <section id="s2" class="tpl-1">
             <div>
-                <img src="../img/kid-pic1.png" width="214" height="230" />
+                <img src="../img/tommy.jpg" height="350" /> <!--  width="214" height="230" -->
             </div>
             <div>
                 <p>
                     Seventeen year-old Tommy became involved in the child welfare system two years ago as a result of chronic truancy.
+                </p>
+                <p>
                     His child welfare agency caseworker regularly requests and receives reports from Tommy’s schools that include his
                     attendance, grades, and any disciplinary actions.
                 </p>
             </div>
 
+            <a href="#1.0" class="button-back">BACK</a>
             <a href="#3.0" class="button">NEXT</a>
         </section>
 
         <section id="s3" class="tpl-1">
             <div>
-                <img src="../img/kid-pic1.png" width="214" height="230" />
+                <img src="../img/tommy.jpg" height="350"/> <!--  width="214" height="230" -->
+                <img id="probationOfficer1" src="../img/probationofficer1.png" height="280"/>
             </div>
             <div>
                 <p>
@@ -48,24 +55,34 @@
                 </p>
             </div>
 
+            <a href="#2.0" class="button-back">BACK</a>
             <a href="#4.0" class="button">NEXT</a>
         </section>
 
-        <section id="s4" class="tpl-2">
+        <section id="s4" class="tpl-1">
+            <div>
+                <img src="../img/tommy.jpg" height="350"/> <!--  width="214" height="230" -->
+                <img id="probationOfficer1" src="../img/probationofficer1.png" height="280"/>
+                <img id="socialWorker1" src="../img/socialworker1.png" height="280"/>
+            </div>
             <div>
                 <p>
-                    The probation officer contacts Tommy’s child welfare agency caseworker and asks her to provide him with the reports
-                    she receives from Tommy’s school so the probation officer can track Tommy’s progress to ensure he is complying with
-                    conditions of probation.  The child welfare agency caseworker is unclear as to whether she can re-disclose this
-                    information to the probation officer.
+                    The probation officer contacts Tommy's child welfare agency caseworker and asks her to provide him with the reports
+                    she receives from Tommy's school so the probation officer can track Tommy's progress to ensure he is complying with
+                    conditions of probation.
                 </p>
             </div>
 
+            <a href="#3.0" class="button-back">BACK</a>
             <a href="#5.0" class="button">NEXT</a>
         </section>
 
         <section id="s5" class="tpl-3">
             <div>
+                <p>
+                    The child welfare agency caseworker is unclear as to whether she can re-disclose this
+                    information to the probation officer.
+                </p>
                 <p>Which federal law(s) will guide the child welfare agency caseworker?</p>
 
                 <ul>
@@ -78,6 +95,7 @@
 
             </div>
 
+            <a href="#4.0" class="button-back">BACK</a>
             <a href="#6.0" class="button hide">NEXT</a>
 
             <div id="s5-correct" class="modal">
@@ -94,8 +112,11 @@
                 <p>
                     The child welfare caseworker knows that FERPA generally allows a school to disclose education records with parental
                     consent and only if the recipient agrees not to re-disclose the records without first obtaining additional parental
-                    consent.  The caseworker must first determine whether any or all of the requested information meets the definition
-                    of education records.  She believes that disciplinary actions are NOT considered part of the education record.
+                    consent.
+                </p>
+                <p>
+                    The caseworker must first determine whether any or all of the requested information meets the definition
+                    of education records. She believes that disciplinary actions are NOT considered part of the education record.
                     Is she correct?
                 </p>
 
@@ -105,6 +126,7 @@
                 </ul>
             </div>
 
+            <a href="#5.0" class="button-back">BACK</a>
             <a href="#7.0" class="button hide">NEXT</a>
 
             <div id="s6-correct" class="modal modal-wide">
@@ -112,9 +134,6 @@
                     <span class="correct">Correct</span>. FERPA defines a student's <i>education record</i> as records, files, documents,
                     and other material maintained by a school or a person acting for the school and containing information directly related to a student.
                     Reports from a school that include information about disciplinary actions are considered education records.
-                    It is only if the disciplinary action is solely contained in a record made by officials of a school law
-                    enforcement unit for a law enforcement purpose and kept separate from other records at the school that it
-                    would not be considered part of the education record.
                 </p>
             </div>
 
@@ -123,9 +142,7 @@
                     <span class="incorrect">Incorrect</span>.  FERPA defines a student's <i>education record</i> as records, files,
                     documents, and other material maintained by a school or a person acting for the school and containing information
                     directly related to a student. Reports from a school that include information about disciplinary actions are considered
-                    education records. It is only if the disciplinary action is solely contained in a record made by officials of a school
-                    law enforcement unit for a law enforcement purpose and kept separate from other records at the school that it would not
-                    be considered part of the education record.
+                    education records.
                 </p>
             </div>
         </section>
@@ -144,6 +161,7 @@
                 </ul>
             </div>
 
+            <a href="#6.0" class="button-back">BACK</a>
             <a href="#8.0" class="button hide">NEXT</a>
 
             <div id="s7-correct" class="modal modal-wide">
@@ -184,6 +202,7 @@
                 </ul>
             </div>
 
+            <a href="#7.0" class="button-back">BACK</a>
             <a href="#9.0" class="button hide">NEXT</a>
 
             <div id="s8-correct" class="modal modal-wide">
@@ -205,12 +224,13 @@
             </div>
         </section>
 
-        <section id="s9" class="tpl-3">
+        <section id="s9" class="tpl-4">
             <div>
-                <h2>Thank You!</h2>
+                <h3>You have completed Scenario 1</h3>
+                <a href="2.html">Go To Scenario 2: Juvenile Probation, Prosecutor's Office and School</a>
             </div>
 
-            <a class="goto button" data-slide="1">Start Over</a>
+            <a href="#1.0" class="button">Start Over</a>
         </section>
 
         <!--<section>-->
