@@ -140,6 +140,22 @@ section, .view head > title {
     color: #600;
 }
 
+.bg-hall {
+    background: url(../img/bg-kid.png);
+}
+
+.bg-lawbooks {
+    background: url(../img/lawbooks1.png);
+}
+
+.bg-school {
+    background: url(../img/school1.png);
+}
+
+.bg-school-fade {
+    background: url(../img/school1-fade.png);
+}
+
 /* TEMPLATE 1: Folder background, image left, text right */
 section.tpl-1 {
     background: url(../img/bg-folder.jpg);
@@ -179,7 +195,6 @@ section.tpl-1 > div:nth-of-type(2) { /* Second div is the right column */
 
 /* TEMPLATE 2: Full background image, faded paper, text right */
 section.tpl-2 {
-    background: url(../img/bg-kid.png);
     background-size: contain;
 }
 
@@ -208,13 +223,12 @@ section.tpl-2 > div:first-of-type:after {
     background-size: 100%;
     width: 100%;
     height: 100%;
-    opacity: 0.75;
+    opacity: 0.90;
     z-index: -1;
 }
 
 /* TEMPLATE 3: Full background faded image, no paper, text full */
 section.tpl-3 {
-    background: url(../img/lawbooks1.png);
     background-size: contain;
 }
 
@@ -269,15 +283,23 @@ h2 {
 
 h3 {
     font-size: 32px;
-    line-height: 3em;
+    line-height: 2em;
 }
 
 ul {
-    margin: 20px 100px;
+    margin: 20px 40px 20px 80px;
+}
+
+li {
+    margin-bottom: 10px;
 }
 
 ul.verbose {
-    font-size: 15px;
+    font-size: 17px;
+}
+
+ul.alpha li {
+    list-style-type: upper-alpha;
 }
 
 li > ul {

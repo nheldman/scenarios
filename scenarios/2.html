@@ -3,6 +3,7 @@
 <html>
     <head>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
         <link rel="stylesheet" href="../css/jquery.modal.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="../css/scenarios.css" type="text/css" media="screen" />
         <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
@@ -17,15 +18,18 @@
             <img src="../img/mfc-logo.png" width="109" height="30" />
         </div>
 
-        <section id="s1">
-            <h1>Scenario 2</h1>
-            <h3>Juvenile Probation, Prosecutor's Office and School</h3>
+        <section id="s1" class="tpl-4">
+            <div>
+                <h1>Scenario 2</h1>
+                <h3>Juvenile Probation, Prosecutor's Office and School</h3>
+            </div>
+
             <a href="#2.0" class="button">START</a>
         </section>
 
         <section id="s2" class="tpl-1">
             <div>
-                <img src="../img/kid-pic1.png" width="214" height="230" />
+                <img src="../img/james.jpg" height="230" />
             </div>
             <div>
                 <p>
@@ -35,12 +39,13 @@
                 </p>
             </div>
 
+            <a href="#1.0" class="button-back">BACK</a>
             <a href="#3.0" class="button">NEXT</a>
         </section>
 
         <section id="s3" class="tpl-1">
             <div>
-                <img src="../img/kid-pic1.png" width="214" height="230" />
+                <img src="../img/james.jpg" height="230"/>
             </div>
             <div>
                 <p>
@@ -50,22 +55,17 @@
                 </p>
             </div>
 
+            <a href="#2.0" class="button-back">BACK</a>
             <a href="#4.0" class="button">NEXT</a>
         </section>
 
-        <section id="s4" class="tpl-2">
+        <section id="s4" class="tpl-2 bg-school">
             <div>
                 <p>
                     James gets a court date to contest his governability, before which the prosecuting attorney's office
                     and the probation office both contact the school.
                 </p>
-            </div>
 
-            <a href="#5.0" class="button">NEXT</a>
-        </section>
-
-        <section id="s5" class="tpl-3">
-            <div>
                 <p>
                     The prosecuting attorney's office and the probation office want James's school attendance record,
                     past school disciplinary history, and information about services and interventions the school has
@@ -73,103 +73,148 @@
                 </p>
             </div>
 
-            <a href="#6.0" class="button">NEXT</a>
+            <a href="#3.0" class="button-back">BACK</a>
+            <a href="#5.0" class="button">NEXT</a>
         </section>
 
-        <section id="s6" class="tpl-3">
+        <section id="s5" class="tpl-2 bg-school">
             <div>
                 <p>
-                    It is not clear from the scenario what the prosecuting attorney and probation office want to do with
-                    the information.  These offices may use the information obtained to prosecute James for being
-                    ungovernable as alleged in the petition.  The offices may use the information to divert James from
+                    It is not clear what the prosecuting attorney and probation office want to do with
+                    the information.
+                </p>
+
+                <p>
+                    These offices may use the information obtained to prosecute James for being
+                    ungovernable as alleged in the petition.
+                </p>
+
+                <p>
+                    The offices may also use the information to divert James from
                     adjudication and into some type of alternative program.
                 </p>
             </div>
 
-            <a href="#7.0" class="button">NEXT</a>
+            <a href="#4.0" class="button-back">BACK</a>
+            <a href="#6.0" class="button">NEXT</a>
         </section>
 
-        <section id="s7" class="tpl-3">
+        <section id="s6" class="tpl-3 bg-lawbooks">
             <div>
                 <p>Which federal laws pertain to the school's treatment of the information?</p>
 
-                <ul>
-                    <li><a class="open-modal" href="#s7-incorrect">A. HIPAA</a></li>
-                    <li><a class="open-modal" href="#s7-incorrect">B. FERPA</a></li>
-                    <li><a class="open-modal" href="#s7-incorrect">C. 42 CFR Part 2</a></li>
-                    <li><a class="open-modal correct" href="#s7-correct">D. FERPA (and IDEIA if James is receiving special
+                <ul class="alpha">
+                    <li><a class="open-modal" href="#s6-incorrect">HIPAA</a></li>
+                    <li><a class="open-modal" href="#s6-incorrect">FERPA</a></li>
+                    <li><a class="open-modal" href="#s6-incorrect">42 CFR Part 2</a></li>
+                    <li><a class="open-modal correct" href="#s6-correct">FERPA (and IDEA if James is receiving special
                         education services)</a></li>
                 </ul>
 
             </div>
 
-            <a href="#8.0" class="button hide">NEXT</a>
+            <a href="#5.0" class="button-back">BACK</a>
+            <a href="#7.0" class="button hide">NEXT</a>
 
-            <div id="s7-correct" class="modal">
+            <div id="s6-correct" class="modal">
                 <p><span class="correct">Correct!</span></p>
             </div>
 
-            <div id="s7-incorrect" class="modal">
+            <div id="s6-incorrect" class="modal">
                 <p><span class="incorrect">Incorrect.</span></p>
             </div>
         </section>
 
-        <section id="s8" class="tpl-3">
+        <section id="s7" class="tpl-3 bg-lawbooks">
             <div>
                 <p>
                     What does the law permit the school to do with the information?
                 </p>
 
-                <ul class="verbose">
-                    <li><a class="open-modal" href="#s8-a">A. The laws permit the school to share the educational
+                <ul class="verbose alpha">
+                    <li><a class="open-modal" href="#s7-a">The school may share the educational
                         records with prior parental consent;</a></li>
-                    <li><a class="open-modal" href="#s8-b">B. The laws permit the school to share the educational
+                    <li><a class="open-modal" href="#s7-b">The school may share the educational
                         records if the prosecutor/probation office serve the school with a court order or subpoena as
                         long as "reasonable efforts" were made to notify the student's parent of the order or subpoena
                         before service and the school made a "reasonable effort" to notify the student's parent of the
                         order or subpoena before complying with it;</a></li>
-                    <li><a class="open-modal" href="#s8-c">C. The laws permit the school to share the educational
+                    <li><a class="open-modal" href="#s7-c">The school may share the educational
                         records if the state has a juvenile justice exception that allows schools to release records to
                         juvenile justice personnel in order to assist youth in the system prior to adjudication;</a></li>
-                    <li><a class="open-modal correct" href="#s8-d">D. Any of the above</a></li>
+                    <li><a class="open-modal correct" href="#s7-d">Any of the above</a></li>
                 </ul>
             </div>
 
-            <a href="#9.0" class="button hide">NEXT</a>
+            <a href="#6.0" class="button-back">BACK</a>
+            <a href="#8.0" class="button hide">NEXT</a>
 
-            <div id="s8-a" class="modal">
+            <div id="s7-a" class="modal modal-wide">
                 <p><span class="correct">Partially correct</span>. The school requires prior parental consent to release
-                    the educational record to the prosecutor and the probation office. But B and C also apply.</p>
+                    the educational record to the prosecutor and the probation office. But <em>B</em> and <em>C</em> also apply.</p>
             </div>
 
-            <div id="s8-b" class="modal">
+            <div id="s7-b" class="modal modal-wide">
                 <p><span class="correct">Partially correct</span>. The alternative to obtaining parental consent is for
                     the prosecutor/probation office to serve the school with a court order or subpoena.  Upon receipt,
                     the school must make a "reasonable effort" to notify the student's parent of the order or subpoena
-                    before complying. But A and C also apply.</p>
+                    before complying. But <em>A</em> and <em>C</em> also apply.</p>
             </div>
 
-            <div id="s8-c" class="modal">
-                <p><span class="correct">Partially correct</span>, but A and B also apply. One exception to FERPA that
-                    may apply here is the state law juvenile justice exception.  Under this exception, individual states
-                    may enact statutes that permit schools to release records to juvenile justice personnel in order to
-                    assist youth in the system prior to adjudication if the recipient of the records certifies in
-                    writing that he or she will not disclose the information to a third party without first obtaining
-                    parental consent.  If such a law exists in this state, the school may release the education records
-                    to the prosecutor/probation offices.</p>
+            <div id="s7-c" class="modal modal-wide">
+                <p><span class="correct">Partially correct</span>, but <em>A</em> and <em>B</em> also apply. One
+                    exception to FERPA that may apply here is the state law juvenile justice exception. If such a law
+                    exists in this state, the school may release the education records to the prosecutor or probation
+                    offices.</p>
             </div>
 
-            <div id="s8-d" class="modal">
-                <p><span class="correct">TODO</span></p>
+            <div id="s7-d" class="modal">
+                <p><span class="correct">Correct!</span></p>
             </div>
         </section>
 
-        <section id="s9" class="tpl-3">
+        <section id="s8" class="tpl-3 bg-lawbooks">
             <div>
-                <h2>Thank You!</h2>
+                <p>If the records are released under the juvenile justice exception, which statement(s) are true?</p>
+
+                <ul class="alpha">
+                    <li><a class="open-modal" href="#s8-a">The records released under this exception can only
+                        be used to assist the youth; they cannot be used to prosecute the youth.</a></li>
+                    <li><a class="open-modal" href="#s8-b">The recipients of the education records need to
+                        provide the school with written verification that they will not re-disclose the information
+                        without parental consent.</a></li>
+                    <li><a class="open-modal correct" href="#s8-c">Both A and B</a></li>
+                    <li><a class="open-modal" href="#s8-d">Neither A nor B</a></li>
+                </ul>
             </div>
 
-            <a class="goto button" data-slide="1">Start Over</a>
+            <a href="#7.0" class="button-back">BACK</a>
+            <a href="#9.0" class="button hide">NEXT</a>
+
+            <div id="s8-a" class="modal">
+                <p><span class="correct">Partially Correct</span>. Answer <em>B</em> is also true.</p>
+            </div>
+
+            <div id="s8-b" class="modal">
+                <p><span class="correct">Partially Correct</span>. Answer <em>A</em> is also true.</p>
+            </div>
+
+            <div id="s8-c" class="modal">
+                <p><span class="correct">Correct</span>!</p>
+            </div>
+
+            <div id="s8-d" class="modal">
+                <p><span class="incorrect">Incorrect</span>.</p>
+            </div>
+        </section>
+
+        <section id="s9" class="tpl-4">
+            <div>
+                <h3>You have completed Scenario 2</h3>
+                <a href="3.html">Go To Scenario 3: School Resource Officer and School Counselor</a>
+            </div>
+
+            <a href="#1.0" class="button">Start Over</a>
         </section>
 
         <!--<section>-->
