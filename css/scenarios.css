@@ -141,6 +141,7 @@ section, .view head > title {
 }
 
 .polaroid {
+    width: 209px;
     height: 230px;
 }
 
@@ -497,7 +498,7 @@ ul.reveal li {
     float: left;
     width: 120px;
     height: 120px;
-    padding: 8px;
+    padding: 4px;
     margin: 8px;
     border: 2px solid #666;
     font-size: 0;
@@ -518,7 +519,7 @@ ul.reveal li:hover {
 }
 
 ul.reveal li.show {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.25em;
     color: #333;
     background: url(../img/form-pencil-fade.jpg) #888;
@@ -594,6 +595,13 @@ select {
     position: absolute;
     top: 253px;
     left: 397px;
+    height: 230px;
+}
+
+.socialWorker2a {
+    position: absolute;
+    top: 123px;
+    left: 87px;
     height: 230px;
 }
 
