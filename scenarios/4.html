@@ -29,26 +29,42 @@
 
         <section id="s2" class="tpl-1">
             <div>
-                <img class="polaroid" src="../img/ziggy.jpg" />
+                <img class="polaroid" src="../img/ziggy.png"/>
+                <img class="sap1 hide inc-1" src="../img/sap.png"/>
+                <img class="socialWorker2 hide inc-2" src="../img/socialworker2.png"/>
             </div>
             <div>
                 <p>
                     Jake is 15 years old and in the custody of the local children and youth agency.
+                    <a href="#inc-1" class="inc">more</a>
+                </p>
+
+                <p class="hide inc-1">
+                    Sally runs the Student Assistance Program (SAP) at a local area high school that Jake
+                    attends.
+                    <a href="#inc-2" class="inc">more</a>
+                </p>
+
+                <p class="hide inc-2">
+                    Jake told his Children and Youth caseworker about the substance abuse treatment and counseling
+                    he is receiving in the SAP.
                 </p>
             </div>
 
             <a href="#1.0" class="button-back">BACK</a>
-            <a href="#3.0" class="button">NEXT</a>
+            <a href="#3.0" class="button hide">NEXT</a>
         </section>
 
         <section id="s3" class="tpl-1">
             <div>
-                <img class="polaroid" src="../img/ziggy.jpg" />
-                <img class="sap1" src="../img/sap.png" height="280"/>
+                <img class="polaroid" src="../img/ziggy.png" />
+                <img class="sap1" src="../img/sap.png" />
+                <img class="socialWorker2" src="../img/socialworker2.png" />
             </div>
             <div>
                 <p>
-                    Sally runs the Student Assistance Program (SAP) at a local area high school that Jake attends.
+                    Jake's caseworker calls Sally to get information about Jake's
+                    progress in the SAP – specifically, what kinds of treatment he's receiving and how he's doing.
                 </p>
             </div>
 
@@ -56,28 +72,7 @@
             <a href="#4.0" class="button">NEXT</a>
         </section>
 
-        <section id="s4" class="tpl-1">
-            <div>
-                <img class="polaroid" src="../img/ziggy.jpg" />
-                <img class="sap1" src="../img/sap.png" />
-                <img class="socialWorker2" src="../img/socialworker2.png" />
-            </div>
-            <div>
-                <p>
-                    Jake has a Children and Youth caseworker who he has told about the substance abuse treatment and
-                    counseling he is receiving in the SAP.
-                </p>
-                <p>
-                    Jake's caseworker calls Sally to get information about Jake's
-                    progress in the SAP – specifically, what kinds of treatment he's receiving and how he's doing.
-                </p>
-            </div>
-
-            <a href="#3.0" class="button-back">BACK</a>
-            <a href="#5.0" class="button">NEXT</a>
-        </section>
-
-        <section id="s5" class="tpl-2 bg-lawbooks">
+        <section id="s4" class="tpl-2 bg-lawbooks">
             <img class="socialWorker2a" src="../img/socialworker2.png"/>
             <div>
                 <p>
@@ -85,32 +80,32 @@
                 </p>
             </div>
 
-            <a href="#4.0" class="button-back">BACK</a>
-            <a href="#6.0" class="button">NEXT</a>
+            <a href="#3.0" class="button-back">BACK</a>
+            <a href="#5.0" class="button">NEXT</a>
         </section>
 
-        <section id="s6" class="tpl-3 bg-lawbooks">
+        <section id="s5" class="tpl-3 bg-lawbooks">
             <div>
                 <p>Which laws pertain?</p>
 
                 <ul class="alpha">
-                    <li><a class="open-modal" href="#s6-a">FERPA</a></li>
-                    <li><a class="open-modal" href="#s6-b">HIPAA</a></li>
-                    <li><a class="open-modal correct" href="#s6-c">The Federal Drug & Alcohol (D&A) regulations at 42
+                    <li><a class="open-modal" href="#s5-a">FERPA</a></li>
+                    <li><a class="open-modal" href="#s5-b">HIPAA</a></li>
+                    <li><a class="open-modal correct" href="#s5-c">The Federal Drug & Alcohol (D&A) regulations at 42
                         CFR Part 2</a></li>
-                    <li><a class="open-modal" href="#s6-d">IDEIA</a></li>
+                    <li><a class="open-modal" href="#s5-d">IDEIA</a></li>
                 </ul>
             </div>
 
-            <a href="#5.0" class="button-back">BACK</a>
-            <a href="#7.0" class="button hide">NEXT</a>
+            <a href="#4.0" class="button-back">BACK</a>
+            <a href="#6.0" class="button hide">NEXT</a>
 
-            <div id="s6-a" class="modal">
+            <div id="s5-a" class="modal">
                 <p><span class="incorrect">Incorrect</span>, schools providing D&A prevention and treatment services are
                     bound by the Federal D&A regulations. FERPA does not apply to the SAP counselor.</p>
             </div>
 
-            <div id="s6-b" class="modal modal-wide">
+            <div id="s5-b" class="modal modal-wide">
                 <p><span class="incorrect">Incorrect</span>, here Part 2 applies rather than HIPAA. Part 2
                     protects all information about any person who has applied for or been given diagnosis or treatment
                     for alcohol or drug abuse at a federally assisted program. See 42 CFR §2.11 (definition of a
@@ -118,7 +113,7 @@
                     those times.</p>
             </div>
 
-            <div id="s6-c" class="modal modal-wide">
+            <div id="s5-c" class="modal modal-wide">
                 <p><span class="correct">Correct</span>, the Federal Drug & Alcohol (D&A) regulations at 42 CFR Part 2
                     apply to Jake's SAP records. In the substance abuse treatment field, confidentiality is governed by
                     the federal drug and alcohol (FDAC) laws (42 U.S.C. § 290dd-2) and regulations (42 CFR Part 2).
@@ -128,7 +123,7 @@
                     and what his caseworker wants information about.</p>
             </div>
 
-            <div id="s6-d" class="modal modal-wide">
+            <div id="s5-d" class="modal modal-wide">
                 <p><span class="incorrect">Incorrect</span>, the IDEIA requires states to provide school-age children
                     with "free, appropriate public education" in the "least restrictive environment." Part B of the act
                     sets forth the process for providing such education, including evaluations for services, eligibility
@@ -139,33 +134,33 @@
             </div>
         </section>
 
-        <section id="s7" class="tpl-3 bg-lawbooks">
+        <section id="s6" class="tpl-3 bg-lawbooks">
             <div>
                 <p>Does the SAP need to consider state law as well when deciding how to proceed with the disclosure?</p>
 
                 <ul>
-                    <li><a class="open-modal correct" href="#s7-a">Yes</a></li>
-                    <li><a class="open-modal" href="#s7-b">No</a></li>
+                    <li><a class="open-modal correct" href="#s6-a">Yes</a></li>
+                    <li><a class="open-modal" href="#s6-b">No</a></li>
                 </ul>
             </div>
 
-            <a href="#6.0" class="button-back">BACK</a>
-            <a href="#8.0" class="button hide">NEXT</a>
+            <a href="#5.0" class="button-back">BACK</a>
+            <a href="#7.0" class="button hide">NEXT</a>
 
-            <div id="s7-a" class="modal">
+            <div id="s6-a" class="modal">
                 <p><span class="correct">Correct</span>, remember that whenever you have a record that falls under Part
                     2 it is important to look at whether state law permits the child to consent to treatment. The age of
                     consent will affect who holds the power to release those records.</p>
             </div>
 
-            <div id="s7-b" class="modal">
+            <div id="s6-b" class="modal">
                 <p><span class="incorrect">Incorrect</span>, remember that whenever you have a record that falls under
                     Part 2, it is important to look at whether state law permits the child to consent to treatment. The
                     age of consent will affect who holds the power to release those records.</p>
             </div>
         </section>
 
-        <section id="s8" class="tpl-2 bg-lawbooks">
+        <section id="s7" class="tpl-2 bg-lawbooks">
             <div>
                 <p>
                     In this case, state law permits Jake to consent to his own treatment and therefore he can consent or
@@ -177,11 +172,11 @@
                 </p>
             </div>
 
-            <a href="#7.0" class="button-back">BACK</a>
-            <a href="#9.0" class="button">NEXT</a>
+            <a href="#6.0" class="button-back">BACK</a>
+            <a href="#8.0" class="button">NEXT</a>
         </section>
 
-        <section id="s9" class="tpl-3 bg-lawbooks">
+        <section id="s8" class="tpl-3 bg-lawbooks">
             <div>
                 <p>
                     Federal D&A regulations require Jake to include in his authorization to release records:
@@ -203,13 +198,13 @@
                 </ul>
             </div>
 
-            <a href="#8.0" class="button-back">BACK</a>
-            <a href="#10.0" class="button hide">NEXT</a>
+            <a href="#7.0" class="button-back">BACK</a>
+            <a href="#9.0" class="button hide">NEXT</a>
         </section>
 
-        <section id="s10" class="tpl-1">
+        <section id="s9" class="tpl-1">
             <div>
-                <img class="polaroid" src="../img/ziggy.jpg" />
+                <img class="polaroid" src="../img/ziggy.png" />
             </div>
             <div>
                 <p>
@@ -222,11 +217,11 @@
                 </p>
             </div>
 
-            <a href="#9.0" class="button-back">BACK</a>
-            <a href="#11.0" class="button">NEXT</a>
+            <a href="#8.0" class="button-back">BACK</a>
+            <a href="#10.0" class="button">NEXT</a>
         </section>
 
-        <section id="s11" class="tpl-3">
+        <section id="s10" class="tpl-3">
             <div>
                 <h3>You have completed Scenario 4</h3>
                 <a href="5.html">Go To Scenario 5: Special Education Teacher, Children and Youth Caseworker, and Foster

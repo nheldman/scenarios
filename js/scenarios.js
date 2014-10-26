@@ -154,4 +154,27 @@ jQuery(function() {
             alert('No');
         }
     });
+
+    $('.unhide').click(function(e) {
+        e.preventDefault();
+
+        var section = $(this).parents('section');
+
+        section.find('.hide').show(500);
+        $(this).unbind('click');
+    });
+
+    $('a.inc').click(function(e) {
+        e.preventDefault();
+
+        var inc = $(this).attr('href').replace('#', '.'),
+            section = $(this).parents('section'),
+            lastInc = section.find('a.inc').last(),
+            isLast = lastInc.attr('href') == $(this).attr('href');
+
+        section.find(inc).show(500);
+
+        $(this).hide();
+        $(this).parents('section').children('.button').toggleClass('hide', !isLast);
+    });
 });
