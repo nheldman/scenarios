@@ -18,69 +18,111 @@
             <img src="../img/mfc-logo.png" width="109" height="30" />
         </div>
 
-        <section id="s1">
-            <h1>Scenario 5</h1>
-            <h3>Special Education Teacher, Children and Youth Caseworker, and Foster Parent</h3>
+        <section id="s1" class="tpl-4">
+            <div>
+                <h1>Scenario 5</h1>
+
+                <h3>Special Education Teacher, Children and Youth Caseworker, and Foster Parent</h3>
+            </div>
+
             <a href="#2.0" class="button">START</a>
         </section>
 
-        <section id="s2" class="tpl-3">
+        <section id="s2" class="tpl-1">
+            <div>
+                <img class="polaroid" src="../img/linus.jpg"/>
+                <img class="foster1 hide inc-1" src="../img/fosterfamily1.jpg"/>
+            </div>
             <div>
                 <p>
-                    Ten year-old Linus recently entered the child welfare system. The local children & youth agency
-                    places Linus with a foster family. The children & youth case worker learned during his investigation
-                    that Linus has an Individualized Education Program (IEP). The case worker and Linus's foster mother
+                    Ten year-old Linus recently entered the child welfare system.
+                    <a href="#inc-1" class="inc">more</a>
+                </p>
+                <p class="hide inc-1">
+                    The local children & youth agency places Linus with a foster family.
+                </p>
+            </div>
+
+            <a href="#1.0" class="button-back">BACK</a>
+            <a href="#3.0" class="button hide">NEXT</a>
+        </section>
+
+        <section id="s3" class="tpl-2 bg-phone">
+            <div>
+                <p>
+                    The children & youth case worker learned during his investigation
+                    that Linus has an Individualized Education Program (IEP).
+                </p>
+                <p>
+                    The case worker and Linus's foster mother
                     each contact the special education teacher at Linus's school to obtain a copy of Linus's IEP and
                     tell the teacher that they want to be included in all future meetings at the school regarding Linus.
                 </p>
             </div>
 
-            <a href="#3.0" class="button">NEXT</a>
+            <a href="#2.0" class="button-back">BACK</a>
+            <a href="#4.0" class="button">NEXT</a>
         </section>
 
-        <section id="s3" class="tpl-3">
+        <section id="s4" class="tpl-3 bg-lawbooks">
             <div>
                 <p>
                     The case worker and the foster mother both attend an IEP meeting for Linus. At the end of the
                     meeting, the special education teacher asks <em>both</em> the case worker and foster mother to sign the IEP
                     on the line "parent/guardian". You are the caseworker, and you have a feeling that you can't sign
                     the IEP. You try to think of the law that applies so you can formulate an answer for the teacher.
-                    You tell the teacher that the following law/s apply:
+                    You tell the teacher that the following law(s) apply:
                 </p>
 
                 <ul>
-                    <li><a class="open-modal" href="#s3-a">A. FERPA</a></li>
-                    <li><a class="open-modal" href="#s3-b">B. Individuals with Disabilities Education Improvement Act
+                    <li><a class="open-modal" href="#s4-a">A. FERPA</a></li>
+                    <li><a class="open-modal" href="#s4-b">B. Individuals with Disabilities Education Improvement Act
                         (IDEIA)</a></li>
-                    <li><a class="open-modal correct" href="#s3-c">C. FERPA <em>and</em> the Individuals with Disabilities
+                    <li><a class="open-modal correct" href="#s4-c">C. FERPA <em>and</em> the Individuals with Disabilities
                         Education Improvement Act (IDEIA)</a></li>
                 </ul>
             </div>
 
-            <a href="#4.0" class="button hide">NEXT</a>
+            <a href="#3.0" class="button-back">BACK</a>
+            <a href="#5.0" class="button hide">NEXT</a>
 
-            <div id="s3-a" class="modal">
-                <p><span class="correct">Partially correct</span>, FERPA applies because the foster parent
+            <div id="s4-a" class="modal">
+                <p><span class="correct">Partially correct</span>. FERPA applies because the foster parent
                     and the case worker want Linus' school records. But, remember that the particular record they want
                     is a special education record for which IDEIA applies. Therefore, IDEIA applies too.</p>
             </div>
 
-            <div id="s3-b" class="modal">
-                <p><span class="correct">Partially correct</span>, the IDEIA applies, but so does FERPA. The
+            <div id="s4-b" class="modal">
+                <p><span class="correct">Partially correct</span>. The IDEIA applies, but so does FERPA. The
                     IDEIA applies because we are talking about an IEP and although the IDEIA confidentiality regulations
                     incorporate FERPA, they also contain some provisions that apply to only special education records.
                     FERPA applies because the IEP may include some other elements that are in the education record more
                     generally.</p>
             </div>
 
-            <div id="s3-c" class="modal">
-                <p><span class="correct">Correct</span>, both FERPA and the IDEIA apply because we are talking
+            <div id="s4-c" class="modal">
+                <p><span class="correct">Correct</span>. Both FERPA and the IDEIA apply because we are talking
                     about an IEP and the education record more generally.</p>
             </div>
         </section>
 
-        <section id="s4" class="tpl-3">
+        <section id="s5" class="tpl-3 bg-lawbooks">
             <div>
+                <p>
+                    You explain to the teacher that under IDEIA a "parent" &mdash; the education decision
+                    maker in the special education system &mdash; can be:
+                </p>
+
+                <ul class="reveal-list no-next">
+                    <li>a biological or adoptive parent,</li>
+                    <li>a foster parent (<i>if permitted under state law</i>),</li>
+                    <li>a guardian generally or specially authorized to make
+                        education decisions for the child,</li>
+                    <li>someone with whom the child lives who acts as the parent,</li>
+                    <li>someone who is legally responsible for the child's welfare, or</li>
+                    <li>a surrogate parent.</li>
+                </ul>
+
                 <p>
                     You then explain to the teacher that under the IDEIA you, the caseworker,
 
@@ -90,24 +132,24 @@
                         <option value="correct">cannot</option>
                     </select>
 
-                    sign the IEP. You explain to the teacher that under IDEIA a "parent" &mdash; the education decision
-                    maker in the special education system &mdash; can be a biological or adoptive parent, a foster
-                    parent (<i>if permitted under state law</i>), a guardian generally or specially authorized to make
-                    education decisions for the child, someone with whom the child lives who acts as the parent, someone
-                    who is legally responsible for the child's welfare, or a surrogate parent. But a caseworker can
-                    never be a "parent."
+                    sign the IEP.
                 </p>
+
             </div>
 
-            <a href="#5.0" class="button hide">NEXT</a>
+            <a href="#4.0" class="button-back">BACK</a>
+            <a href="#6.0" class="button hide">NEXT</a>
         </section>
 
-        <section id="s5" class="tpl-3">
+        <section id="s6" class="tpl-3 bg-lawbooks">
             <div>
                 <p>
-                    Therefore in this scenario, if the foster mother is permitted under state law to act as the
+                    Therefore, if the foster mother is permitted under state law to act as the
                     education decision-maker, and the birth or adoptive parent is not attempting to act as the education
-                    decision-maker, the foster mother can act as the education decision maker. In that case, the school
+                    decision-maker, the foster mother can act as the education decision maker.
+                </p>
+                <p>
+                    In that case, the school
 
                     <select class="fill-in-the-blank">
                         <option value="">Select</option>
@@ -115,12 +157,15 @@
                         <option value="correct">must release</option>
                     </select>
 
-                    the IEP and other education records to her and invite her to IEP meetings. The foster mother as
+                    the IEP and other education records to her and invite her to IEP meetings.
+                </p>
+                <p>
+                    The foster mother as
                     educational decision-maker can also sign the IEP.
                 </p>
             </div>
 
-            <div id="s5-correct-modal" class="modal modal-medium">
+            <div id="s6-correct-modal" class="modal modal-medium">
                 <p>
                     Note: If state law does NOT permit a foster parent to act as an IDEIA "parent," the juvenile court
                     can appoint the foster parent as a "surrogate parent" for a child who is in the custody of a child
@@ -128,15 +173,17 @@
                 </p>
             </div>
 
-            <a href="#6.0" class="button hide">NEXT</a>
+            <a href="#5.0" class="button-back">BACK</a>
+            <a href="#7.0" class="button hide">NEXT</a>
         </section>
 
-        <section id="s6" class="tpl-3">
+        <section id="s7" class="tpl-3 bg-lawbooks">
             <div>
                 <p>
                     Then the teacher asks you if under FERPA she can share the IEP with you (the caseworker) and the
                     foster mother. Fill in the blanks below with your advice.
-
+                </p>
+                <p>
                     Under a recent FERPA amendment, the Uninterrupted Scholars Act (USA), the children and youth
                     caseworker
 
@@ -146,7 +193,10 @@
                         <option value="incorrect">does not have</option>
                     </select>
 
-                    access to Linus' education record and IEP. Under the USA, the children and youth caseworker, who has
+                    access to Linus's education record and IEP.
+                </p>
+                <p>
+                    Under the USA, the children and youth caseworker, who has
                     the right to access a child's case plan under state law and whose agency has legal responsibility
                     for the care of the youth,
 
@@ -156,7 +206,18 @@
                         <option value="incorrect">cannot</option>
                     </select>
 
-                    access the child's educational records. The child welfare caseworker may then disclose the records
+                    access the child's educational records.
+                </p>
+            </div>
+
+            <a href="#6.0" class="button-back">BACK</a>
+            <a href="#8.0" class="button hide">NEXT</a>
+        </section>
+
+        <section id="s8" class="tpl-3 bg-lawbooks">
+            <div>
+                <p>
+                    The child welfare caseworker may then disclose the records
                     to individuals/entities engaged in addressing the youth's education needs as long as the
 
                     <select class="fill-in-the-blank">
@@ -166,27 +227,33 @@
                         <option value="correct">child welfare agency</option>
                     </select>
 
-                    authorizes those individuals/entities to receive such records. Thus, the educational information
+                    authorizes those individuals/entities to receive such records.
+                </p>
+                <p>
+                    Thus, the educational information
                     could possibly be shared with the foster mother for purposes of addressing the youth's education
                     needs without consent of the parent if the child welfare agency authorizes it.
                 </p>
+
             </div>
 
-            <div id="s6-correct-modal" class="modal modal-medium">
+            <div id="s8-correct-modal" class="modal modal-medium">
                 <p>
                     Great job! Keep reading to help the teacher understand more about releasing school records.
                 </p>
             </div>
 
-            <a href="#7.0" class="button hide">NEXT</a>
+            <a href="#7.0" class="button-back">BACK</a>
+            <a href="#9.0" class="button hide">NEXT</a>
         </section>
 
-        <section id="s7" class="tpl-3">
+        <section id="s9" class="tpl-3 bg-lawbooks">
             <div>
                 <p>
                     The teacher then asks you if there's any way to disclose the information directly to the foster
                     mother without going through the child welfare agency. You answer the following:
-
+                </p>
+                <p>
                     The court in the child welfare agency may issue a/an
 
                     <select class="fill-in-the-blank">
@@ -196,8 +263,10 @@
                         <option value="incorrect">injunction</option>
                     </select>
 
-                    authorizing the school to release records to the foster mother. FERPA allows schools to release
-                    records in response to a court order. Normally, FERPA
+                    authorizing the school to release records to the foster mother.
+                </p>
+                <p>
+                    FERPA allows schools to release records in response to a court order. Normally, FERPA
 
                     <select class="fill-in-the-blank">
                         <option value="">Select</option>
@@ -205,22 +274,27 @@
                         <option value="incorrect">does not require</option>
                     </select>
 
-                    the school to notify the parent before disclosing records pursuant to a court order. However, USA
+                    the school to notify the parent before disclosing records pursuant to a court order.
+                </p>
+                <p>
+                    However, USA
                     amended FERPA to specifically provide that if such an order is issued in a child welfare case to
                     which the child's parent is a party, the school is not required to provide additional notice to the
                     parent prior to releasing the records.
                 </p>
             </div>
 
-            <a href="#8.0" class="button hide">NEXT</a>
+            <a href="#8.0" class="button-back">BACK</a>
+            <a href="#10.0" class="button hide">NEXT</a>
         </section>
 
-        <section id="s8" class="tpl-3">
+        <section id="s10" class="tpl-3">
             <div>
-                <h2>Thank You!</h2>
+                <h3>You have completed Scenario 5</h3>
+                <a href="5.html">Go To Scenario 6: Child Welfare Agency and Prosecutor</a>
             </div>
 
-            <a class="goto button" data-slide="1">Start Over</a>
+            <a href="#1.0" class="button">Start Over</a>
         </section>
 
         <div id="progress-bar"></div>

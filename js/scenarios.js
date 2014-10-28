@@ -104,9 +104,13 @@ jQuery(function() {
     $('ul.reveal li, ul.reveal-list li').on('click touchend', function () {
         $(this).addClass('show');
 
-        var allClicked = $(this).parent().children('li').length === $(this).parent().children('li.show').length;
+        var allClicked = $(this).parent().children('li').length === $(this).parent().children('li.show').length,
+            section = $(this).parents('section'),
+            shouldShowNextButton = !$(this).parent().hasClass('no-next');
 
-        $(this).parents('section').children('.button').toggleClass('hide', !allClicked);
+        if (shouldShowNextButton) {
+            $(this).parents('section').children('.button').toggleClass('hide', !allClicked);
+        }
     });
 
     $('.fill-in-the-blank').change(function() {

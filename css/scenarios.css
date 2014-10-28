@@ -161,6 +161,10 @@ section, .view head > title {
     background: url(../img/school1-fade.png);
 }
 
+.bg-phone {
+    background: url(../img/phone1.jpg);
+}
+
 /* TEMPLATE 1: Folder background, image left, text right */
 section.tpl-1 {
     background: url(../img/bg-folder.jpg);
@@ -489,14 +493,14 @@ ul.reveal {
 }
 
 .help {
-    font-size: 12px;
+    font-size: 14px;
     color: #888;
     clear: both;
 }
 
 ul.reveal li {
     float: left;
-    width: 120px;
+    width: 128px;
     height: 120px;
     padding: 4px;
     margin: 8px;
@@ -537,8 +541,8 @@ ul.reveal-list li {
 }
 
 ul.reveal-list li:after {
-    font-size: 18px;
-    color: #888;
+    font-size: 16px;
+    color : #ee2e24;
     cursor: pointer;
     content: 'Click to reveal...';
 }
@@ -550,7 +554,7 @@ ul.reveal-list li:hover {
 }
 
 ul.reveal-list li.show {
-    font-size: 18px;
+    font-size: 16px;
     color: #666;
     cursor: default;
 }
@@ -602,6 +606,13 @@ select {
     position: absolute;
     top: 123px;
     left: 87px;
+    height: 230px;
+}
+
+.foster1 {
+    position: absolute;
+    top: 200px;
+    left: 195px;
     height: 230px;
 }
 
