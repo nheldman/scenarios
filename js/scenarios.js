@@ -181,4 +181,20 @@ jQuery(function() {
         $(this).hide();
         $(this).parents('section').children('.button').toggleClass('hide', !isLast);
     });
+
+    $('#release-info-submit').on('click touchend', function () {
+        var section = $(this).parents('section'),
+            allChecked = section.find('input[type="checkbox"]').length == section.find('input[type="checkbox"]:checked').length,
+            numChecked = section.find('.release-info:checked').length;
+
+        var modalId = allChecked
+            ? '#release-info-correct-modal'
+            : numChecked == 0
+                ? '#release-info-incorrect-modal'
+                : '#release-info-partially-correct-modal';
+
+        $(modalId).modal({fadeDuration: 100, closeText: 'OK'});
+
+        section.children('.button').toggleClass('hide', !allChecked);
+    });
 });

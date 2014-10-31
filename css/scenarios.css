@@ -98,6 +98,7 @@ section, .view head > title {
     bottom: 120px;
     right: 10px;
     z-index: 1;
+    cursor: pointer;
 }
 
 .button-back {
@@ -115,6 +116,7 @@ section, .view head > title {
     bottom: 120px;
     left: 10px;
     z-index: 1;
+    cursor: pointer;
 }
 
 .answer {
@@ -163,6 +165,10 @@ section, .view head > title {
 
 .bg-phone {
     background: url(../img/phone1.jpg);
+}
+
+.bg-ilprovider {
+    background: url(../img/bg-ilprovider1.jpg);
 }
 
 /* TEMPLATE 1: Folder background, image left, text right */
@@ -372,6 +378,14 @@ blockquote {
     color: #fff;
     padding: 20px;
     margin: 10px;
+    font-size: 17px;
+}
+
+.handwritten {
+    font-family: cursive;
+    background: #fff;
+    color: #333;
+    padding: 40px;
 }
 
 span.correct {
@@ -516,6 +530,10 @@ ul.reveal li {
     text-align: center;
 }
 
+ul.reveal.fit-5 li {
+    width: 126px;
+}
+
 ul.reveal li:hover {
     color: #aaa;
     background: #aaa transparent;
@@ -530,6 +548,10 @@ ul.reveal li.show {
     cursor: default;
 }
 
+ul.reveal-list {
+    margin-left: 30px;
+}
+
 ul.reveal-list li.show:hover {
     color: #333;
     background: url(../img/form-pencil-fade.jpg) #888;
@@ -538,6 +560,7 @@ ul.reveal-list li.show:hover {
 
 ul.reveal-list li {
     font-size: 0;
+    margin-bottom: 0;
 }
 
 ul.reveal-list li:after {
@@ -555,6 +578,8 @@ ul.reveal-list li:hover {
 
 ul.reveal-list li.show {
     font-size: 16px;
+    line-height: 1.25em;
+    margin-bottom: 10px;
     color: #666;
     cursor: default;
 }
@@ -614,6 +639,13 @@ select {
     top: 200px;
     left: 195px;
     height: 230px;
+}
+
+.ilprovider1 {
+    position: absolute;
+    top: 264px;
+    left: 195px;
+    height: 200px;
 }
 
 #s6-file {
