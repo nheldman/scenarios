@@ -594,6 +594,59 @@ ul.reveal-list li.show:hover {
     opacity: 1.0;
 }
 
+ul.person-list {
+    margin: 0;
+    height: 140px;
+}
+
+ul.person-list li {
+    float: left;
+    width: 126px;
+    height: 126px;
+    padding: 4px;
+    margin: 8px;
+    font-size: 14px;
+    border: 2px solid #666;
+    list-style: none;
+    cursor: pointer;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.no-pad li {
+    padding: 0 !important;
+}
+
+.click-text {
+    clear: both;
+}
+
+.click-text div {
+    display: none;
+}
+
+.click-text p {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+ul.person-list li:hover {
+    color: #aaa;
+    background: #aaa transparent;
+}
+
+ul.person-list li.show-pic {
+    font-size: 0;
+    line-height: 0;
+    padding: 0;
+    cursor: default;
+}
+
+ul.person-list li
+
 select {
     font-size: 17px;
     font-family: Oswald;
@@ -648,7 +701,7 @@ select {
     height: 200px;
 }
 
-#s6-file {
+#s5-file {
     width: 100px;
     height: 100px;
     position: absolute;
@@ -658,7 +711,7 @@ select {
     cursor: move;
 }
 
-#s6-caseworker {
+#s5-caseworker {
     width: 350px;
     height: 258px;
     position: absolute;
@@ -667,7 +720,7 @@ select {
     z-index: 1;
 }
 
-#s6-file-cabinet {
+#s5-file-cabinet {
     width: 240px;
     position: absolute;
     bottom: 121px;
@@ -678,4 +731,8 @@ select {
 .droppable-active {
     border: 2px solid #333;
     opacity: 0.75;
+}
+
+.person-list {
+
 }

@@ -113,6 +113,21 @@ jQuery(function() {
         }
     });
 
+    $('ul.person-list li').on('click touchend', function () {
+        $(this).addClass('show-pic');
+        $(this).children('img').removeClass('hide');
+
+        var allClicked = $(this).parent().children('li').length === $(this).parent().children('li.show-pic').length,
+            section = $(this).parents('section');
+
+        if (allClicked) {
+            $(this).parents('section').find('#show-caseworker').removeClass('hide');
+            $(this).parent().children('li.fade').css({opacity: 0.5});
+        }
+
+        $(this).parents('section').children('.button').toggleClass('hide', !allClicked);
+    });
+
     $('.fill-in-the-blank').change(function() {
         var id = $(this).val(),
             section = $(this).parents('section'),
@@ -140,7 +155,7 @@ jQuery(function() {
     var recoupLeft, recoupTop;
     $('.drag-me').draggable({ revert: 'invalid' });
 
-    $('#s6-caseworker').droppable({
+    $('#s5-caseworker').droppable({
         activeClass: 'droppable-active',
         accept: '.drag-me',
         drop: function (event, ui) {
@@ -149,7 +164,7 @@ jQuery(function() {
             alert('Yes');
         }
     });
-    $('#s6-file-cabinet').droppable({
+    $('#s5-file-cabinet').droppable({
         activeClass: 'droppable-active',
         accept: '.drag-me',
         drop: function (event, ui) {
@@ -168,7 +183,7 @@ jQuery(function() {
         $(this).unbind('click');
     });
 
-    $('a.inc').click(function(e) {
+    $('a.inc').on('click touchend', function(e) {
         e.preventDefault();
 
         var inc = $(this).attr('href').replace('#', '.'),
@@ -228,5 +243,17 @@ jQuery(function() {
         $(modalId).modal({fadeDuration: 100, closeText: 'OK'});
 
         section.children('.button').toggleClass('hide', !allChecked);
+    });
+
+    $('.show-click-text').on('click touchend', function() {
+        var section = $(this).parents('section'),
+            id = $(this).data('id'),
+            clickTextDivs = section.find('.click-text div'),
+            images = section.find('li img');
+
+        images.css({ opacity: 0.5 });
+        $(this).css({ opacity: 1.0 });
+        clickTextDivs.hide();
+        $('#' + id).show();
     });
 });
