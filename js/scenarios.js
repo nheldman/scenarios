@@ -3,7 +3,7 @@ jQuery(function() {
 
     $('.open-modal').on('click touchend', function() {
         event.preventDefault();
-        $(this).modal({fadeDuration:100,closeText:'OK'});
+        $(this).modal({fadeDuration:100,clickClose:true});
 
         if ($(this).hasClass('correct')) {
             $(this).parents('section').children('.button').removeClass('hide');
@@ -192,6 +192,38 @@ jQuery(function() {
             : numChecked == 0
                 ? '#release-info-incorrect-modal'
                 : '#release-info-partially-correct-modal';
+
+        $(modalId).modal({fadeDuration: 100, closeText: 'OK'});
+
+        section.children('.button').toggleClass('hide', !allChecked);
+    });
+
+    $('#release-ed-rec-submit').on('click touchend', function () {
+        var section = $(this).parents('section'),
+            allChecked = section.find('input[type="checkbox"]').length == section.find('input[type="checkbox"]:checked').length,
+            numChecked = section.find('.release-ed-rec:checked').length;
+
+        var modalId = allChecked
+            ? '#release-ed-rec-correct-modal'
+            : numChecked == 0
+                ? '#release-ed-rec-incorrect-modal'
+                : '#release-ed-rec-partially-correct-modal';
+
+        $(modalId).modal({fadeDuration: 100, closeText: 'OK'});
+
+        section.children('.button').toggleClass('hide', !allChecked);
+    });
+
+    $('#release-ed-rec2-submit').on('click touchend', function () {
+        var section = $(this).parents('section'),
+            allChecked = section.find('input[type="checkbox"]').length == section.find('input[type="checkbox"]:checked').length,
+            numChecked = section.find('.release-ed-rec2:checked').length;
+
+        var modalId = allChecked
+            ? '#release-ed-rec2-correct-modal'
+            : numChecked == 0
+            ? '#release-ed-rec2-incorrect-modal'
+            : '#release-ed-rec2-partially-correct-modal';
 
         $(modalId).modal({fadeDuration: 100, closeText: 'OK'});
 
