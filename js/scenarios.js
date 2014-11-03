@@ -159,18 +159,39 @@ jQuery(function() {
         activeClass: 'droppable-active',
         accept: '.drag-me',
         drop: function (event, ui) {
-            $(ui.draggable).css('top', $(this).position().top + 10);
-            $(ui.draggable).css('left', $(this).position().left + 10);
-            alert('Yes');
+            $(ui.draggable).css('top', $(this).position().top + 60);
+            $(ui.draggable).css('left', $(this).position().left - 30);
+            $('#s5-a').modal('open');
+            $(this).parents('section').children('.button').removeClass('hide');
         }
     });
     $('#s5-file-cabinet').droppable({
         activeClass: 'droppable-active',
         accept: '.drag-me',
         drop: function (event, ui) {
-            $(ui.draggable).css('top', $(this).position().top + 10);
+            $(ui.draggable).css('bottom', $(this).position().bottom + 10);
             $(ui.draggable).css('left', $(this).position().left + 10);
-            alert('No');
+            $('#s5-b').modal('open');
+        }
+    });
+
+    $('#s6-caseworker').droppable({
+        activeClass: 'droppable-active',
+        accept: '.drag-me',
+        drop: function (event, ui) {
+            $(ui.draggable).css('top', $(this).position().top + 60);
+            $(ui.draggable).css('left', $(this).position().left - 30);
+            $('#s6-a').modal('open');
+            $(this).parents('section').children('.button').removeClass('hide');
+        }
+    });
+    $('#s6-file-cabinet').droppable({
+        activeClass: 'droppable-active',
+        accept: '.drag-me',
+        drop: function (event, ui) {
+            $(ui.draggable).css('bottom', $(this).position().bottom + 10);
+            $(ui.draggable).css('left', $(this).position().left + 10);
+            $('#s6-b').modal('open');
         }
     });
 

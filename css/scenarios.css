@@ -701,29 +701,27 @@ select {
     height: 200px;
 }
 
-#s5-file {
+#s5-file, #s6-file {
     width: 100px;
     height: 100px;
     position: absolute;
-    top: 204px;
-    left: 295px;
+    top: 104px;
+    left: 368px;
     z-index: 2;
     cursor: move;
 }
 
-#s5-caseworker {
-    width: 350px;
-    height: 258px;
+#s5-caseworker, #s6-caseworker {
     position: absolute;
-    top: 100px;
+    top: 183px;
     right: 10px;
     z-index: 1;
 }
 
-#s5-file-cabinet {
+#s5-file-cabinet, #s6-file-cabinet {
     width: 240px;
     position: absolute;
-    bottom: 121px;
+    bottom: 160px;
     left: 10px;
     z-index: 1;
 }
@@ -731,8 +729,4 @@ select {
 .droppable-active {
     border: 2px solid #333;
     opacity: 0.75;
-}
-
-.person-list {
-
 }
