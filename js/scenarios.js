@@ -175,23 +175,24 @@ jQuery(function() {
         }
     });
 
-    $('#s6-caseworker').droppable({
-        activeClass: 'droppable-active',
-        accept: '.drag-me',
-        drop: function (event, ui) {
-            $(ui.draggable).css('top', $(this).position().top + 60);
-            $(ui.draggable).css('left', $(this).position().left - 30);
-            $('#s6-a').modal('open');
-            $(this).parents('section').children('.button').removeClass('hide');
-        }
-    });
-    $('#s6-file-cabinet').droppable({
+    $('#s9-rtf').droppable({
         activeClass: 'droppable-active',
         accept: '.drag-me',
         drop: function (event, ui) {
             $(ui.draggable).css('bottom', $(this).position().bottom + 10);
             $(ui.draggable).css('left', $(this).position().left + 10);
-            $('#s6-b').modal('open');
+            $('#s9-a').modal('open');
+        }
+    });
+
+    $('#s9-table').droppable({
+        activeClass: 'droppable-active',
+        accept: '.drag-me',
+        drop: function (event, ui) {
+            $(ui.draggable).css('top', $(this).position().top + 60);
+            $(ui.draggable).css('left', $(this).position().left - 30);
+            $('#s9-b').modal('open');
+            $(this).parents('section').children('.button').removeClass('hide');
         }
     });
 

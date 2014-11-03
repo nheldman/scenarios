@@ -214,15 +214,14 @@
                     Can the caseworker share the information with the multi-agency team without first obtaining consent?
                 </p>
 
-                <p class="help">
-                    Drag the file to the caseworker if she can legally obtain the educational records.
-                    Drag it back to the filing cabinet if not.
-                </p>
+                <ul class="alpha">
+                    <li><a class="open-modal" href="#s6-a">No</a></li>
+                    <li><a class="open-modal" href="#s6-b">Yes</a></li>
+                    <li><a class="open-modal correct" href="#s6-c">Probably</a></li>
+                </ul>
             </div>
 
-            <img id="s6-file" class="drag-me" src="../img/casefile.png"/>
             <img id="s6-caseworker" src="../img/caseworker1.png"/>
-            <img id="s6-file-cabinet" src="../img/file-cabinet.png"/>
 
             <a href="#5.0" class="button-back">BACK</a>
             <a href="#7.0" class="button hide">NEXT</a>
@@ -230,14 +229,11 @@
             <div id="s6-a" class="modal modal-wide">
                 <div>
                     <p>
-                        <span class="correct">Probably</span>. What must be true for the worker to be able to share
-                        this information? (check all that apply)
-                        -The child welfare agency authorized the multi-system individuals/entities to receive education
-                        records.
-                        -The redisclosure to other members of the transition team is for addressing the youth's
-                        education
-                        needs.
-                        -The redisclosure is consistent with State or tribal laws.
+                        Actually, the caseworker is likely able to share
+                        this information with the multi-agency team. As long as the disclosure to other members of the
+                        transition team is for addressing the youth's education needs, and the child welfare agency
+                        authorizes the other members of the transition team to receive such records, no consent will be
+                        required.
                     </p>
                 </div>
             </div>
@@ -245,7 +241,18 @@
             <div id="s6-b" class="modal modal-wide">
                 <div>
                     <p>
-                        <span class="incorrect">Incorrect</span>. Actually, the caseworker is likely able to share
+                        <span class="incorrect">This is not the best answer</span>. The caseworker can only share this information with the
+                        multi-agency team without consent if the disclosure to other members of the
+                        transition team is for addressing the youth's education needs, and the child welfare agency
+                        authorizes the other members of the transition team to receive such records.
+                    </p>
+                </div>
+            </div>
+
+            <div id="s6-c" class="modal modal-wide">
+                <div>
+                    <p>
+                        <span class="correct">This is the best answer</span>. The caseworker is likely able to share
                         this information with the multi-agency team. As long as the disclosure to other members of the
                         transition team is for addressing the youth's education needs, and the child welfare agency
                         authorizes the other members of the transition team to receive such records, no consent will be
@@ -311,7 +318,10 @@
                     If the USA criteria is not met and Bill's parent cannot be located or refuses to sign a valid
                     authorization, the school may still release Bill's education records as long as the school has 1) a
                     signed court order or subpoena, and 2) makes a reasonable effort to notify the child's parent of the
-                    subpoena or order. Imagine that the school follows the protocol with the court order and also makes
+                    subpoena or order.
+                </p>
+                <p>
+                    Imagine that the school follows the protocol with the court order and also makes
                     reasonable efforts to notify Bill's parent. Please check all the parties that could receive Bill's
                     education record:
                 </p>
@@ -366,24 +376,47 @@
                     multi-agency team without consent? If so, drag the file folder to the table. If not, press NO.
                 </p>
 
-                <p>
-                    User drags file folder and pop-up says: "Incorrect. In order for the treatment information to be
-                    shared, there must be a signed authorization. If state law permitted Bill to consent to his own
-                    mental health treatment both in the RTF and through the outpatient mental health provider, Bill may
-                    consent to the release of that information at the meeting by signing a consent form. However, if
-                    Bill did not consent to the mental health care, HIPAA requires the consent of Bill's parent/guardian
-                    or a court order in order for the information to be shared at the multi-agency teaming. "
-                    User presses NEXT and text says "Correct! In order for the treatment information to be shared,
-                    there must be a signed authorization. If state law permitted Bill to consent to his own mental
-                    health treatment both in the RTF and through the outpatient mental health provider, Bill may consent
-                    to the release of that information at the meeting by signing a consent form. However, if Bill did
-                    not consent to the mental health care, HIPAA requires the consent of Bill's parent/guardian or a
-                    court order in order for the information to be shared at the multi-agency teaming."
+                <p class="help">
+                    If so, drag the file to the table. If not, drag the file back to the RTF representative.
                 </p>
             </div>
 
+            <img id="s9-file" class="drag-me" src="../img/casefile.png"/>
+            <img id="s9-rtf" src="../img/rtf1.png"/>
+            <img id="s9-table" src="../img/table1.png"/>
+
             <a href="#8.0" class="button-back">BACK</a>
-            <a href="#10.0" class="button">NEXT</a>
+            <a href="#10.0" class="button hide">NEXT</a>
+
+            <div id="s9-a" class="modal modal-wide">
+                <div>
+                    <p>
+                        <span class="incorrect">Incorrect</span>. In order for the treatment information to be
+                        shared, there must be a signed authorization. If state law permitted Bill to consent to his own
+                        mental health treatment both in the RTF and through the outpatient mental health provider, Bill
+                        may
+                        consent to the release of that information at the meeting by signing a consent form. However, if
+                        Bill did not consent to the mental health care, HIPAA requires the consent of Bill's
+                        parent/guardian
+                        or a court order in order for the information to be shared at the multi-agency teaming.
+                    </p>
+                </div>
+            </div>
+
+            <div id="s9-b" class="modal modal-wide">
+                <div>
+                    <p>
+                        <span class="correct">Correct</span>! In order for the treatment information to be shared,
+                        there must be a signed authorization. If state law permitted Bill to consent to his own mental
+                        health treatment both in the RTF and through the outpatient mental health provider, Bill may
+                        consent
+                        to the release of that information at the meeting by signing a consent form. However, if Bill
+                        did
+                        not consent to the mental health care, HIPAA requires the consent of Bill's parent/guardian or a
+                        court order in order for the information to be shared at the multi-agency teaming.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <section id="s10" class="tpl-3">

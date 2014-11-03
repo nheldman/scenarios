@@ -701,7 +701,7 @@ select {
     height: 200px;
 }
 
-#s5-file, #s6-file {
+#s5-file {
     width: 100px;
     height: 100px;
     position: absolute;
@@ -718,7 +718,7 @@ select {
     z-index: 1;
 }
 
-#s5-file-cabinet, #s6-file-cabinet {
+#s5-file-cabinet {
     width: 240px;
     position: absolute;
     bottom: 160px;
@@ -726,7 +726,30 @@ select {
     z-index: 1;
 }
 
+#s9-file {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 114px;
+    left: 60px;
+    z-index: 2;
+    cursor: move;
+}
+
+#s9-rtf {
+    position: absolute;
+    bottom: 110px;
+    left: 150px;
+    z-index: 1;
+}
+
+#s9-table {
+    position: absolute;
+    top: 123px;
+    right: 10px;
+    z-index: 1;
+}
+
 .droppable-active {
-    border: 2px solid #333;
     opacity: 0.75;
 }
