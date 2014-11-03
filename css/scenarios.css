@@ -171,6 +171,10 @@ section, .view head > title {
     background: url(../img/bg-ilprovider1.jpg);
 }
 
+.bg-signature {
+    background: url(../img/sign1.jpg);
+}
+
 /* TEMPLATE 1: Folder background, image left, text right */
 section.tpl-1 {
     background: url(../img/bg-folder.jpg);
@@ -298,7 +302,7 @@ h2 {
 
 h3 {
     font-size: 32px;
-    line-height: 2em;
+    line-height: 1.5em;
 }
 
 ul {
