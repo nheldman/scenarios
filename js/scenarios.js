@@ -179,8 +179,8 @@ jQuery(function() {
         activeClass: 'droppable-active',
         accept: '.drag-me',
         drop: function (event, ui) {
-            $(ui.draggable).css('bottom', $(this).position().bottom + 10);
-            $(ui.draggable).css('left', $(this).position().left + 10);
+            $(ui.draggable).css('top', $(this).position().top + 140);
+            $(ui.draggable).css('left', $(this).position().left + 120);
             $('#s9-a').modal('open');
         }
     });
@@ -189,8 +189,8 @@ jQuery(function() {
         activeClass: 'droppable-active',
         accept: '.drag-me',
         drop: function (event, ui) {
-            $(ui.draggable).css('top', $(this).position().top + 60);
-            $(ui.draggable).css('left', $(this).position().left - 30);
+            $(ui.draggable).css('top', $(this).position().top + 20);
+            $(ui.draggable).css('left', $(this).position().left + 80);
             $('#s9-b').modal('open');
             $(this).parents('section').children('.button').removeClass('hide');
         }
