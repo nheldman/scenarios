@@ -32,27 +32,39 @@ jQuery(function() {
         }
     });
 
-    $('.checkbox-list.require-all-checked td').on('click touchend', function () {
+    $('.button.require-all-checked').on('click touchend', function () {
         var section = $(this).parents('section'),
-            allChecked = section.find('input[type="checkbox"]').length == section.find('input[type="checkbox"]:checked').length,
-            modal = section.find('.modal.all-checked');
+            numCheckboxes = section.find('input[type="checkbox"]').length,
+            numChecked = section.find('input[type="checkbox"]:checked').length,
+            allChecked = numCheckboxes === numChecked,
+            modal = allChecked
+                ? section.find('.modal.correct')
+                : numChecked > 0
+                    ? section.find('.modal.partially-correct')
+                    : section.find('.modal.incorrect');
 
         section.children('.button').toggleClass('hide', !allChecked);
 
-        if (allChecked && modal) {
-            modal.modal({fadeDuration: 100, closeText: 'OK'});
-        }
+        modal.modal({fadeDuration: 100, closeText: 'OK'});
     });
 
-    $('.obtain-records').on('click touchend', function () {
-        var id = $(this).attr('id');
-        var allChecked = $('.obtain-records').length == $('.obtain-records:checked').length;
+    $('#obtain-records').on('click touchend', function () {
+        var section = $(this).parents('section'),
+            allChecked = section.find('.obtain-records').length == section.find('.obtain-records:checked').length,
+            obtainRecords1Checked = section.find('#obtain-records-1').is(':checked'),
+            obtainRecords2Checked = section.find('#obtain-records-2').is(':checked');
 
         $(this).parents('section').children('.button').toggleClass('hide', !allChecked);
 
-        if ($(this).is(':checked')) {
-            $('#' + id + '-modal').modal({fadeDuration: 100, closeText: 'OK'});
-        }
+        var modalId = allChecked
+            ? '#obtain-records-1-modal'
+            : obtainRecords1Checked && !obtainRecords2Checked
+                ? '#obtain-records-2-modal'
+                : obtainRecords2Checked && !obtainRecords1Checked
+                    ? '#obtain-records-3-modal'
+                    : '#obtain-records-4-modal';
+
+        $(modalId).modal({fadeDuration: 100, closeText: 'OK'});
     });
 
     $('#dir-info-submit').on('click touchend', function () {
@@ -73,17 +85,20 @@ jQuery(function() {
         section.children('.button').toggleClass('hide', !correctAnswersChecked);
     });
 
-    $('#signed-auth-1').on('click touchend', function() {
-        if ($(this).is(':checked')) {
-            $(this).prop('checked', false);
-            $('#s10-incorrect').modal({fadeDuration: 100, closeText: 'OK'});
-        }
-    });
+    $('#signed-auth').on('click touchend', function () {
+        var section = $(this).parents('section'),
+            signedAuth1Checked = section.find('#signed-auth-1').is(':checked'),
+            signedAuth2Checked = section.find('#signed-auth-2').is(':checked');
 
-    $('#signed-auth-2').on('click touchend', function() {
-        if ($(this).is(':checked')) {
-            Dz.setSlide(11);
-        }
+        var modalId = signedAuth2Checked && !signedAuth1Checked
+            ? '#signed-auth-correct-modal'
+            : signedAuth1Checked && !signedAuth2Checked
+                ? '#signed-auth-incorrect-modal'
+                : '#signed-auth-incorrect2-modal';
+
+        $(modalId).modal({fadeDuration: 100, closeText: 'OK'});
+
+        section.children('.button').toggleClass('hide', !signedAuth2Checked);
     });
 
     $('.hospital-response').on('click touchend', function() {

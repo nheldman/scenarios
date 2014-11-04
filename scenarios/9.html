@@ -33,9 +33,14 @@
             </div>
             <div>
                 <p>
-                    Sixteen-year-old Katy is before Judge Hicks on charges of aggravated assault.  Katy has been in court a number of
-                    times on various charges, this being the most serious.  Katy has pled guilty to the current charge and has been
-                    adjudicated delinquent.
+                    Sixteen-year-old Katy is before Judge Hicks on charges of aggravated assault.
+
+                </p>
+                <p>
+                    Katy has been in court a number of times on various charges, this being the most serious.
+                </p>
+                <p>
+                    Katy has pled guilty to the current charge and has been adjudicated delinquent.
                 </p>
             </div>
 
@@ -46,24 +51,37 @@
         <section id="s3" class="tpl-1">
             <div>
                 <img class="polaroid" src="../img/katy.jpg"/>
+                <img class="proboff1" src="../img/proboff1.png"/>
+                <img class="mental1 hide inc-1" src="../img/mental1.png"/>
             </div>
             <div>
                 <p>
                     The probation officer is preparing a report for the court to aid in disposition, and the officer wishes to obtain
                     information about Katy's diagnosis, treatment plan and overall progress in treatment to include in the report.
+                    <a href="#inc-1" class="inc">more</a>
+                </p>
+                <p class="hide inc-1">
                     He contacts Katy's outpatient mental health counselor.
                 </p>
             </div>
 
             <a href="#2.0" class="button-back">BACK</a>
-            <a href="#4.0" class="button">NEXT</a>
+            <a href="#4.0" class="button hide">NEXT</a>
         </section>
 
-        <section id="s4" class="tpl-3 bg-lawbooks">
+        <section id="s4" class="tpl-1">
+            <div>
+                <img class="polaroid" src="../img/katy.jpg"/>
+                <img class="proboff1" src="../img/proboff1.png"/>
+                <img class="mental1" src="../img/mental1.png"/>
+            </div>
             <div>
                 <p>
                     HIPAA permits the mental health counselor to release the requested information to the juvenile probation officer if
-                    she has a signed authorization. The counselor seeks to have Katy or her mother sign the following authorization.
+                    she has a signed authorization.
+                </p>
+                <p>
+                    The counselor seeks to have Katy or her mother sign an authorization.
                 </p>
             </div>
 
@@ -74,8 +92,7 @@
         <section id="s5" class="tpl-3 bg-lawbooks">
             <div>
                 <p>
-                    Does the form meet the requirements of a HIPAA authorization form?  Check off each of the required elements present
-                    on the form:
+                    Which of the following elements must be present on the HIPAA authorization form? Check all that apply.
                 </p>
 
                 <table class="checkbox-list require-all-checked">
@@ -88,6 +105,7 @@
                     <tr><td><input id="hipaa-auth-7" type="checkbox" /></td><td><label for="hipaa-auth-7">Signature of individual & date (or of the individual's personal representative with a description of that person's authority to act)</label></td></tr>
                     <tr><td><input id="hipaa-auth-8" type="checkbox" /></td><td><label for="hipaa-auth-8">Purpose of disclosure</label></td></tr>
                 </table>
+                <a class="require-all-checked button">SUBMIT</a>
             </div>
 
             <a href="#4.0" class="button-back">BACK</a>
@@ -102,34 +120,73 @@
                 </p>
             </div>
 
-            <div class="modal all-checked">
+            <div class="modal correct">
                 <p><span class="correct">Right</span>! This form meets the requirements for a HIPAA authorization form.</p>
+            </div>
+
+            <div class="modal incorrect">
+                <p><span class="incorrect">Incorrect</span>.</p>
+            </div>
+
+            <div class="modal partially-correct">
+                <p><span class="correct">Partially correct</span></p>
             </div>
         </section>
 
-        <section id="s6" class="tpl-1">
-            <div>
-                <img class="polaroid" src="../img/katy.jpg"/>
-            </div>
+        <section id="s6" class="tpl-3 bg-lawbooks">
             <div>
                 <p>Katy and her mother refuse to sign the authorization.</p>
+
+                <p>
+                    The probation officer believes it is important to report about Katy's current treatment plan to the court.
+                    The probation officer believes that despite Katy and her mother's refusal to authorize the disclosure, the
+                    court can order disclosure of the information to the probation officer.
+                </p>
+                <p>
+                    Is this true?
+                </p>
+
+                <ul>
+                    <li><a class="open-modal correct" href="#s6-correct">True</a></li>
+                    <li><a class="open-modal" href="#s6-incorrect">False</a></li>
+                </ul>
             </div>
 
             <a href="#5.0" class="button-back">BACK</a>
-            <a href="#7.0" class="button">NEXT</a>
+            <a href="#7.0" class="button hide">NEXT</a>
+
+            <div id="s6-correct" class="modal modal-wide">
+                <p>
+                    <span class="correct">Right</span>! The counselor can disclose information to the probation officer if
+                    served with a subpoena or court order.
+                </p>
+            </div>
+
+            <div id="s6-incorrect" class="modal modal-wide">
+                <p>
+                    <span class="incorrect">Wrong</span>. The counselor can disclose information to the probation officer if
+                    served with a subpoena or court order.
+                </p>
+            </div>
         </section>
 
         <section id="s7" class="tpl-3 bg-lawbooks">
             <div>
                 <p>
-                    The probation officer believes it is important to report about Katy's current treatment plan to the court.
-                    The probation officer believes that despite Katy and her mother's refusal to authorize the disclosure, the
-                    court can order disclosure of the information to the probation officer. Is this true?
+                    After reviewing the information provided by the counselor in response to the court order, the probation officer
+                    finds that Katy has not progressed well with her treatment plan.
+                </p>
+                <p>
+                    He is interested in why this might be true. He asks the counselor for any notes she may have taken
+                    during Katy's therapy.
+                </p>
+                <p>
+                    Can the counselor share this information?
                 </p>
 
                 <ul>
-                    <li><a class="open-modal correct" href="#s7-correct">True</a></li>
-                    <li><a class="open-modal" href="#s7-incorrect">False</a></li>
+                    <li><a class="open-modal" href="#s7-incorrect">Yes</a></li>
+                    <li><a class="open-modal correct" href="#s7-correct">No</a></li>
                 </ul>
             </div>
 
@@ -138,45 +195,12 @@
 
             <div id="s7-correct" class="modal modal-wide">
                 <p>
-                    <span class="correct">Right</span>! The counselor can disclose information to the probation officer if
-                    served with a subpoena or court order.
-                </p>
-            </div>
-
-            <div id="s7-incorrect" class="modal modal-wide">
-                <p>
-                    <span class="incorrect">Wrong</span>. The counselor can disclose information to the probation officer if
-                    served with a subpoena or court order.
-                </p>
-            </div>
-        </section>
-
-        <section id="s8" class="tpl-3 bg-lawbooks">
-            <div>
-                <p>
-                    After reviewing the information provided by the counselor in response to the court order, the probation officer
-                    finds that Katy has not progressed well with her treatment plan.  He is interested in why this might be true.
-                    He asks the counselor for any notes she may have taken during Katy's therapy.  Can the counselor share this
-                    information?
-                </p>
-
-                <ul>
-                    <li><a class="open-modal" href="#s8-incorrect">Yes</a></li>
-                    <li><a class="open-modal correct" href="#s8-correct">No</a></li>
-                </ul>
-            </div>
-
-            <a href="#7.0" class="button-back">BACK</a>
-            <a href="#9.0" class="button hide">NEXT</a>
-
-            <div id="s8-correct" class="modal modal-wide">
-                <p>
                     <span class="correct">Correct</span>. The counselor can only provide information contained in psychotherapy
                     notes if the youth gives her written authorization.
                 </p>
             </div>
 
-            <div id="s8-incorrect" class="modal modal-wide">
+            <div id="s7-incorrect" class="modal modal-wide">
                 <p>
                     <span class="incorrect">Incorrect</span>. The counselor can only provide information contained in psychotherapy
                     notes if the youth gives her written authorization.
@@ -184,32 +208,50 @@
             </div>
         </section>
 
-        <section id="s9" class="tpl-2 bg-phone">
+        <section id="s8" class="tpl-2 bg-phone">
             <div>
                 <p>
-                    Meanwhile, Katy is detained at the local juvenile detention center awaiting disposition.  A caseworker at the detention
+                    Meanwhile, Katy is detained at the local juvenile detention center awaiting disposition.
+                </p>
+                <p>
+                    A caseworker at the detention
                     center calls Katy's school counselor and asks for a copy of her IEP so the center can implement the IEP while she's in detention.
                 </p>
             </div>
 
-            <a href="#8.0" class="button-back">BACK</a>
-            <a href="#10.0" class="button">NEXT</a>
+            <a href="#7.0" class="button-back">BACK</a>
+            <a href="#9.0" class="button">NEXT</a>
         </section>
 
-        <section id="s10" class="tpl-3 bg-lawbooks">
+        <section id="s9" class="tpl-3 bg-lawbooks">
             <div>
                 <p>
                     The school counselor is unclear as to whether he needs to obtain a signed authorization from Katy’s parent or educational
-                    surrogate.  Is there an exception to FERPA’s requirement of a signed authorization that may apply? (check all that apply)
+                    surrogate.
+                </p>
+                <p>
+                    Is there an exception to FERPA’s requirement of a signed authorization that may apply?
+                </p>
+
+                <p class="help">
+                    Check all that apply:
                 </p>
 
                 <table class="checkbox-list">
                     <tr><td><input id="signed-auth-1" class="signed-auth" type="checkbox" /></td><td><label for="signed-auth-1">The juvenile justice exception to FERPA</label></td></tr>
                     <tr><td><input id="signed-auth-2" class="signed-auth" type="checkbox" /></td><td><label for="signed-auth-2">Disclosure of educational records without written authorization to schools to which the youth has transferred</label></td></tr>
                 </table>
+
+                <a id="signed-auth" class="button">SUBMIT</a>
             </div>
 
-            <div id="s10-incorrect" class="modal modal-wide">
+            <div id="signed-auth-correct-modal" class="modal modal-wide">
+                <p>
+                    Maybe. Click "Next" to find out more.
+                </p>
+            </div>
+
+            <div id="signed-auth-incorrect-modal" class="modal modal-wide">
                 <p>
                     Sorry, this exception would not apply. Under this exception, individual states may enact statutes that permit schools
                     to release records to juvenile justice personnel in order to assist youth in the system <em>prior to adjudication</em> if the
@@ -219,15 +261,26 @@
                 </p>
             </div>
 
-            <a href="#9.0" class="button-back">BACK</a>
-            <a href="#11.0" class="button-">NEXT</a>
+            <div id="signed-auth-incorrect2-modal" class="modal">
+                <p>
+                    <span class="incorrect">Incorrect</span>.
+                </p>
+            </div>
+
+            <a href="#8.0" class="button-back">BACK</a>
+            <a href="#10.0" class="button hide">NEXT</a>
         </section>
 
-        <section id="s11" class="tpl-3 bg-lawbooks">
+        <section id="s10" class="tpl-3 bg-lawbooks">
             <div>
                 <p>
-                    Maybe. Through her detention, Katy has "transferred" to the detention center school. Which would have to be true in
-                    order for the caseworker to obtain the records through this exception? (check all that apply)
+                    Through her detention, Katy has "transferred" to the detention center school.
+                </p>
+                <p>
+                    Which would have to be true in order for the caseworker to obtain the records through this exception?
+                </p>
+                <p class="help">
+                    Check all that apply:
                 </p>
 
                 <table class="checkbox-list">
@@ -249,26 +302,43 @@
                         </td>
                     </tr>
                 </table>
+
+                <a id="obtain-records" class="button">SUBMIT</a>
             </div>
 
-            <a href="#10.0" class="button-back">BACK</a>
-            <a href="#12.0" class="button hide">NEXT</a>
+            <a href="#9.0" class="button-back">BACK</a>
+            <a href="#11.0" class="button hide">NEXT</a>
 
-            <div id="obtain-records-1-modal" class="modal">
-                <p><span class="correct">Yes</span>. This is a requirement for the exception to apply.</p>
-            </div>
-
-            <div id="obtain-records-2-modal" class="modal modal-wide">
+            <div id="obtain-records-1-modal" class="modal modal-wide">
                 <p>
-                    <span class="correct">Yes</span>. Schools may release education records without parental consent to
-                    "officials" within the student's school who have a "legitimate educational interest." Here, the caseworker
-                    could have an interest in implementing the IEP, so the school could look to its notification to see if the
-                    caseworker is a school official.
+                    <span class="correct">Correct</span>!
+                </p>
+            </div>
+
+            <div id="obtain-records-2-modal" class="modal">
+                <p>
+                    <span class="correct">Partially correct</span>. This is a requirement for the exception to apply.
+                    However, it is not the only requirement.
+                </p>
+            </div>
+
+            <div id="obtain-records-3-modal" class="modal modal-wide">
+                <p>
+                    <span class="correct">Partially correct</span>. Schools may release education records without parental consent to
+                    "officials" within the student's school who have a "legitimate educational interest." Here, the
+                    caseworker could have an interest in implementing the IEP, so the school could look to its notification to see
+                    if the caseworker is a school official. However, it is not the only requirement.
+                </p>
+            </div>
+
+            <div id="obtain-records-4-modal" class="modal modal-wide">
+                <p>
+                    <span class="incorrect">Incorrect</span>.
                 </p>
             </div>
         </section>
 
-        <section id="s12" class="tpl-1">
+        <section id="s11" class="tpl-1">
             <div>
                 <img class="polaroid" src="../img/katy.jpg"/>
             </div>
@@ -278,34 +348,25 @@
                     Separately, a physician at the detention center had referred Katy for a chest x-ray at a local hospital
                     after she tested positive for TB during her admission physical; the x-ray was clear.
                 </p>
-            </div>
 
-            <a href="#11.0" class="button-back">BACK</a>
-            <a href="#13.0" class="button">NEXT</a>
-        </section>
-
-        <section id="s13" class="tpl-1">
-            <div>
-                <img class="polaroid" src="../img/katy.jpg"/>
-            </div>
-
-            <div>
                 <p>
                     At disposition, the court orders Katy into a multidimensional treatment foster care (MTFC) program.
-                    The MTFC provider agency indicates that it cannot place Katy until it verifies that she is not contagious
-                    for TB. The child's attorney calls the hospital to ask that the chest x-ray results be sent to the MTFC
+                    The MTFC provider agency indicates that it cannot place Katy until it verifies that she is not
+                    contagious
+                    for TB. The child's attorney calls the hospital to ask that the x-ray results be sent to the
+                    MTFC
                     provider's health unit.
                 </p>
             </div>
 
-            <a href="#12.0" class="button-back">BACK</a>
-            <a href="#14.0" class="button">NEXT</a>
+            <a href="#10.0" class="button-back">BACK</a>
+            <a href="#12.0" class="button">NEXT</a>
         </section>
 
-        <section id="s14" class="tpl-3 bg-lawbooks">
+        <section id="s12" class="tpl-3 bg-lawbooks">
             <div>
                 <p>
-                    What would be accurate for the hospital to say to the attorney? (choose the BEST answer)
+                    What would be accurate for the hospital to say to the attorney? <span class="help">(choose the BEST answer)</span>
                 </p>
 
                 <table class="checkbox-list">
@@ -331,7 +392,7 @@
                         <td><input id="hospital-response-3" class="hospital-response" type="checkbox" /></td>
                         <td>
                             <label for="hospital-response-3">
-                                "HIPAA governs our hospital's ability to release health care records. We can release the health
+                                "HIPAA governs our hospital's ability to release health care records. We can release the
                                 information to the MTFC provider agency's health unit either with a signed release or without a
                                 release if the unit is considered a health care provider who is providing care to Katy.”
                             </label>
@@ -351,25 +412,25 @@
                 </table>
             </div>
 
-            <a href="#13.0" class="button-back">BACK</a>
-            <a href="#15.0" class="button hide">NEXT</a>
+            <a href="#11.0" class="button-back">BACK</a>
+            <a href="#13.0" class="button hide">NEXT</a>
 
             <div id="hospital-response-1-modal" class="modal">
                 <p>
-                    This is not an accurate response. There are several ways in which the records can be properly released.
+                    <span class="incorrect">This is not an accurate response</span>. There are several ways in which the records can be properly released.
                 </p>
             </div>
 
             <div id="hospital-response-2-modal" class="modal">
                 <p>
-                    This is not a wholly accurate response. Although a signed authorization is the preferred method for
+                    <span class="incorrect">This is not a wholly accurate response</span>. Although a signed authorization is the preferred method for
                     authorizing the release of health information, there are exceptions under HIPAA which could apply in this situation.
                 </p>
             </div>
 
             <div id="hospital-response-3-modal" class="modal">
                 <p>
-                    This is an accurate response, as HIPAA provides an exception for the release of health care information to
+                    <span class="correct">This is an accurate response</span>, as HIPAA provides an exception for the release of health care information to
                     treatment providers providing care to a patient. However, it is not a complete response.
                 </p>
             </div>
@@ -387,7 +448,7 @@
             </div>
         </section>
 
-        <section id="s15" class="tpl-3 bg-lawbooks">
+        <section id="s13" class="tpl-3 bg-lawbooks">
             <div>
                 <h3>You have completed Scenario 9</h3>
                 <a href="10.html">Go To Scenario 10: Contracted School Mental Health Provider, Community Mental Health

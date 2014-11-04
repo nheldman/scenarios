@@ -202,11 +202,11 @@ section.tpl-1 > div:first-of-type { /* First div is the left column */
 section.tpl-1 > div:nth-of-type(2) { /* Second div is the right column */
     background: url("../img/bg-paper.png") no-repeat;
     background-size: 100%;
-    /*font-size: 20px;*/
     height: 450px;
     line-height: 35px;
     margin: 10px 0 0 4px;
-    padding: 50px 50px 0;
+    /*padding: 50px 50px 0;*/
+    padding: 40px 40px 0;
     position: relative;
     width: 50%;
     z-index: 0;
@@ -358,7 +358,7 @@ a:active, a:hover {
 
 .checkbox-list {
     margin: 20px;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.5em;
 }
 
@@ -702,6 +702,20 @@ select {
     position: absolute;
     top: 264px;
     left: 195px;
+    height: 200px;
+}
+
+.proboff1 {
+    position: absolute;
+    top: 204px;
+    left: 160px;
+    height: 200px;
+}
+
+.mental1 {
+    position: absolute;
+    top: 260px;
+    left: 278px;
     height: 200px;
 }
 
