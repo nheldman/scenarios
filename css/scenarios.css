@@ -148,36 +148,36 @@ section, .view head > title {
 }
 
 .bg-hall {
-    background: url(../img/bg-kid.png);
+    background: url(../img/bg/bg-kid.png);
 }
 
 .bg-lawbooks {
-    background: url(../img/lawbooks1.png);
+    background: url(../img/bg/bg-lawbooks.png);
 }
 
 .bg-school {
-    background: url(../img/school1.png);
+    background: url(../img/bg/bg-school.png);
 }
 
 .bg-school-fade {
-    background: url(../img/school1-fade.png);
+    background: url(../img/bg/bg-school-fade.png);
 }
 
 .bg-phone {
-    background: url(../img/phone1.jpg);
+    background: url(../img/bg/bg-phone.jpg);
 }
 
 .bg-ilprovider {
-    background: url(../img/bg-ilprovider1.jpg);
+    background: url(../img/bg/bg-ilprovider1.jpg);
 }
 
 .bg-signature {
-    background: url(../img/sign1.jpg);
+    background: url(../img/bg/bg-signature.jpg);
 }
 
 /* TEMPLATE 1: Folder background, image left, text right */
 section.tpl-1 {
-    background: url(../img/bg-folder.jpg);
+    background: url(../img/bg/bg-folder.jpg);
     background-size: contain;
 }
 
@@ -200,7 +200,7 @@ section.tpl-1 > div:first-of-type { /* First div is the left column */
 }
 
 section.tpl-1 > div:nth-of-type(2) { /* Second div is the right column */
-    background: url("../img/bg-paper.png") no-repeat;
+    background: url("../img/bg/bg-paper.png") no-repeat;
     background-size: 100%;
     height: 450px;
     line-height: 35px;
@@ -238,7 +238,7 @@ section.tpl-2 > div:first-of-type:after {
     position: absolute;
     top: 0;
     left: 0;
-    background: url("../img/bg-paper.png") no-repeat;
+    background: url("../img/bg/bg-paper.png") no-repeat;
     background-size: 100%;
     width: 100%;
     height: 100%;
@@ -649,8 +649,6 @@ ul.person-list li.show-pic {
     cursor: default;
 }
 
-ul.person-list li
-
 select {
     font-size: 17px;
     font-family: Oswald;
@@ -672,7 +670,7 @@ select {
 
 .sap1 {
     position: absolute;
-    top: 201px;
+    top: 212px;
     left: 124px;
     height: 200px;
 }
