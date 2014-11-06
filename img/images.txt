@@ -1,43 +1,43 @@
 bg
- bg-ilprovider.jpg      http://www.dollarphotoclub.com/stock-photo/Young+Businessman/49620295 - align left on 1024x555 mottled gray bg
+ bg-ilprovider.jpg      http://www.dollarphotoclub.com/49620295 - align left on 1024x555 mottled gray bg
  bg-lawbooks.jpg        http://www.shutterstock.com/pic-31368961.html - heavily faded
- bg-phone.jpg           https://www.dollarphotoclub.com/stock-photo/Making+a+phone+call/66411287 - align left on 1024x555 mottled gray bg
+ bg-phone.jpg           https://www.dollarphotoclub.com/66411287 - align left on 1024x555 mottled gray bg
  bg-school.jpg          http://www.shutterstock.com/pic-63409600.html - black and white
  bg-school-fade.jpg     http://www.shutterstock.com/pic-63409600.html - black and white plus fade
- bg-signature.jpg       http://www.dollarphotoclub.com/stock-photo/Casual+businessman+working+at+his+desk/71631924 - align left on 1024x555 mottled gray bg
+ bg-signature.jpg       http://www.dollarphotoclub.com/71631924 - align left on 1024x555 mottled gray bg
 s1
  probationofficer.png   http://www.shutterstock.com/pic-36660193.html - polaroid tilt right
  socialworker.png       http://www.shutterstock.com/pic-24194590.html - polaroid tilt left
  tommy.png              http://www.shutterstock.com/pic-102177115.html - polaroid tilt left, paper clip
 s2
- james.png              http://www.dollarphotoclub.com/stock-photo/Brooding/14269757 - polaroid tilt left, paper clip
+ james.png              http://www.dollarphotoclub.com/14269757 - polaroid tilt left, paper clip
 s3
  aaron.png              http://www.shutterstock.com/pic-134304083.html - polaroid tilt left, paper clip
 s4
- jake.png               http://www.dollarphotoclub.com/stock-photo/close+up+portrait+of+a+young+rasta+boy/37103310 - polaroid tilt left, paper clip
- sap.png                http://www.dollarphotoclub.com/stock-photo/Asia+woman+isolated/62357223 - polaroid tilt right
- socialworker.png       http://www.dollarphotoclub.com/stock-photo/Asian+business+woman+portrait/43303667 - polaroid tilt left
+ jake.png               http://www.dollarphotoclub.com/37103310 - polaroid tilt left, paper clip
+ sap.png                http://www.dollarphotoclub.com/62357223 - polaroid tilt right
+ socialworker.png       http://www.dollarphotoclub.com/43303667 - polaroid tilt left
 s5
- fosterfamily.png       https://www.dollarphotoclub.com/stock-photo/Happy+smiling+couple+on+white/70134204 - polaroid tilt right
- linus.png              https://www.dollarphotoclub.com/stock-photo/Happy+Young+Hispanic+Boy+Ready+for+School+on+White/48421131 - polaroid tilt left, paper clip
+ fosterfamily.png       https://www.dollarphotoclub.com/70134204 - polaroid tilt right
+ linus.png              https://www.dollarphotoclub.com/48421131 - polaroid tilt left, paper clip
 s6
- denise.png             http://www.dollarphotoclub.com/stock-photo/teenage+beauty/578479 - polaroid tilt left, paper clip
+ denise.png             http://www.dollarphotoclub.com/578479 - polaroid tilt left, paper clip
 s7
- charmaine.png          http://www.dollarphotoclub.com/stock-photo/Happy+smiling+business+woman+with+arms+crossed/61325060 - polaroid tilt left, paper clip
- ilprovider.png         http://www.dollarphotoclub.com/stock-photo/Young+Businessman/49620295 - polaroid tilt right
+ charmaine.png          http://www.dollarphotoclub.com/61325060 - polaroid tilt left, paper clip
+ ilprovider.png         http://www.dollarphotoclub.com/49620295 - polaroid tilt right
 s8
- bill.png               http://www.dollarphotoclub.com/stock-photo/portrait+of+handsome+teenager/53017557 - polaroid tilt left, paper clip
- caseworker.png         http://www.dollarphotoclub.com/stock-photo/Mature+Woman+-+Uncertainty/63115596 - transparent bg, 239w x 251h
- person1.png            http://www.dollarphotoclub.com/stock-photo/pretty+irish+woman/2602019 - 122 x 122 headshot, white background
- person2.png            http://www.dollarphotoclub.com/stock-photo/Junge+freigestellte+lachende+Frau%3A+Bewerbungsfoto/71311470 - 122 x 122 headshot, white background
- person3.png            http://www.dollarphotoclub.com/stock-photo/Gesch%C3%A4ftsmann/60018108 - 122 x 122 headshot, white background
- person4.png            http://www.dollarphotoclub.com/stock-photo/Portrait+einer+jungen+business+Frau+isoliert/62535068 - 122 x 122 headshot, white background
- person5.png            http://www.dollarphotoclub.com/stock-photo/Handsome+Black+Man+Portrait/55951241 - 122 x 122 headshot, white background
- rtf.png                http://www.dollarphotoclub.com/stock-photo/Expressive+black+man+portrait/58508667 - transparent bg, 302w x 240h
- table.png              http://www.dollarphotoclub.com/stock-photo/Solution+problems.+White+background%2C+3d+render/49917022 - transparent bg (mostly), 393w x 240h
+ bill.png               http://www.dollarphotoclub.com/53017557 - polaroid tilt left, paper clip
+ caseworker.png         http://www.dollarphotoclub.com/63115596 - transparent bg, 239w x 251h
+ person1.png            http://www.dollarphotoclub.com/2602019 - 122 x 122 headshot, white background
+ person2.png            http://www.dollarphotoclub.com/71311470 - 122 x 122 headshot, white background
+ person3.png            http://www.dollarphotoclub.com/60018108 - 122 x 122 headshot, white background
+ person4.png            http://www.dollarphotoclub.com/62535068 - 122 x 122 headshot, white background
+ person5.png            http://www.dollarphotoclub.com/55951241 - 122 x 122 headshot, white background
+ rtf.png                http://www.dollarphotoclub.com/58508667 - transparent bg, 302w x 240h
+ table.png              http://www.dollarphotoclub.com/49917022 - transparent bg (mostly), 393w x 240h
 s9
- katy.png               http://www.dollarphotoclub.com/stock-photo/serious+woman+portrait+real+people+high+definition+green+backgro/48672105 - polaroid tilt left, paper clip
- mentalhealth.png       http://www.dollarphotoclub.com/stock-photo/Portrait+of+young+woman+against+white/68325800 - polaroid of face, tilt left
- probationofficer.png   http://www.dollarphotoclub.com/stock-photo/African+Male+Smiling/29448296 - polaroid, tilt right
+ katy.png               http://www.dollarphotoclub.com/48672105 - polaroid tilt left, paper clip
+ mentalhealth.png       http://www.dollarphotoclub.com/68325800 - polaroid of face, tilt left
+ probationofficer.png   http://www.dollarphotoclub.com/29448296 - polaroid, tilt right
 s10
- marcus.png             http://www.dollarphotoclub.com/stock-photo/Handsome+Male+smiling/24864409 - white bg, frame his face, polaroid tilt left, paper clip
+ marcus.png             http://www.dollarphotoclub.com/24864409 - white bg, frame his face, polaroid tilt left, paper clip
