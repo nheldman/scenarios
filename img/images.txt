@@ -1,7 +1,7 @@
 bg
  bg-ilprovider.jpg      http://www.dollarphotoclub.com/49620295 - align left on 1024x555 mottled gray bg
  bg-lawbooks.jpg        http://www.shutterstock.com/pic-31368961.html - heavily faded
- bg-phone.jpg           https://www.dollarphotoclub.com/66411287 - align left on 1024x555 mottled gray bg
+ bg-phone.jpg           https://www.dollarphotoclub.com/65439430 (previously 66411287) - align left on 1024x555 mottled gray bg
  bg-school.jpg          http://www.shutterstock.com/pic-63409600.html - black and white
  bg-school-fade.jpg     http://www.shutterstock.com/pic-63409600.html - black and white plus fade
  bg-signature.jpg       http://www.dollarphotoclub.com/71631924 - align left on 1024x555 mottled gray bg
