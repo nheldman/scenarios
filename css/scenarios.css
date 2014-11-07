@@ -713,7 +713,7 @@ select {
 .mental1 {
     position: absolute;
     top: 260px;
-    left: 278px;
+    left: 313px;
     height: 200px;
 }
 
@@ -757,6 +757,7 @@ select {
     bottom: 110px;
     left: 150px;
     z-index: 1;
+    width: 270px;
 }
 
 #s9-table {
@@ -764,6 +765,7 @@ select {
     top: 123px;
     right: 10px;
     z-index: 1;
+    width: 400px;
 }
 
 .droppable-active {

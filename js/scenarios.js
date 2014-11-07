@@ -194,7 +194,7 @@ jQuery(function() {
         activeClass: 'droppable-active',
         accept: '.drag-me',
         drop: function (event, ui) {
-            $(ui.draggable).css('top', $(this).position().top + 140);
+            $(ui.draggable).css('top', $(this).position().top + 110);
             $(ui.draggable).css('left', $(this).position().left + 120);
             $('#s9-a').modal('open');
         }
