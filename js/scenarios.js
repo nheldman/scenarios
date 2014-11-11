@@ -88,17 +88,23 @@ jQuery(function() {
     $('#signed-auth').on('click touchend', function () {
         var section = $(this).parents('section'),
             signedAuth1Checked = section.find('#signed-auth-1').is(':checked'),
-            signedAuth2Checked = section.find('#signed-auth-2').is(':checked');
+            signedAuth2Checked = section.find('#signed-auth-2').is(':checked'),
+            isCorrect = signedAuth2Checked && !signedAuth1Checked,
+            isIncorrect = signedAuth1Checked && !signedAuth2Checked;
 
-        var modalId = signedAuth2Checked && !signedAuth1Checked
+        var modalId = isCorrect
             ? '#signed-auth-correct-modal'
-            : signedAuth1Checked && !signedAuth2Checked
+            : isIncorrect
                 ? '#signed-auth-incorrect-modal'
                 : '#signed-auth-incorrect2-modal';
 
+        if (isIncorrect) {
+            section.find('#signed-auth-1').prop('checked', false);
+        }
+
         $(modalId).modal({fadeDuration: 100, closeText: 'OK'});
 
-        section.children('.button').toggleClass('hide', !signedAuth2Checked);
+        section.children('.button').toggleClass('hide', !isCorrect);
     });
 
     $('.hospital-response').on('click touchend', function() {
