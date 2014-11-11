@@ -670,8 +670,8 @@ select {
 
 .sap1 {
     position: absolute;
-    top: 212px;
-    left: 124px;
+    top: 216px;
+    left: 120px;
     height: 200px;
 }
 
@@ -698,14 +698,14 @@ select {
 
 .ilprovider1 {
     position: absolute;
-    top: 228px;
-    left: 135px;
+    top: 230px;
+    left: 133px;
     height: 200px;
 }
 
 .proboff1 {
     position: absolute;
-    top: 204px;
+    top: 208px;
     left: 160px;
     height: 200px;
 }

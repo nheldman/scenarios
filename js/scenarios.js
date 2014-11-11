@@ -1,8 +1,8 @@
 jQuery(function() {
     var $ = jQuery;
 
-    $('.open-modal').on('click touchend', function() {
-        event.preventDefault();
+    $('.open-modal').on('click touchend', function(e) {
+        e.preventDefault();
         $(this).modal({fadeDuration:100,clickClose:true});
 
         if ($(this).hasClass('correct')) {
