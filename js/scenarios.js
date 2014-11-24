@@ -203,6 +203,7 @@ jQuery(function() {
             $(ui.draggable).css('top', $(this).position().top + 110);
             $(ui.draggable).css('left', $(this).position().left + 120);
             $('#s9-a').modal('open');
+            $(this).parents('section').children('.button').removeClass('hide');
         }
     });
 
@@ -213,7 +214,6 @@ jQuery(function() {
             $(ui.draggable).css('top', $(this).position().top + 20);
             $(ui.draggable).css('left', $(this).position().left + 80);
             $('#s9-b').modal('open');
-            $(this).parents('section').children('.button').removeClass('hide');
         }
     });
 
