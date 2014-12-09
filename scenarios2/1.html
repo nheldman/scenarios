@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="../css/jquery.modal.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="../css/scenarios.css" type="text/css" media="screen" />
+        <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <title>JLC: Scenario 1: State Youth Services Department and Local School District</title>
+    </head>
+
+    <body class="scenario-1">
+        <div class="slide-header">
+            <img src="../img/mfc-logo.png" width="109" height="30" />
+        </div>
+
+        <section id="s1" class="tpl-4">
+            <div>
+                <h1>Scenario 1</h1>
+                <h3>State Youth Services Department and Local School District</h3>
+            </div>
+
+            <a href="#2.0" class="button">START</a>
+        </section>
+
+        <section id="s2" class="tpl-1">
+            <div>
+                <img class="polaroid" src="../img/s1/tommy.png" />
+            </div>
+            <div>
+                <p>
+                    The local school district has detailed attendance and truancy data.
+                </p>
+                <p>
+                    The state youth services department would like to gather this information in the aggregate, meaning
+                    that the information will be de-identified.
+                </p>
+            </div>
+
+            <a href="#1.0" class="button-back">BACK</a>
+            <a href="#3.0" class="button">NEXT</a>
+        </section>
+
+        <section id="s3" class="tpl-1">
+            <div>
+                <img class="polaroid" src="../img/s1/tommy.png" />
+                <img class="probationOfficer1" src="../img/s1/probationofficer.png" />
+            </div>
+            <div>
+                <p>
+                    The state youth services department wishes to share the aggregate truancy and attendance data with
+                    School Resource Officers at local probation and police offices to create programming at the local
+                    level that would reduce truancy and increase attendance in local school districts.
+                </p>
+            </div>
+
+            <a href="#2.0" class="button-back">BACK</a>
+            <a href="#4.0" class="button">NEXT</a>
+        </section>
+
+        <section id="s4" class="tpl-3 bg-lawbooks">
+            <div>
+                <p>
+                    If the schools want to disclose the attendance and truancy records before they are de-identified,
+                    what federal law protects that disclosure?
+                </p>
+
+                <ul class="alpha">
+                    <li><a class="open-modal correct" href="#s4-correct">FERPA</a></li>
+                    <li><a class="open-modal" href="#s4-incorrect">HIPAA</a></li>
+                    <li><a class="open-modal" href="#s4-incorrect">Indian Child Welfare Act</a></li>
+                    <li><a class="open-modal" href="#s4-incorrect">Protection of Pupil Right Amendment (PPRA)</a></li>
+                </ul>
+            </div>
+
+            <a href="#3.0" class="button-back">BACK</a>
+            <a href="#5.0" class="button hide">NEXT</a>
+
+            <div id="s4-correct" class="modal modal-wide">
+                <p><span class="correct">Correct!</span> Under the FERPA regulations, "disclosure" means "to permit
+                    access to or the release, transfer, or other communication of <em>personally identifiable</em> information
+                    contained in <em>education records</em> to any party, by any means, including oral, written, or electronic
+                    means." 34 CFR &sect; 99.3. Attendance and truancy records would be part of a child's education record,
+                    and before they are de-identified, they would be considered "personally identifiable."</p>
+            </div>
+
+            <div id="s4-incorrect" class="modal">
+                <p><span class="incorrect">Incorrect</span>, try again.</p>
+            </div>
+        </section>
+
+        <section id="s5" class="tpl-3 bg-lawbooks">
+            <div>
+                <p>
+                    The youth services department tells the school that as long as they remove the students' names from
+                    the records, they will be de-identified. You explain that de-identification involves more than name
+                    removal. You start to explain the meaning of personally identifiable information to the youth
+                    services department. You say that according to FERPA's regulations, "personally identifiable
+                    information" includes, but is not limited to:
+                </p>
+
+                <ul class="alpha compact">
+                    <li><a class="open-modal" href="#s5-incorrect">Indirect identifiers, such as the student's date of
+                        birth, place of birth, and mother's maiden name;</a></li>
+
+                    <li><a class="open-modal" href="#s5-incorrect">Information that, alone or in combination, is
+                        linked or linkable to a specific student that would allow a reasonable person in the school
+                        community, who does not have personal knowledge of the relevant circumstances, to identify the
+                        student with reasonable certainty; or</a></li>
+
+                    <li><a class="open-modal" href="#s5-incorrect">Information requested by a person who the
+                        educational agency or institution reasonably believes knows the identity of the student to whom
+                        the education record relates. </a></li>
+
+                    <li><a class="open-modal correct" href="#s5-correct">All of the above</a></li>
+                </ul>
+            </div>
+
+            <a href="#4.0" class="button-back">BACK</a>
+            <a href="#6.0" class="button hide">NEXT</a>
+
+            <div id="s5-correct" class="modal modal-wide">
+                <div>
+                    <p><span class="correct">Correct</span>. According to 34 CFR &sect; 99.3, "personally identifiable
+                        information" includes, but is not
+                    limited to:
+                        <ul class="alpha compact">
+                            <li>Indirect identifiers, such as the student's date of birth, place of birth, and
+                                mother's maiden name;
+                            </li>
+                            <li>Information that, alone or in combination, is linked or linkable to a
+                                specific student that would allow a reasonable person in the school community, who does
+                                not have
+                                personal knowledge of the relevant circumstances, to identify the student with
+                                reasonable certainty;
+                                or
+                            </li>
+                            <li>Information requested by a person who the educational agency or institution
+                                reasonably
+                                believes knows the identity of the student to whom the education record relates.
+                                Personally
+                                identifiable information also includes, but is not limited to: the student's name; the
+                                name of the
+                                student's parent or other family members; the address of the student or student's
+                                family; or a
+                                personal identifier, such as the student's social security number, student number, or
+                                biometric
+                                record.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div id="s5-incorrect" class="modal">
+                <p><span class="correct">Partially correct</span>. Try again.</p>
+            </div>
+        </section>
+
+        <section id="s6" class="tpl-3 bg-lawbooks">
+            <div>
+                <p>
+                    If the school removes all of the personally identifiable information in the truancy and attendance
+                    information before it turns over the records to the youth services department, the school can
+                    release the records without parental consent. True or False?
+                </p>
+
+                <ul>
+                    <li><a class="open-modal correct" href="#s6-correct">True</a></li>
+                    <li><a class="open-modal" href="#s6-incorrect">False</a></li>
+                </ul>
+            </div>
+
+            <a href="#5.0" class="button-back">BACK</a>
+            <a href="#7.0" class="button hide">NEXT</a>
+
+            <div id="s6-correct" class="modal modal-wide">
+                <p>
+                    <span class="correct">That's correct</span>! Education records may be shared without consent if the
+                    records are de-identified. De-identification involves removing or obscuring all identifiable
+                    information until all data that can lead to individual identification have been expunged or masked.
+                    In order to ensure that data has been truly de-identified, one must consider the cumulative
+                    re-identification risk from all previous data releases and other publicly available information.
+                    Once data are de-identified, they can be released as aggregated data that can help direct
+                    programming and policy to meet identified goals.
+                </p>
+            </div>
+
+            <div id="s6-incorrect" class="modal modal-wide">
+                <p>
+                    <span class="incorrect">Incorrect</span>. Education records may be shared without consent if the
+                    records are de-identified. De-identification involves removing or obscuring all identifiable
+                    information until all data that can lead to individual identification have been expunged or masked.
+                    In order to ensure that data has been truly de-identified, one must consider the cumulative
+                    re-identification risk from all previous data releases and other publicly available information.
+                    Once data are de-identified, they can be released as aggregated data that can help direct
+                    programming and policy to meet identified goals.
+                </p>
+            </div>
+        </section>
+
+        <section id="s7" class="tpl-4">
+            <div>
+                <h3>You have completed Scenario 1</h3>
+                <a href="2.html">Go To Scenario 2: State Child Welfare Agency, State Education Agency, and Local
+                    Education Agency</a>
+            </div>
+
+            <a href="#1.0" class="button">Start Over</a>
+        </section>
+
+        <div id="progress-bar"></div>
+
+        <div class="slide-footer">
+            An initiative supported by the John D. and Catherine T. MacArthur Foundation <a href="http://www.macfound.org">www.macfound.org</a>
+        </div>
+
+        <script type="text/javascript" src="../js/dzslides.js"></script>
+        <script type="text/javascript" src="../js/jquery.modal.js"></script>
+        <script type="text/javascript" src="../js/scenarios.js"></script>
+    </body>
+</html>

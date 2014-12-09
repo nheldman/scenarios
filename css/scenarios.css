@@ -317,6 +317,11 @@ ul.verbose {
     font-size: 17px;
 }
 
+ul.compact {
+    font-size: 16px;
+    margin: 10px 30px;
+}
+
 ul.alpha li {
     list-style-type: upper-alpha;
 }

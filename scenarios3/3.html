@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="../css/jquery.modal.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="../css/scenarios.css" type="text/css" media="screen" />
+        <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <title>JLC: Scenario 3: Law Enforcement Agency, School, Department of Behavioral Health, Social Services
+            Agency</title>
+    </head>
+
+    <body class="scenario-3">
+        <div class="slide-header">
+            <img src="../img/mfc-logo.png" width="109" height="30" />
+        </div>
+
+        <section id="s1" class="tpl-4">
+            <div>
+                <h1>Scenario 3</h1>
+                <h3>Law Enforcement Agency, School, Department of Behavioral Health, Social Services Agency</h3>
+            </div>
+
+            <a href="#2.0" class="button">START</a>
+        </section>
+
+        <section id="s2" class="tpl-1">
+            <div>
+                <img class="polaroid" src="../img/s3/aaron.png" />
+            </div>
+            <div>
+                <p>
+                    A school resource officer (SRO), who is employed by the school district's police department, is
+                    concerned about a student he has seen hanging out with known gang members and has seen out after
+                    curfew a number of times.
+                </p>
+            </div>
+
+            <a href="#1.0" class="button-back">BACK</a>
+            <a href="#3.0" class="button">NEXT</a>
+        </section>
+
+        <section id="s3" class="tpl-1">
+            <div>
+                <img class="polaroid" src="../img/s3/aaron.png" />
+            </div>
+            <div>
+                <p>
+                    The SRO asks the guidance counselor if she can share with him the student's attendance and
+                    disciplinary records, grades, home address, and phone number.
+                </p>
+                <p>
+                    He explains that he plans to go to the
+                    student's home and ask one or both of his parents to talk with him about how to help the student
+                    stay out of trouble.
+                </p>
+            </div>
+
+            <a href="#2.0" class="button-back">BACK</a>
+            <a href="#4.0" class="button">NEXT</a>
+        </section>
+
+        <section id="s4" class="tpl-3 bg-lawbooks">
+            <div>
+                <p>
+                    The counselor knows that this request is governed by FERPA. She knows that there are special rules
+                    about "directory information."
+
+                </p>
+                <p>
+                    Which information will be considered "directory information"? (check
+                    all that apply)
+                </p>
+
+                <table class="checkbox-list">
+                    <tr>
+                        <td><input id="dir-info-1" class="dir-info" type="checkbox"/></td>
+                        <td><label for="dir-info-1">attendance records</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="dir-info-2" class="dir-info" type="checkbox"/></td>
+                        <td><label for="dir-info-2">disciplinary records</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="dir-info-3" class="dir-info" type="checkbox"/></td>
+                        <td><label for="dir-info-3">grades</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="dir-info-4" class="dir-info correct" type="checkbox"/></td>
+                        <td><label for="dir-info-4">home address</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="dir-info-5" class="dir-info correct" type="checkbox"/></td>
+                        <td><label for="dir-info-5">phone number</label></td>
+                    </tr>
+                </table>
+                <a id="dir-info-submit" class="button">SUBMIT</a>
+            </div>
+
+            <a href="#3.0" class="button-back">BACK</a>
+            <a href="#5.0" class="button hide">NEXT</a>
+
+            <div id="dir-info-incorrect-modal" class="modal">
+                <p><span class="incorrect">Incorrect</span>. Try again.</p>
+            </div>
+
+            <div id="dir-info-partially-correct-modal" class="modal">
+                <p><span class="correct">Partially correct</span>.</p>
+            </div>
+
+            <div id="dir-info-correct-modal" class="modal modal-wide">
+                <p>
+                    <span class="correct">Correct</span>! The answer is address and phone number only. According to
+                    the U.S. Department of Education, directory information includes, but is not limited to, the
+                    following data about a student:
+
+                    <ul class="verbose">
+                        <li>Name</li>
+                        <li>Address and telephone number</li>
+                        <li>Date and place of birth</li>
+                        <li>Participation in school activities and sports</li>
+                        <li>Dates of attendance</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+
+        <section id="s5" class="tpl-3 bg-lawbooks">
+            <div>
+                <p>
+                    The counselor is aware that the school has met the requirements for releasing directory information
+                    without obtaining parental consent. This means the school has:
+
+                    <ul>
+                        <li>
+                            notified parents about the specific types of directory information it may disclose,
+                            <select class="fill-in-the-blank">
+                                <option value="">Select</option>
+                                <option value="correct">and</option>
+                                <option value="incorrect">or</option>
+                            </select>
+                        </li>
+                        <li>
+                            parents have the opportunity to notify the school in writing that they do not want
+                            information about their child disclosed.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <a href="#4.0" class="button-back">BACK</a>
+            <a href="#6.0" class="button hide">NEXT</a>
+        </section>
+
+        <section id="s6" class="tpl-3 bg-lawbooks">
+            <div>
+                <p>
+                    The counselor shares the directory information with the SRO, but informs him that she cannot share
+                    the student's attendance and disciplinary records and grades without parental authorization.
+                </p>
+
+                <p>
+                    However, there is an exception to the parental authorization requirement that may apply in this
+                    situation. FERPA allows disclosure without parental consent to:
+                </p>
+
+                <ul class="alpha">
+                    <li><a class="open-modal" href="#s6-incorrect">Law enforcement officers pursuant to an interagency
+                        agreement.</a></li>
+                    <li><a class="open-modal" href="#s6-partial">Other school officials with a legitimate educational
+                        interest in the records.</a></li>
+                    <li><a class="open-modal" href="#s6-partial">Comply with a lawfully issued subpoena or judicial order.</a>
+                    </li>
+                    <li><a class="open-modal correct" href="#s6-correct">Both B and C</a></li>
+                    <li><a class="open-modal" href="#s6-partial">All of the above</a></li>
+                </ul>
+            </div>
+
+            <a href="#5.0" class="button-back">BACK</a>
+            <a href="#7.0" class="button hide">NEXT</a>
+
+            <div id="s6-incorrect" class="modal">
+                <p><span class="incorrect">Incorrect</span>. Interagency agreements do
+                    not supersede the consent requirements under FERPA.</p>
+            </div>
+
+            <div id="s6-partial" class="modal modal-wide">
+                <p>
+                    <span class="correct">Partially correct</span>. The correct answer is <em>D</em> (Both <em>B</em> and
+                    <em>C</em>).
+                </p>
+            </div>
+
+            <div id="s6-correct" class="modal modal-wide">
+                <div>
+                    <p>
+                        <span class="correct">Correct</span>!
+                    </p>
+
+                    <p>
+                        Answer <em>B</em> is correct because FERPA allows disclosure without parental consent to other school
+                        officials who have a legitimate educational interest in the records. The school must include in an
+                        annual notification to parents the specific criteria for determining who is a <i>school official</i>
+                        and
+                        what constitutes <i>a legitimate educational interest</i>. Additionally, if the SRO (and any other
+                        individuals) in this case example were to receive information under this exception, they would have
+                        to be informed that they cannot re-release the information except in accordance with FERPA.
+                    </p>
+
+                    <p>
+                        Answer <em>C</em> is correct because FERPA also allows disclosure without parental consent if required to
+                        comply with a court order or subpoena. If the school receives such an order or subpoena, it must
+                        make a "reasonable effort" to notify the parents about the court order/subpoena before releasing the
+                        records to law enforcement.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="s7" class="tpl-3">
+            <div>
+                <h3>You have completed Scenario 3</h3>
+                <!--<a href="4.html">Go To Scenario 4: TBD</a>-->
+            </div>
+
+            <a href="#1.0" class="button">Start Over</a>
+        </section>
+
+        <div id="progress-bar"></div>
+
+        <div class="slide-footer">
+            An initiative supported by the John D. and Catherine T. MacArthur Foundation <a href="http://www.macfound.org">www.macfound.org</a>
+        </div>
+
+        <script type="text/javascript" src="../js/dzslides.js"></script>
+        <script type="text/javascript" src="../js/jquery.modal.js"></script>
+        <script type="text/javascript" src="../js/scenarios.js"></script>
+    </body>
+</html>

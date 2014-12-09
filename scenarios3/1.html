@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="../css/jquery.modal.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="../css/scenarios.css" type="text/css" media="screen" />
+        <link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <title>JLC: Scenario 1: Municipal Community Centers and School District</title>
+    </head>
+
+    <body class="scenario-1">
+        <div class="slide-header">
+            <img src="../img/mfc-logo.png" width="109" height="30" />
+        </div>
+
+        <section id="s1" class="tpl-4">
+            <div>
+                <h1>Scenario 1</h1>
+                <h3>Municipal Community Centers and School District</h3>
+            </div>
+
+            <a href="#2.0" class="button">START</a>
+        </section>
+
+        <section id="s2" class="tpl-1">
+            <div>
+                <img class="polaroid" src="../img/s1/tommy.png" />
+            </div>
+            <div>
+                <p>
+                    Seventeen year-old Tommy became involved in the child welfare system two years ago as a result of chronic truancy.
+                </p>
+                <p>
+                    His child welfare agency caseworker regularly requests and receives reports from Tommy’s schools that include his
+                    attendance, grades, and any disciplinary actions.
+                </p>
+            </div>
+
+            <a href="#1.0" class="button-back">BACK</a>
+            <a href="#3.0" class="button">NEXT</a>
+        </section>
+
+        <section id="s3" class="tpl-1">
+            <div>
+                <img class="polaroid" src="../img/s1/tommy.png" />
+                <img class="probationOfficer1" src="../img/s1/probationofficer.png" />
+            </div>
+            <div>
+                <p>
+                    Recently, Tommy was adjudicated delinquent and assigned a probation officer.
+                </p>
+            </div>
+
+            <a href="#2.0" class="button-back">BACK</a>
+            <a href="#4.0" class="button">NEXT</a>
+        </section>
+
+        <section id="s4" class="tpl-1">
+            <div>
+                <img class="polaroid" src="../img/s1/tommy.png" />
+                <img class="probationOfficer1" src="../img/s1/probationofficer.png" />
+                <img class="socialWorker1" src="../img/s1/socialworker.png" />
+            </div>
+            <div>
+                <p>
+                    The probation officer contacts Tommy's child welfare agency caseworker and asks her to provide him with the reports
+                    she receives from Tommy's school so the probation officer can track Tommy's progress to ensure he is complying with
+                    conditions of probation.
+                </p>
+            </div>
+
+            <a href="#3.0" class="button-back">BACK</a>
+            <a href="#5.0" class="button">NEXT</a>
+        </section>
+
+        <section id="s5" class="tpl-3 bg-lawbooks">
+            <div>
+                <p>
+                    The child welfare agency caseworker is unclear as to whether she can re-disclose this
+                    information to the probation officer.
+                </p>
+                <p>Which federal law(s) will guide the child welfare agency caseworker?</p>
+
+                <ul class="alpha">
+                    <li><a class="open-modal" href="#s5-incorrect">HIPAA</a></li>
+                    <li><a class="open-modal correct" href="#s5-correct">FERPA</a></li>
+                    <li><a class="open-modal" href="#s5-incorrect">42 CFR Part 2</a></li>
+                    <li><a class="open-modal" href="#s5-incorrect">HIPAA and FERPA</a></li>
+                    <li><a class="open-modal" href="#s5-incorrect">All of the above</a></li>
+                </ul>
+            </div>
+
+            <a href="#4.0" class="button-back">BACK</a>
+            <a href="#6.0" class="button hide">NEXT</a>
+
+            <div id="s5-correct" class="modal">
+                <p><span class="correct">Correct!</span></p>
+            </div>
+
+            <div id="s5-incorrect" class="modal">
+                <p><span class="incorrect">Incorrect.</span></p>
+            </div>
+        </section>
+
+        <section id="s6" class="tpl-3 bg-lawbooks">
+            <div>
+                <p>
+                    The child welfare caseworker knows that FERPA generally allows a school to disclose education records with parental
+                    consent and only if the recipient agrees not to re-disclose the records without first obtaining additional parental
+                    consent.
+                </p>
+                <p>
+                    The caseworker must first determine whether any or all of the requested information meets the definition
+                    of education records. She believes that disciplinary actions are NOT considered part of the education record.
+                    Is she correct?
+                </p>
+
+                <ul>
+                    <li><a class="open-modal" href="#s6-incorrect">Yes</a></li>
+                    <li><a class="open-modal correct" href="#s6-correct">No</a></li>
+                </ul>
+            </div>
+
+            <a href="#5.0" class="button-back">BACK</a>
+            <a href="#7.0" class="button hide">NEXT</a>
+
+            <div id="s6-correct" class="modal modal-wide">
+                <p>
+                    <span class="correct">Correct</span>. FERPA defines a student's <i>education record</i> as records, files, documents,
+                    and other material maintained by a school or a person acting for the school and containing information directly related to a student.
+                    Reports from a school that include information about disciplinary actions are considered education records.
+                </p>
+            </div>
+
+            <div id="s6-incorrect" class="modal modal-wide">
+                <p>
+                    <span class="incorrect">Incorrect</span>.  FERPA defines a student's <i>education record</i> as records, files,
+                    documents, and other material maintained by a school or a person acting for the school and containing information
+                    directly related to a student. Reports from a school that include information about disciplinary actions are considered
+                    education records.
+                </p>
+            </div>
+        </section>
+
+        <section id="s7" class="tpl-3 bg-lawbooks">
+            <div>
+                <p>
+                    However, the caseworker believes that because she obtained the education records through application of the Uninterrupted
+                    Scholars Act (USA), she is automatically allowed to share the education records with probation without parental consent.
+                    Is she correct?
+                </p>
+
+                <ul>
+                    <li><a class="open-modal" href="#s7-incorrect">Yes</a></li>
+                    <li><a class="open-modal correct" href="#s7-correct">No</a></li>
+                </ul>
+            </div>
+
+            <a href="#6.0" class="button-back">BACK</a>
+            <a href="#8.0" class="button hide">NEXT</a>
+
+            <div id="s7-correct" class="modal modal-wide">
+                <p>
+                    <span class="correct">Correct</span>. If the school discloses the records pursuant to the USA exception, FERPA says the caseworker may only
+                    re-disclose the records to another individual or agency <em>engaged in addressing the child’s education needs if the
+                    child welfare agency authorizes such re-disclosure</em>. In this scenario, we have no information that the probation
+                    officer is engaged in addressing the child’s education needs, nor that the child welfare agency authorizes the
+                    caseworker to re-disclose the records to the probation officer. So FERPA dictates that the caseworker would not
+                    <em>automatically</em> be allowed to share the education records with probation if the caseworker received the information
+                    via the USA.
+                </p>
+            </div>
+
+            <div id="s7-incorrect" class="modal modal-wide">
+                <p>
+                    <span class="incorrect">Incorrect</span>. If the school discloses the records pursuant to the USA exception, FERPA says the caseworker may only
+                    re-disclose the records to another individual or agency <em>engaged in addressing the child’s education needs if the
+                    child welfare agency authorizes such re-disclosure</em>. In this scenario, we have no information that the probation
+                    officer is engaged in addressing the child’s education needs, nor that the child welfare agency authorizes the
+                    caseworker to re-disclose the records to the probation officer. So FERPA dictates that the caseworker would not
+                    <em>automatically</em> be allowed to share the education records with probation if the caseworker received the information
+                    via the USA.
+                </p>
+            </div>
+        </section>
+
+        <section id="s8" class="tpl-3 bg-lawbooks">
+            <div>
+                <p>
+                    If the school had disclosed the records to the caseworker pursuant to a court order in the child’s dependency case,
+                    would the FERPA prohibition on re-disclosure apply?
+                </p>
+
+                <ul>
+                    <li><a class="open-modal" href="#s8-incorrect">Yes</a></li>
+                    <li><a class="open-modal correct" href="#s8-correct">No</a></li>
+                </ul>
+            </div>
+
+            <a href="#7.0" class="button-back">BACK</a>
+            <a href="#9.0" class="button hide">NEXT</a>
+
+            <div id="s8-correct" class="modal modal-wide">
+                <p>
+                    <span class="correct">Correct</span>. If the school discloses the records to the caseworker pursuant to a court order in the child’s dependency case,
+                    then the FERPA prohibition on re-disclosure does not apply.  In that situation, the caseworker would have to consult the
+                    state laws/regulations governing the disclosure of child welfare case records to determine if he/she can give the
+                    education records to Tommy’s probation officer without first getting a court order or a signed parental consent.
+                </p>
+            </div>
+
+            <div id="s8-incorrect" class="modal modal-wide">
+                <p>
+                    <span class="incorrect">Incorrect</span>. If the school discloses the records to the caseworker pursuant to a court order in the child’s dependency
+                    case, then the FERPA prohibition on re-disclosure does not apply.  In that situation, the caseworker would have to
+                    consult the <em>state laws/regulations</em> governing the disclosure of child welfare case records to determine if he/she can
+                    give the education records to Tommy’s probation officer without first getting a court order or a signed parental consent.
+                </p>
+            </div>
+        </section>
+
+        <section id="s9" class="tpl-4">
+            <div>
+                <h3>You have completed Scenario 1</h3>
+                <a href="3.html">Go To Scenario 3: Law Enforcement Agency, School, Department of Behavioral Health,
+                    Social Services Agency</a>
+            </div>
+
+            <a href="#1.0" class="button">Start Over</a>
+        </section>
+
+        <div id="progress-bar"></div>
+
+        <div class="slide-footer">
+            An initiative supported by the John D. and Catherine T. MacArthur Foundation <a href="http://www.macfound.org">www.macfound.org</a>
+        </div>
+
+        <script type="text/javascript" src="../js/dzslides.js"></script>
+        <script type="text/javascript" src="../js/jquery.modal.js"></script>
+        <script type="text/javascript" src="../js/scenarios.js"></script>
+    </body>
+</html>
