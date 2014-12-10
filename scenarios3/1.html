@@ -33,11 +33,12 @@
             </div>
             <div>
                 <p>
-                    Seventeen year-old Tommy became involved in the child welfare system two years ago as a result of chronic truancy.
+                    Kathy works for a city agency that runs a community center serving youth. The center issues
+                    membership cards with a unique identifier for each member youth.
                 </p>
                 <p>
-                    His child welfare agency caseworker regularly requests and receives reports from Tommy’s schools that include his
-                    attendance, grades, and any disciplinary actions.
+                    Kathy wants to collect some
+                    demographic information to understand which youth do and do not access the center.
                 </p>
             </div>
 
@@ -45,84 +46,126 @@
             <a href="#3.0" class="button">NEXT</a>
         </section>
 
-        <section id="s3" class="tpl-1">
-            <div>
-                <img class="polaroid" src="../img/s1/tommy.png" />
-                <img class="probationOfficer1" src="../img/s1/probationofficer.png" />
-            </div>
+        <section id="s3" class="tpl-2 bg-school">
             <div>
                 <p>
-                    Recently, Tommy was adjudicated delinquent and assigned a probation officer.
+                    Kathy contacts the school district to request the following information about each youth who comes
+                    to the center:
                 </p>
+
+                <ul>
+                    <li>gender,</li>
+                    <li>school ID number,</li>
+                    <li>date of birth,</li>
+                    <li>school, and</li>
+                    <li>home zip code.</li>
+                </ul>
             </div>
 
             <a href="#2.0" class="button-back">BACK</a>
             <a href="#4.0" class="button">NEXT</a>
         </section>
 
-        <section id="s4" class="tpl-1">
-            <div>
-                <img class="polaroid" src="../img/s1/tommy.png" />
-                <img class="probationOfficer1" src="../img/s1/probationofficer.png" />
-                <img class="socialWorker1" src="../img/s1/socialworker.png" />
-            </div>
+        <section id="s4" class="tpl-3 bg-lawbooks">
             <div>
                 <p>
-                    The probation officer contacts Tommy's child welfare agency caseworker and asks her to provide him with the reports
-                    she receives from Tommy's school so the probation officer can track Tommy's progress to ensure he is complying with
-                    conditions of probation.
+                    Which federal law(s) must the school district consult before releasing the requested information to
+                    Kathy?
                 </p>
+
+                <ul class="alpha">
+                    <li><a class="open-modal" href="#s4-incorrect">HIPAA</a></li>
+                    <li><a class="open-modal" href="#s4-incorrect">IDEIA</a></li>
+                    <li><a class="open-modal" href="#s4-incorrect">42 CFR Part 2</a></li>
+                    <li><a class="open-modal correct" href="#s4-correct">FERPA</a></li>
+                </ul>
             </div>
 
             <a href="#3.0" class="button-back">BACK</a>
-            <a href="#5.0" class="button">NEXT</a>
+            <a href="#5.0" class="button hide">NEXT</a>
+
+            <div id="s4-correct" class="modal">
+                <p><span class="correct">Correct!</span></p>
+            </div>
+
+            <div id="s4-incorrect" class="modal">
+                <p><span class="incorrect">Incorrect.</span></p>
+            </div>
         </section>
 
         <section id="s5" class="tpl-3 bg-lawbooks">
             <div>
                 <p>
-                    The child welfare agency caseworker is unclear as to whether she can re-disclose this
-                    information to the probation officer.
+                    Under FERPA, which of the following pieces of information is considered "directory information"?
                 </p>
-                <p>Which federal law(s) will guide the child welfare agency caseworker?</p>
+                <p class="info">
+                    Check all that apply and then click submit.
+                </p>
 
-                <ul class="alpha">
-                    <li><a class="open-modal" href="#s5-incorrect">HIPAA</a></li>
-                    <li><a class="open-modal correct" href="#s5-correct">FERPA</a></li>
-                    <li><a class="open-modal" href="#s5-incorrect">42 CFR Part 2</a></li>
-                    <li><a class="open-modal" href="#s5-incorrect">HIPAA and FERPA</a></li>
-                    <li><a class="open-modal" href="#s5-incorrect">All of the above</a></li>
-                </ul>
+                <table class="checkbox-list">
+                    <tr>
+                        <td><input id="dir-info2-1" class="dir-info2" type="checkbox"/></td>
+                        <td><label for="dir-info2-1">Gender</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="dir-info2-2" class="dir-info2 correct" type="checkbox"/></td>
+                        <td><label for="dir-info2-2">School</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="dir-info2-3" class="dir-info2 correct" type="checkbox"/></td>
+                        <td><label for="dir-info2-3">School ID number</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="dir-info2-4" class="dir-info2 correct" type="checkbox"/></td>
+                        <td><label for="dir-info2-4">Date of birth</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="dir-info2-5" class="dir-info2 correct" type="checkbox"/></td>
+                        <td><label for="dir-info2-5">Home zip code</label></td>
+                    </tr>
+                </table>
+                <a id="dir-info2-submit" class="button">SUBMIT</a>
             </div>
 
             <a href="#4.0" class="button-back">BACK</a>
             <a href="#6.0" class="button hide">NEXT</a>
 
-            <div id="s5-correct" class="modal">
+            <div id="dir-info2-correct-modal" class="modal">
                 <p><span class="correct">Correct!</span></p>
             </div>
 
-            <div id="s5-incorrect" class="modal">
-                <p><span class="incorrect">Incorrect.</span></p>
+            <div id="dir-info2-partially-correct-modal" class="modal">
+                <p><span class="correct">Partially Correct</span>.</p>
+            </div>
+
+            <div id="dir-info2-incorrect-modal" class="modal">
+                <p><span class="incorrect">Incorrect</span>. It is not clear whether a child's gender can be included as
+                    directory information. There is no specific mention of gender in any Department of Education
+                    guidance on directory information.</p>
+            </div>
+
+            <div id="dir-info2-none-modal" class="modal">
+                <p><span class="incorrect">Incorrect</span>.</p>
             </div>
         </section>
 
         <section id="s6" class="tpl-3 bg-lawbooks">
             <div>
                 <p>
-                    The child welfare caseworker knows that FERPA generally allows a school to disclose education records with parental
-                    consent and only if the recipient agrees not to re-disclose the records without first obtaining additional parental
-                    consent.
-                </p>
-                <p>
-                    The caseworker must first determine whether any or all of the requested information meets the definition
-                    of education records. She believes that disciplinary actions are NOT considered part of the education record.
-                    Is she correct?
+                    According to FERPA, the school district may release the information to Kathy if it takes any of the
+                    following steps:
                 </p>
 
-                <ul>
-                    <li><a class="open-modal" href="#s6-incorrect">Yes</a></li>
-                    <li><a class="open-modal correct" href="#s6-correct">No</a></li>
+                <ul class="alpha verbose">
+                    <li><a class="open-modal" href="#s6-incorrect">The school district doesn't need to do anything
+                        before it may release the information.</a></li>
+                    <li><a class="open-modal" href="#s6-incorrect">The school district may release the information if
+                        it already notified parents about what directory information it will generally disclose.</a></li>
+                    <li><a class="open-modal correct" href="#s6-correct">The school district may release the information if
+                        it did (B) and also gave parents the option to notify the school that they do not want their
+                        child's directory information released.</a></li>
+                    <li><a class="open-modal" href="#s6-incorrect2">The school district obtained a signed
+                        authorization from each student </a></li>
                 </ul>
             </div>
 
@@ -139,92 +182,34 @@
 
             <div id="s6-incorrect" class="modal modal-wide">
                 <p>
-                    <span class="incorrect">Incorrect</span>.  FERPA defines a student's <i>education record</i> as records, files,
-                    documents, and other material maintained by a school or a person acting for the school and containing information
-                    directly related to a student. Reports from a school that include information about disciplinary actions are considered
-                    education records.
+                    <span class="incorrect">Incorrect</span>. A school may release directory information without
+                    parental consent <i>only if</i> it already notified parents about what directory information it will
+                    generally disclose AND gave parents the option to notify the school that they do not want their
+                    child’s directory information released.
                 </p>
+            </div>
+
+            <div id="s6-incorrect2" class="modal modal-wide">
+                <div>
+                    <p>
+                        <span class="incorrect">Incorrect</span>. A student under the age of 18 who is not enrolled in a
+                        post-secondary school cannot sign an authorization for the release of records. If the school did
+                        not comply with the notification requirements to release directory information, the school will need
+                        a signed authorization from the child's parent. A written authorization to release education
+                        records must:
+
+                        <ul class="compact">
+                            <li>Specify the records to be disclosed</li>
+                            <li>State the purpose of the disclosure</li>
+                            <li>Identify the party or class of parties to whom disclosure is to be made</li>
+                            <li>Be signed and dated by the parent or guardian</li>
+                        </ul>
+                    </p>
+                </div>
             </div>
         </section>
 
-        <section id="s7" class="tpl-3 bg-lawbooks">
-            <div>
-                <p>
-                    However, the caseworker believes that because she obtained the education records through application of the Uninterrupted
-                    Scholars Act (USA), she is automatically allowed to share the education records with probation without parental consent.
-                    Is she correct?
-                </p>
-
-                <ul>
-                    <li><a class="open-modal" href="#s7-incorrect">Yes</a></li>
-                    <li><a class="open-modal correct" href="#s7-correct">No</a></li>
-                </ul>
-            </div>
-
-            <a href="#6.0" class="button-back">BACK</a>
-            <a href="#8.0" class="button hide">NEXT</a>
-
-            <div id="s7-correct" class="modal modal-wide">
-                <p>
-                    <span class="correct">Correct</span>. If the school discloses the records pursuant to the USA exception, FERPA says the caseworker may only
-                    re-disclose the records to another individual or agency <em>engaged in addressing the child’s education needs if the
-                    child welfare agency authorizes such re-disclosure</em>. In this scenario, we have no information that the probation
-                    officer is engaged in addressing the child’s education needs, nor that the child welfare agency authorizes the
-                    caseworker to re-disclose the records to the probation officer. So FERPA dictates that the caseworker would not
-                    <em>automatically</em> be allowed to share the education records with probation if the caseworker received the information
-                    via the USA.
-                </p>
-            </div>
-
-            <div id="s7-incorrect" class="modal modal-wide">
-                <p>
-                    <span class="incorrect">Incorrect</span>. If the school discloses the records pursuant to the USA exception, FERPA says the caseworker may only
-                    re-disclose the records to another individual or agency <em>engaged in addressing the child’s education needs if the
-                    child welfare agency authorizes such re-disclosure</em>. In this scenario, we have no information that the probation
-                    officer is engaged in addressing the child’s education needs, nor that the child welfare agency authorizes the
-                    caseworker to re-disclose the records to the probation officer. So FERPA dictates that the caseworker would not
-                    <em>automatically</em> be allowed to share the education records with probation if the caseworker received the information
-                    via the USA.
-                </p>
-            </div>
-        </section>
-
-        <section id="s8" class="tpl-3 bg-lawbooks">
-            <div>
-                <p>
-                    If the school had disclosed the records to the caseworker pursuant to a court order in the child’s dependency case,
-                    would the FERPA prohibition on re-disclosure apply?
-                </p>
-
-                <ul>
-                    <li><a class="open-modal" href="#s8-incorrect">Yes</a></li>
-                    <li><a class="open-modal correct" href="#s8-correct">No</a></li>
-                </ul>
-            </div>
-
-            <a href="#7.0" class="button-back">BACK</a>
-            <a href="#9.0" class="button hide">NEXT</a>
-
-            <div id="s8-correct" class="modal modal-wide">
-                <p>
-                    <span class="correct">Correct</span>. If the school discloses the records to the caseworker pursuant to a court order in the child’s dependency case,
-                    then the FERPA prohibition on re-disclosure does not apply.  In that situation, the caseworker would have to consult the
-                    state laws/regulations governing the disclosure of child welfare case records to determine if he/she can give the
-                    education records to Tommy’s probation officer without first getting a court order or a signed parental consent.
-                </p>
-            </div>
-
-            <div id="s8-incorrect" class="modal modal-wide">
-                <p>
-                    <span class="incorrect">Incorrect</span>. If the school discloses the records to the caseworker pursuant to a court order in the child’s dependency
-                    case, then the FERPA prohibition on re-disclosure does not apply.  In that situation, the caseworker would have to
-                    consult the <em>state laws/regulations</em> governing the disclosure of child welfare case records to determine if he/she can
-                    give the education records to Tommy’s probation officer without first getting a court order or a signed parental consent.
-                </p>
-            </div>
-        </section>
-
-        <section id="s9" class="tpl-4">
+        <section id="s7" class="tpl-4">
             <div>
                 <h3>You have completed Scenario 1</h3>
                 <a href="3.html">Go To Scenario 3: Law Enforcement Agency, School, Department of Behavioral Health,

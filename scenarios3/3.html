@@ -30,13 +30,22 @@
 
         <section id="s2" class="tpl-1">
             <div>
-                <img class="polaroid" src="../img/s3/aaron.png" />
+                <img class="polaroid" src="../img/s8/bill.png"/>
             </div>
             <div>
                 <p>
-                    A school resource officer (SRO), who is employed by the school district's police department, is
-                    concerned about a student he has seen hanging out with known gang members and has seen out after
-                    curfew a number of times.
+                    Bill, a 15 year-old youth, is currently placed in a Residential Treatment Facility (RTF) because of
+                    a delinquency adjudication.
+                </p>
+
+                <p>
+                    At his last hearing, the RTF told the judge that Bill will be discharged
+                    in a month.
+                </p>
+
+                <p>
+                    Bill has an open child welfare case and a child welfare case worker as he has been involved in the
+                    child welfare system since age 7.
                 </p>
             </div>
 
@@ -44,184 +53,384 @@
             <a href="#3.0" class="button">NEXT</a>
         </section>
 
-        <section id="s3" class="tpl-1">
-            <div>
-                <img class="polaroid" src="../img/s3/aaron.png" />
-            </div>
+        <section id="s3" class="tpl-3">
             <div>
                 <p>
-                    The SRO asks the guidance counselor if she can share with him the student's attendance and
-                    disciplinary records, grades, home address, and phone number.
+                    Bill's child welfare case worker convenes a multi-agency team meeting to develop a
+                    re-entry/transition plan for Bill for his return to the community. In attendance at the meeting:
+
+                <ul class="person-list">
+                    <li>
+                        the child welfare case worker
+                        <img class="hide" src="../img/s8/person1.jpg"/>
+                    </li>
+                    <li class="fade">
+                        a representative of the RTF
+                        <img class="hide" src="../img/s8/person2.jpg"/>
+                    </li>
+                    <li class="fade">
+                        a school counselor from the local high school that Bill was attending before his
+                        placement
+                        <img class="hide" src="../img/s8/person3.jpg"/>
+                    </li>
+                    <li class="fade">
+                        an outpatient mental health counselor who treated Bill previously
+                        <img class="hide" src="../img/s8/person4.jpg"/>
+                    </li>
+                    <li class="fade">
+                        a juvenile probation officer
+                        <img class="hide" src="../img/s8/person5.jpg"/>
+                    </li>
+                </ul>
                 </p>
-                <p>
-                    He explains that he plans to go to the
-                    student's home and ask one or both of his parents to talk with him about how to help the student
-                    stay out of trouble.
+
+                <p id="show-caseworker" class="hide">
+                    The caseworker wants to collect information about Bill's progress in the RTF, including mental
+                    health treatment and educational progress; his ongoing treatment needs; and what treatment and
+                    education options are available to him once he returns to the community.
                 </p>
             </div>
 
             <a href="#2.0" class="button-back">BACK</a>
-            <a href="#4.0" class="button">NEXT</a>
+            <a href="#4.0" class="button hide">NEXT</a>
         </section>
 
         <section id="s4" class="tpl-3 bg-lawbooks">
             <div>
                 <p>
-                    The counselor knows that this request is governed by FERPA. She knows that there are special rules
-                    about "directory information."
-
-                </p>
-                <p>
-                    Which information will be considered "directory information"? (check
-                    all that apply)
+                    Everyone is confused about whether they are allowed to talk to one another and what information they
+                    can share.
                 </p>
 
-                <table class="checkbox-list">
-                    <tr>
-                        <td><input id="dir-info-1" class="dir-info" type="checkbox"/></td>
-                        <td><label for="dir-info-1">attendance records</label></td>
-                    </tr>
-                    <tr>
-                        <td><input id="dir-info-2" class="dir-info" type="checkbox"/></td>
-                        <td><label for="dir-info-2">disciplinary records</label></td>
-                    </tr>
-                    <tr>
-                        <td><input id="dir-info-3" class="dir-info" type="checkbox"/></td>
-                        <td><label for="dir-info-3">grades</label></td>
-                    </tr>
-                    <tr>
-                        <td><input id="dir-info-4" class="dir-info correct" type="checkbox"/></td>
-                        <td><label for="dir-info-4">home address</label></td>
-                    </tr>
-                    <tr>
-                        <td><input id="dir-info-5" class="dir-info correct" type="checkbox"/></td>
-                        <td><label for="dir-info-5">phone number</label></td>
-                    </tr>
-                </table>
-                <a id="dir-info-submit" class="button">SUBMIT</a>
+                <p class="help">Click the images below to see what laws apply</p>
+
+                <ul class="person-list no-pad">
+                    <li>
+                        <img data-id="s4-p1" class="show-click-text" src="../img/s8/person1.jpg"/>
+                    </li>
+                    <li>
+                        <img data-id="s4-p2" class="show-click-text" src="../img/s8/person2.jpg"/>
+                    </li>
+                    <li>
+                        <img data-id="s4-p3" class="show-click-text" src="../img/s8/person3.jpg"/>
+                    </li>
+                    <li>
+                        <img data-id="s4-p4" class="show-click-text" src="../img/s8/person4.jpg"/>
+                    </li>
+                    <li>
+                        <img data-id="s4-p5" class="show-click-text" src="../img/s8/person5.jpg"/>
+                    </li>
+                </ul>
+
+                <div class="click-text">
+                    <div id="s4-p1">
+                        <p>
+                            The ability to share information from case records is subject to state law.
+                        </p>
+                    </div>
+
+                    <div id="s4-p2">
+                        <p>
+                            Educational records from the RTF school are subject to FERPA.
+                            <br/>
+                            Treatment records are subject to HIPAA.
+                        </p>
+                    </div>
+
+                    <div id="s4-p3">
+                        <p>
+                            Educational records from the local school are subject to FERPA.
+                        </p>
+                    </div>
+
+                    <div id="s4-p4">
+                        <p>
+                            Treatment records are subject to HIPAA.
+                        </p>
+                    </div>
+
+                    <div id="s4-p5">
+                        <p>
+                            The ability to share information from case records is subject to state law.
+                        </p>
+                    </div>
+                </div>
             </div>
 
             <a href="#3.0" class="button-back">BACK</a>
             <a href="#5.0" class="button hide">NEXT</a>
-
-            <div id="dir-info-incorrect-modal" class="modal">
-                <p><span class="incorrect">Incorrect</span>. Try again.</p>
-            </div>
-
-            <div id="dir-info-partially-correct-modal" class="modal">
-                <p><span class="correct">Partially correct</span>.</p>
-            </div>
-
-            <div id="dir-info-correct-modal" class="modal modal-wide">
-                <p>
-                    <span class="correct">Correct</span>! The answer is address and phone number only. According to
-                    the U.S. Department of Education, directory information includes, but is not limited to, the
-                    following data about a student:
-
-                    <ul class="verbose">
-                        <li>Name</li>
-                        <li>Address and telephone number</li>
-                        <li>Date and place of birth</li>
-                        <li>Participation in school activities and sports</li>
-                        <li>Dates of attendance</li>
-                    </ul>
-                </p>
-            </div>
         </section>
 
         <section id="s5" class="tpl-3 bg-lawbooks">
             <div>
                 <p>
-                    The counselor is aware that the school has met the requirements for releasing directory information
-                    without obtaining parental consent. This means the school has:
+                    Can the caseworker obtain the educational records from the RTF and the high school?
+                </p>
 
-                    <ul>
-                        <li>
-                            notified parents about the specific types of directory information it may disclose,
-                            <select class="fill-in-the-blank">
-                                <option value="">Select</option>
-                                <option value="correct">and</option>
-                                <option value="incorrect">or</option>
-                            </select>
-                        </li>
-                        <li>
-                            parents have the opportunity to notify the school in writing that they do not want
-                            information about their child disclosed.
-                        </li>
-                    </ul>
+                <p class="help">
+                    Drag the file to the caseworker if she can legally obtain the educational records.
+                    Drag it back to the filing cabinet if not.
                 </p>
             </div>
+
+            <img id="s5-file" class="drag-me" src="../img/s8/casefile.png"/>
+            <img id="s5-caseworker" src="../img/s8/caseworker.png"/>
+            <img id="s5-file-cabinet" src="../img/s8/file-cabinet.png"/>
 
             <a href="#4.0" class="button-back">BACK</a>
             <a href="#6.0" class="button hide">NEXT</a>
-        </section>
 
-        <section id="s6" class="tpl-3 bg-lawbooks">
-            <div>
-                <p>
-                    The counselor shares the directory information with the SRO, but informs him that she cannot share
-                    the student's attendance and disciplinary records and grades without parental authorization.
-                </p>
-
-                <p>
-                    However, there is an exception to the parental authorization requirement that may apply in this
-                    situation. FERPA allows disclosure without parental consent to:
-                </p>
-
-                <ul class="alpha">
-                    <li><a class="open-modal" href="#s6-incorrect">Law enforcement officers pursuant to an interagency
-                        agreement.</a></li>
-                    <li><a class="open-modal" href="#s6-partial">Other school officials with a legitimate educational
-                        interest in the records.</a></li>
-                    <li><a class="open-modal" href="#s6-partial">Comply with a lawfully issued subpoena or judicial order.</a>
-                    </li>
-                    <li><a class="open-modal correct" href="#s6-correct">Both B and C</a></li>
-                    <li><a class="open-modal" href="#s6-partial">All of the above</a></li>
-                </ul>
-            </div>
-
-            <a href="#5.0" class="button-back">BACK</a>
-            <a href="#7.0" class="button hide">NEXT</a>
-
-            <div id="s6-incorrect" class="modal">
-                <p><span class="incorrect">Incorrect</span>. Interagency agreements do
-                    not supersede the consent requirements under FERPA.</p>
-            </div>
-
-            <div id="s6-partial" class="modal modal-wide">
-                <p>
-                    <span class="correct">Partially correct</span>. The correct answer is <em>D</em> (Both <em>B</em> and
-                    <em>C</em>).
-                </p>
-            </div>
-
-            <div id="s6-correct" class="modal modal-wide">
+            <div id="s5-a" class="modal modal-wide">
                 <div>
                     <p>
-                        <span class="correct">Correct</span>!
+                        <span class="correct">Correct</span>! The Uninterrupted Scholars Act (USA) that amended FERPA
+                        allows
+                        the child welfare worker to obtain Bill's educational records. Under FERPA as amended by the
+                        USA,
+                        the child welfare worker, who has the right to access a child's case plan under state law and
+                        whose
+                        agency has legal responsibility for the care of the youth, can access the child's educational
+                        records.
                     </p>
+                </div>
+            </div>
 
+            <div id="s5-b" class="modal modal-wide">
+                <div>
                     <p>
-                        Answer <em>B</em> is correct because FERPA allows disclosure without parental consent to other school
-                        officials who have a legitimate educational interest in the records. The school must include in an
-                        annual notification to parents the specific criteria for determining who is a <i>school official</i>
+                        <span class="incorrect">Incorrect</span>. The Uninterrupted Scholars Act (USA) that amended
+                        FERPA
+                        allows the child welfare worker to obtain Bill's educational records. Under FERPA as amended by
+                        the
+                        USA, the child welfare worker, who has the right to access a child's case plan under state law
                         and
-                        what constitutes <i>a legitimate educational interest</i>. Additionally, if the SRO (and any other
-                        individuals) in this case example were to receive information under this exception, they would have
-                        to be informed that they cannot re-release the information except in accordance with FERPA.
-                    </p>
-
-                    <p>
-                        Answer <em>C</em> is correct because FERPA also allows disclosure without parental consent if required to
-                        comply with a court order or subpoena. If the school receives such an order or subpoena, it must
-                        make a "reasonable effort" to notify the parents about the court order/subpoena before releasing the
-                        records to law enforcement.
+                        whose agency has legal responsibility for the care of the youth, can access the child's
+                        educational
+                        records.
                     </p>
                 </div>
             </div>
         </section>
 
-        <section id="s7" class="tpl-3">
+        <section id="s6" class="tpl-3 bg-lawbooks">
+            <div>
+                <p>
+                    Can the caseworker share the information with the multi-agency team without first obtaining consent?
+                </p>
+
+                <ul class="alpha">
+                    <li><a class="open-modal" href="#s6-a">No</a></li>
+                    <li><a class="open-modal" href="#s6-b">Yes</a></li>
+                    <li><a class="open-modal correct" href="#s6-c">Probably</a></li>
+                </ul>
+            </div>
+
+            <img id="s6-caseworker" src="../img/s8/caseworker.png"/>
+
+            <a href="#5.0" class="button-back">BACK</a>
+            <a href="#7.0" class="button hide">NEXT</a>
+
+            <div id="s6-a" class="modal modal-wide">
+                <div>
+                    <p>
+                        Actually, the caseworker is likely able to share
+                        this information with the multi-agency team. As long as the disclosure to other members of the
+                        transition team is for addressing the youth's education needs, and the child welfare agency
+                        authorizes the other members of the transition team to receive such records, no consent will be
+                        required.
+                    </p>
+                </div>
+            </div>
+
+            <div id="s6-b" class="modal modal-wide">
+                <div>
+                    <p>
+                        <span class="incorrect">This is not the best answer</span>. The caseworker can only share this
+                        information with the
+                        multi-agency team without consent if the disclosure to other members of the
+                        transition team is for addressing the youth's education needs, and the child welfare agency
+                        authorizes the other members of the transition team to receive such records.
+                    </p>
+                </div>
+            </div>
+
+            <div id="s6-c" class="modal modal-wide">
+                <div>
+                    <p>
+                        <span class="correct">This is the best answer</span>. The caseworker is likely able to share
+                        this information with the multi-agency team. As long as the disclosure to other members of the
+                        transition team is for addressing the youth's education needs, and the child welfare agency
+                        authorizes the other members of the transition team to receive such records, no consent will be
+                        required.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="s7" class="tpl-3 bg-lawbooks">
+            <div>
+                <p>
+                    If the USA criteria described previously is <em>not met</em>, in order for the Child Welfare
+                    caseworker to
+                    disclose the information to other members of the team, FERPA requires a signed consent from Bill's
+                    parent (or education surrogate). Under FERPA, written authorization to release education records
+                    must do which of the following:
+                </p>
+
+                <table class="checkbox-list">
+                    <tr>
+                        <td><input id="release-ed-rec-1" class="release-ed-rec correct" type="checkbox"/></td>
+                        <td><label for="release-ed-rec-1">Specify the records to be disclosed</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="release-ed-rec-2" class="release-ed-rec correct" type="checkbox"/></td>
+                        <td><label for="release-ed-rec-2">State the purpose of the disclosure</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="release-ed-rec-3" class="release-ed-rec correct" type="checkbox"/></td>
+                        <td><label for="release-ed-rec-3">Identify the party or class of parties to whom disclosure is
+                            to
+                            be made</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input id="release-ed-rec-4" class="release-ed-rec correct" type="checkbox"/></td>
+                        <td><label for="release-ed-rec-4">Be signed and dated by the parent or guardian</label>
+                        </td>
+                    </tr>
+                </table>
+                <a id="release-ed-rec-submit" class="button">SUBMIT</a>
+            </div>
+
+            <a href="#6.0" class="button-back">BACK</a>
+            <a href="#8.0" class="button hide">NEXT</a>
+
+            <div id="release-ed-rec-correct-modal" class="modal">
+                <p><span class="correct">Right</span>! A valid authorization under FERPA must meet each of
+                    these requirements.</p>
+            </div>
+
+            <div id="release-ed-rec-partially-correct-modal" class="modal">
+                <p><span class="correct">Partially correct</span>.</p>
+            </div>
+
+            <div id="release-ed-rec-incorrect-modal" class="modal">
+                <p><span class="incorrect">Incorrect</span>, please try again.</p>
+            </div>
+        </section>
+
+        <section id="s8" class="tpl-3 bg-lawbooks">
+            <div>
+                <p>
+                    If the USA criteria is not met and Bill's parent cannot be located or refuses to sign a valid
+                    authorization, the school may still release Bill's education records as long as the school has 1) a
+                    signed court order or subpoena, and 2) makes a reasonable effort to notify the child's parent of the
+                    subpoena or order.
+                </p>
+
+                <p>
+                    Imagine that the school follows the protocol with the court order and also makes
+                    reasonable efforts to notify Bill's parent. Please check all the parties that could receive Bill's
+                    education record:
+                </p>
+
+                <table class="checkbox-list">
+                    <tr>
+                        <td><input id="release-ed-rec2-1" class="release-ed-rec2 correct" type="checkbox"/></td>
+                        <td><label for="release-ed-rec2-1">the child welfare agency or caseworker listed on a court
+                            order
+                            issued in a child welfare case,</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="release-ed-rec2-2" class="release-ed-rec2 correct" type="checkbox"/></td>
+                        <td><label for="release-ed-rec2-2">caretaker listed on a court order issued in a child welfare
+                            case,</label></td>
+                    </tr>
+                    <tr>
+                        <td><input id="release-ed-rec2-3" class="release-ed-rec2 correct" type="checkbox"/></td>
+                        <td><label for="release-ed-rec2-3">children's attorney listed on a court order issued in a child
+                            welfare case,</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input id="release-ed-rec2-4" class="release-ed-rec correct" type="checkbox"/></td>
+                        <td><label for="release-ed-rec2-4">court appointed special advocate listed on a court order
+                            issued
+                            in a child welfare case.</label>
+                        </td>
+                    </tr>
+                </table>
+                <a id="release-ed-rec2-submit" class="button">SUBMIT</a>
+            </div>
+
+            <a href="#7.0" class="button-back">BACK</a>
+            <a href="#9.0" class="button hide">NEXT</a>
+
+            <div id="release-ed-rec2-correct-modal" class="modal">
+                <p><span class="correct">Right</span>! Any party listed on a court order issued in a child welfare case
+                    may access the record.</p>
+            </div>
+
+            <div id="release-ed-rec2-partially-correct-modal" class="modal">
+                <p><span class="correct">Partially correct</span>.</p>
+            </div>
+
+            <div id="release-ed-rec2-incorrect-modal" class="modal">
+                <p><span class="incorrect">Incorrect</span>, please try again.</p>
+            </div>
+        </section>
+
+        <section id="s9" class="tpl-3 bg-lawbooks">
+            <div>
+                <p>
+                    Can the representative from the RTF share the mental health treatment information with the
+                    multi-agency team without consent?
+                </p>
+
+                <p class="help">
+                    If so, drag the file to the table. If not, drag the file back to the RTF representative.
+                </p>
+            </div>
+
+            <img id="s9-file" class="drag-me" src="../img/s8/casefile.png"/>
+            <img id="s9-rtf" src="../img/s8/rtf.png"/>
+            <img id="s9-table" src="../img/s8/table.png"/>
+
+            <a href="#8.0" class="button-back">BACK</a>
+            <a href="#10.0" class="button hide">NEXT</a>
+
+            <div id="s9-a" class="modal modal-wide">
+                <div>
+                    <p>
+                        <span class="correct">Correct</span>! In order for the treatment information to be shared,
+                        there must be a signed authorization. If state law permitted Bill to consent to his own mental
+                        health treatment both in the RTF and through the outpatient mental health provider, Bill may
+                        consent
+                        to the release of that information at the meeting by signing a consent form. However, if Bill
+                        did
+                        not consent to the mental health care, HIPAA requires the consent of Bill's parent/guardian or a
+                        court order in order for the information to be shared at the multi-agency teaming.
+                    </p>
+                </div>
+            </div>
+
+            <div id="s9-b" class="modal modal-wide">
+                <div>
+                    <p>
+                        <span class="incorrect">Incorrect</span>. In order for the treatment information to be
+                        shared, there must be a signed authorization. If state law permitted Bill to consent to his own
+                        mental health treatment both in the RTF and through the outpatient mental health provider, Bill
+                        may
+                        consent to the release of that information at the meeting by signing a consent form. However, if
+                        Bill did not consent to the mental health care, HIPAA requires the consent of Bill's
+                        parent/guardian
+                        or a court order in order for the information to be shared at the multi-agency teaming.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="s10" class="tpl-3">
             <div>
                 <h3>You have completed Scenario 3</h3>
                 <!--<a href="4.html">Go To Scenario 4: TBD</a>-->

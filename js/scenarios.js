@@ -299,4 +299,27 @@ jQuery(function() {
         clickTextDivs.hide();
         $('#' + id).show();
     });
+
+    $('#dir-info2-submit').on('click touchend', function () {
+        var section = $(this).parents('section'),
+            c1checked = section.find('#dir-info2-1').is(':checked'),
+            c2checked = section.find('#dir-info2-2').is(':checked'),
+            c3checked = section.find('#dir-info2-3').is(':checked'),
+            c4checked = section.find('#dir-info2-4').is(':checked'),
+            c5checked = section.find('#dir-info2-5').is(':checked'),
+            numChecked = section.find('.dir-info2:checked').length,
+            correctAnswersChecked = c2checked && c3checked && c4checked && c5checked && numChecked === 4;
+
+        var modalId = correctAnswersChecked
+            ? '#dir-info2-correct-modal'
+            : numChecked === 0
+            ? '#dir-info2-none-modal'
+            : !c1checked
+            ? '#dir-info2-partially-correct-modal'
+            : '#dir-info2-incorrect-modal';
+
+        $(modalId).modal({fadeDuration: 100, closeText: 'OK'});
+
+        section.children('.button').toggleClass('hide', !correctAnswersChecked);
+    });
 });
