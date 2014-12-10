@@ -291,7 +291,7 @@ jQuery(function() {
     $('.show-click-text').on('click touchend', function() {
         var section = $(this).parents('section'),
             id = $(this).data('id'),
-            clickTextDivs = section.find('.click-text div'),
+            clickTextDivs = section.find('.click-text div, .click-text-side div'),
             images = section.find('li img');
 
         images.css({ opacity: 0.5 });
@@ -321,5 +321,47 @@ jQuery(function() {
         $(modalId).modal({fadeDuration: 100, closeText: 'OK'});
 
         section.children('.button').toggleClass('hide', !correctAnswersChecked);
+    });
+
+    $('#s6-file-cabinet').droppable({
+        activeClass: 'droppable-active',
+        accept: '.drag-me',
+        drop: function (event, ui) {
+            $(ui.draggable).css('bottom', $(this).position().bottom + 10);
+            $(ui.draggable).css('left', $(this).position().left + 10);
+            $('#s6-a').modal('open');
+            $(this).parents('section').children('.button').removeClass('hide');
+        }
+    });
+
+    $('#s6-counselor').droppable({
+        activeClass: 'droppable-active',
+        accept: '.drag-me',
+        drop: function (event, ui) {
+            $(ui.draggable).css('top', $(this).position().top + 60);
+            $(ui.draggable).css('left', $(this).position().left - 30);
+            $('#s6-b').modal('open');
+        }
+    });
+
+    $('#s7-file-cabinet').droppable({
+        activeClass: 'droppable-active',
+        accept: '.drag-me',
+        drop: function (event, ui) {
+            $(ui.draggable).css('bottom', $(this).position().bottom + 10);
+            $(ui.draggable).css('left', $(this).position().left + 10);
+            $('#s7-a').modal('open');
+            $(this).parents('section').children('.button').removeClass('hide');
+        }
+    });
+
+    $('#s7-sheriff').droppable({
+        activeClass: 'droppable-active',
+        accept: '.drag-me',
+        drop: function (event, ui) {
+            $(ui.draggable).css('top', $(this).position().top + 60);
+            $(ui.draggable).css('left', $(this).position().left - 30);
+            $('#s7-b').modal('open');
+        }
     });
 });
