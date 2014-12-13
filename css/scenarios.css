@@ -175,6 +175,10 @@ section, .view head > title {
     background: url(../img/bg/bg-signature.jpg);
 }
 
+.bg-computer {
+    background: url(../img/bg/bg-computer.jpg);
+}
+
 /* TEMPLATE 1: Folder background, image left, text right */
 section.tpl-1 {
     background: url(../img/bg/bg-folder.jpg);
@@ -516,7 +520,7 @@ ul.reveal {
 }
 
 .help {
-    font-size: 14px;
+    font-size: 14px !important;
     color: #888;
     clear: both;
 }
