@@ -179,6 +179,10 @@ section, .view head > title {
     background: url(../img/bg/bg-computer.jpg);
 }
 
+.bg-community {
+    background: url(../img/bg/bg-community.jpg);
+}
+
 /* TEMPLATE 1: Folder background, image left, text right */
 section.tpl-1 {
     background: url(../img/bg/bg-folder.jpg);
@@ -802,18 +806,27 @@ select {
     width: 400px;
 }
 
-#s6-counselor {
+#s6-sheriff {
     position: absolute;
-    top: 183px;
+    top: 134px;
     right: 10px;
     z-index: 1;
+    height: 300px
 }
 
 #s7-sheriff {
     position: absolute;
-    top: 183px;
+    top: 134px;
     right: 10px;
     z-index: 1;
+    height: 300px;
+}
+
+#guidance-counselor {
+    position: absolute;
+    right: 10px;
+    height: 400px;
+    bottom: 110px;
 }
 
 .droppable-active {

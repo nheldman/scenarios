@@ -237,7 +237,10 @@ jQuery(function() {
         section.find(inc).show(500);
 
         $(this).hide();
-        $(this).parents('section').children('.button').toggleClass('hide', !isLast);
+
+        if (!$(this).hasClass('no-next')) {
+            $(this).parents('section').children('.button').toggleClass('hide', !isLast);
+        }
     });
 
     $('#release-info-submit').on('click touchend', function () {
@@ -334,7 +337,7 @@ jQuery(function() {
         }
     });
 
-    $('#s6-counselor').droppable({
+    $('#s6-sheriff').droppable({
         activeClass: 'droppable-active',
         accept: '.drag-me',
         drop: function (event, ui) {
