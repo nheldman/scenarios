@@ -183,6 +183,14 @@ section, .view head > title {
     background: url(../img/bg/bg-community.jpg);
 }
 
+.bg-kid {
+    background: url(../img/bg/bg-kid.png);
+}
+
+.bg-kid-fade {
+    background: url(../img/bg/bg-kid-fade.png);
+}
+
 /* TEMPLATE 1: Folder background, image left, text right */
 section.tpl-1 {
     background: url(../img/bg/bg-folder.jpg);
