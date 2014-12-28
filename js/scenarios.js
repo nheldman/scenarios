@@ -367,4 +367,23 @@ jQuery(function() {
             $('#s7-b').modal('open');
         }
     });
+
+    $('.button, .button-back').click(function() {
+        var iframe = $('iframe.movie');
+
+        if (iframe) {
+            var vimeo = $f(iframe[0]);
+            vimeo.api('pause');
+        }
+    })
+
+    function postIt(action, value) {
+        var data = {method: action};
+        if (value) {
+            data.value = value;
+        }
+        if (url !== undefined) {
+            iFram.contentWindow.postMessage(JSON.stringify(data), url);
+        }
+    }
 });
