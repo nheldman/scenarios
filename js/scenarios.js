@@ -368,7 +368,7 @@ jQuery(function() {
         }
     });
 
-    $('.button, .button-back').click(function() {
+    $('.button, .button-back').on('click touchend', function () {
         var iframe = $('iframe.movie');
 
         if (iframe) {
