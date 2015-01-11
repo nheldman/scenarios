@@ -372,8 +372,8 @@ jQuery(function() {
         var iframe = $('iframe.movie');
 
         if (iframe) {
-            var vimeo = $f(iframe[0]);
-            vimeo.api('pause');
+            var player = iframe[0];
+            player.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
         }
     });
 });
