@@ -376,4 +376,9 @@ jQuery(function() {
             player.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
         }
     });
+
+    $('.iframe-link').on('click touchend', function (e) {
+        e.preventDefault();
+        window.top.location.href = $(this).attr('href');
+    });
 });
