@@ -381,9 +381,8 @@ jQuery(function() {
         e.preventDefault();
 
         var uri = $(this).attr('href');
-        var topUri = window.top.location.href;
         
-        if (topUri.indexOf('fiu.blackboard.com') >= 0) {
+        if (document.referrer.indexOf('fiu.blackboard.com') >= 0) {
             uri = 'https://fiu.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_3718346_1&course_id=_66860_1&mode=cpview';
         }
         
