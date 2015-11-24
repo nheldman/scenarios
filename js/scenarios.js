@@ -379,6 +379,14 @@ jQuery(function() {
 
     $('.iframe-link').on('click touchend', function (e) {
         e.preventDefault();
-        window.top.location.href = $(this).attr('href');
+
+        var uri = $(this).attr('href');
+        var hostname = window.top.location.hostname;
+        
+        if (hostname === 'fiu.blackboard.com') {
+            uri = 'https://fiu.blackboard.com/webapps/blackboard/content/listContentEditable.jsp?content_id=_3718346_1&course_id=_66860_1&mode=cpview';
+        }
+        
+        window.top.location.href = uri;
     });
 });
